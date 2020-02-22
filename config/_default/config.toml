@@ -1,4 +1,4 @@
-baseURL = "https://golapadeog.github.io/blog/" # The URL of your site.
+baseURL = "https://golapadeog.github.io/" # The URL of your site.
 title = "Jérémy landon - Dev, Cloud, DevOps & more" # Title of your site
 theme = "zzo" # Name of Zzo theme folder in `themes/`.
 
