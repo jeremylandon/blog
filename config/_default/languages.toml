@@ -1,0 +1,20 @@
+[fr]
+  title = "Jérémy Landon - Dev, Cloud, DevOps & more"
+  languageName = "Français"
+  weight = 1
+  languagedir = "ltr"
+  contentdir = "content/fr"
+
+[en]
+  title = "Jérémy Landon - Dev, Cloud, DevOps & more"
+  languageName = "English"
+  weight = 2
+  languagedir = "ltr"
+  contentdir = "content/en"
+
+[ko]
+  title = "Jérémy Landon - Dev, Cloud, DevOps & more"
+  languageName = "한국어"
+  weight = 3
+  languagedir = "ltr"
+  contentdir = "content/ko"
