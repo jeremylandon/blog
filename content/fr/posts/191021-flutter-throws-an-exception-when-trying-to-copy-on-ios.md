@@ -22,7 +22,7 @@ image: images/logo/flutter.png
 
 Lors d'une tentative d'un copier/coller (pression longue) sur un champ Text sur IOS le message suivant peut apparaitre :
 
-![The getter 'pasteButtonLabel' was called on null.](/images/content/191021-flutter-throws-an-exception-when-trying-to-copy-on-ios-1.png)
+![The getter 'pasteButtonLabel' was called on null.](/blog/images/content/191021-flutter-throws-an-exception-when-trying-to-copy-on-ios/0.png)
 
 {{< notice error >}}
 **The getter 'pasteButtonLabel' was called on null.**
