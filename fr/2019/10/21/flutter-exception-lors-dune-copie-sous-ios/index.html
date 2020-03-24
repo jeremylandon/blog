@@ -236,7 +236,7 @@
     var notAllowedTitleIds = null;
 
     
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
     var tocLevels = JSON.parse("[\"h2\",\"h3\",\"h4\"]");
     
@@ -1198,7 +1198,7 @@
 <meta name="description" content="Exception : The getter &#34;pasteButtonLabel&#34; was called on null" />
 <meta name="keywords" content="">
 <meta name="created" content="2019-10-21T00:00:00&#43;0000">
-<meta name="modified" content="2020-02-22T17:41:13&#43;0100">
+<meta name="modified" content="2020-03-24T19:30:08&#43;0100">
 <meta property="article:published_time" content="2019-10-21T00:00:00&#43;0000">
 
 <meta name="author" content="Jérémy Landon">
@@ -1210,7 +1210,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="Exception : The getter &#34;pasteButtonLabel&#34; was called on null">
 
-<meta name="generator" content="Hugo 0.68.1" />
+<meta name="generator" content="Hugo 0.68.3" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1245,7 +1245,7 @@
     "@type": "WebPage",
     "headline": "[Flutter] Exception lors d'une copie sous IOS",
     "datePublished": "2019-10-21T00:00:00Z",
-    "dateModified": "2020-02-22T17:41:13+01:00",
+    "dateModified": "2020-03-24T19:30:08+01:00",
     "url" : "https://golapadeog.github.io/blog/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/",
     "description": "Exception : The getter \"pasteButtonLabel\" was called on null",
     "keywords": ["flutter","dart","ios","mobile","exception"],
@@ -1499,7 +1499,7 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Écrit le">📅&nbsp;Oct 21, 2019 </time>  &nbsp;&nbsp; <time class="single__info" title="Modifié le"> 📝Feb 22, 2020 </time>  &middot; <span class="single__info" title="Temps de lecture"> ☕ 1 min de lecture </span>
+  <time class="single__info" title="Écrit le">📅&nbsp;Oct 21, 2019 </time>  &nbsp;&nbsp; <time class="single__info" title="Modifié le"> 📝Mar 24, 2020 </time>  &middot; <span class="single__info" title="Temps de lecture"> ☕ 1 min de lecture </span>
   <span class="single__info">
     
   </span>
@@ -1539,7 +1539,13 @@ if (!doNotTrack) {
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
       <p>Lors d&rsquo;une tentative d&rsquo;un copier/coller (pression longue) sur un champ Text sur IOS le message suivant peut apparaitre :</p>
-<p><img src="/images/content/191021-flutter-throws-an-exception-when-trying-to-copy-on-ios-1.png" alt="The getter &lsquo;pasteButtonLabel&rsquo; was called on null." /></p>
+<figure >
+  
+    
+    <img data-src="/blog/images/content/191021-flutter-throws-an-exception-when-trying-to-copy-on-ios/0.png" alt="The getter &#39;pasteButtonLabel&#39; was called on null." data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="" height=""/>
+    
+  
+</figure>
 <div class="notices error" >
   <strong>The getter &lsquo;pasteButtonLabel&rsquo; was called on null.</strong><br />
 <strong>Receiver: null</strong><br />
@@ -1799,6 +1805,13 @@ Pour corriger ce point il faut modifier la logique de la méthode <strong>load(L
   
     
     <div class="grow"></div>
+    
+      <a href="https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/" class="pagination-single__right">      
+        <div class="pagination-single__right-title">[Azure] Pattern Request/Response avec Azure Service Bus</div>
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        </div>
+      </a>
     
   
 </nav>
@@ -2134,9 +2147,9 @@ document.addEventListener('DOMContentLoaded', function () {
   
   
 
-  var enableToc = JSON.parse("false");
+  var enableToc = JSON.parse("true");
   var toc = JSON.parse("null");
-  var tocPosition = JSON.parse("\"inner\"");
+  var tocPosition = JSON.parse("\"outer\"");
   
   var singleMainElem = document.querySelector('.single__main');
   var singleSideElem = document.querySelector('.single__side');
@@ -2249,12 +2262,12 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     
-    var enableToc = JSON.parse("false");
+    var enableToc = JSON.parse("true");
     var toc = JSON.parse("null");
-    var hideToc = JSON.parse("true");
+    var hideToc = JSON.parse("false");
     var tocFlexbox = document.querySelector('.toc__flexbox');
     var tocFlexboxOuter = document.querySelector('.toc__flexbox--outer');
-    var tocFolding = JSON.parse("false");
+    var tocFolding = JSON.parse("true");
     
     if ((enableToc || toc) && document.querySelector('.toc')) {
       var tableOfContentsElem = document.querySelector('.toc').querySelector('#TableOfContents');
@@ -2832,6 +2845,23 @@ document.addEventListener('DOMContentLoaded', function () {
         
 <div class="wrapper__right hide" dir="ltr">
   <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
+  
+    
+      
+        <div class="toc__flexbox--outer" data-position="fixed" data-dir="ltr" data-ani="false">
+          <h6 class="toc__title toc__title--outer" data-ani="false">Contenu de cette page</h6>
+          
+          <label class="switch" data-ani="false">
+            <input id="visible-toc" aria-label="Visible TOC" type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          
+        </div>
+        <div class="toc toc__outer " data-dir="ltr" data-folding="true" data-ani="false">
+          <nav id="TableOfContents"></nav>
+        </div>
+      
+    
   
 </div>
 

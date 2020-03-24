@@ -163,6 +163,91 @@
   </url>
   
   <url>
+    <loc>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/tags/azure/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/categories/azure/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/categories/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://golapadeog.github.io/blog/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://golapadeog.github.io/blog/ko/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://golapadeog.github.io/blog/fr/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/series/cloud/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/tags/pattern/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/series/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://golapadeog.github.io/blog/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://golapadeog.github.io/blog/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://golapadeog.github.io/blog/fr/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/tags/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://golapadeog.github.io/blog/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://golapadeog.github.io/blog/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://golapadeog.github.io/blog/fr/tags/"
+                />
+  </url>
+  
+  <url>
     <loc>https://golapadeog.github.io/blog/fr/showcase/books/</loc>
     <lastmod>2020-02-22T16:28:54+01:00</lastmod>
     <xhtml:link
@@ -204,102 +289,42 @@
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://golapadeog.github.io/blog/fr/categories/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://golapadeog.github.io/blog/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://golapadeog.github.io/blog/ko/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://golapadeog.github.io/blog/fr/categories/"
-                />
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/tags/dart/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/tags/exception/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/series/exception/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/tags/flutter/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/categories/flutter/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/tags/ios/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/tags/mobile/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://golapadeog.github.io/blog/fr/series/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://golapadeog.github.io/blog/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://golapadeog.github.io/blog/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://golapadeog.github.io/blog/fr/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://golapadeog.github.io/blog/fr/tags/</loc>
-    <lastmod>2020-02-22T17:41:13+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://golapadeog.github.io/blog/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://golapadeog.github.io/blog/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://golapadeog.github.io/blog/fr/tags/"
-                />
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   
   <url>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>azure on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
+    <link>https://golapadeog.github.io/blog/fr/tags/azure/</link>
+    <description>Recent content in azure on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
+    <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 22 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://golapadeog.github.io/blog/fr/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>[Azure] Pattern Request/Response avec Azure Service Bus</title>
+        <link>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</link>
+        <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Tue, 24 Mar 2020 19:30:08 +0100</atom:modified>
+        <guid>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</guid>
+        <description>Une des façons les plus simples et courantes d&amp;rsquo;utiliser les services de messagerie tels qu&amp;rsquo;Azure Service Bus est pour effectuer une communication unidirectionnel.
+source:https://docs.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://golapadeog.github.io/blog/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+            
+              <category>pattern</category>
+            
+          
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+        
+        
+          
+            
+              <category>cloud</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

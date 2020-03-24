@@ -22,14 +22,55 @@
 
       
       <item>
+        <title>[Azure] Pattern Request/Response avec Azure Service Bus</title>
+        <link>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</link>
+        <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Tue, 24 Mar 2020 19:30:08 +0100</atom:modified>
+        <guid>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</guid>
+        <description>Une des façons les plus simples et courantes d&amp;rsquo;utiliser les services de messagerie tels qu&amp;rsquo;Azure Service Bus est pour effectuer une communication unidirectionnel.
+source:https://docs.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://golapadeog.github.io/blog/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+            
+              <category>pattern</category>
+            
+          
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+        
+        
+          
+            
+              <category>cloud</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>[Flutter] Exception lors d&#39;une copie sous IOS</title>
         <link>https://golapadeog.github.io/blog/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Sat, 22 Feb 2020 17:41:13 +0100</atom:modified>
+        <atom:modified>Tue, 24 Mar 2020 19:30:08 +0100</atom:modified>
         <guid>https://golapadeog.github.io/blog/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</guid>
         <description>Lors d&amp;rsquo;une tentative d&amp;rsquo;un copier/coller (pression longue) sur un champ Text sur IOS le message suivant peut apparaitre :
-The getter &amp;lsquo;pasteButtonLabel&amp;rsquo; was called on null.</description>
+ The getter &amp;lsquo;pasteButtonLabel&amp;rsquo; was called on null.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
         <media:content url="https://golapadeog.github.io/blog/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
