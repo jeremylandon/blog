@@ -1,8 +1,8 @@
-[[main]]
-  identifier = "about"
-  name = "à-propos"
-  url = "about"
-  weight = 1
+#[[main]]
+#  identifier = "about"
+#  name = "à-propos"
+#  url = "about"
+#  weight = 1
 
 [[main]]
   identifier = "posts"
