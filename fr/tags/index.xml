@@ -14,13 +14,103 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 22 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://golapadeog.github.io/blog/fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>.net</title>
+        <link>https://golapadeog.github.io/blog/fr/tags/.net/</link>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://golapadeog.github.io/blog/fr/tags/.net/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>algorithm</title>
+        <link>https://golapadeog.github.io/blog/fr/tags/algorithm/</link>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://golapadeog.github.io/blog/fr/tags/algorithm/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>benchmark</title>
+        <link>https://golapadeog.github.io/blog/fr/tags/benchmark/</link>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://golapadeog.github.io/blog/fr/tags/benchmark/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>c#</title>
+        <link>https://golapadeog.github.io/blog/fr/tags/c#/</link>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://golapadeog.github.io/blog/fr/tags/c#/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>performance</title>
+        <link>https://golapadeog.github.io/blog/fr/tags/performance/</link>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://golapadeog.github.io/blog/fr/tags/performance/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>azure</title>

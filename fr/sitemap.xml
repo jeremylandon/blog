@@ -163,23 +163,43 @@
   </url>
   
   <url>
-    <loc>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <loc>https://golapadeog.github.io/blog/fr/tags/.net/</loc>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://golapadeog.github.io/blog/fr/tags/azure/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <loc>https://golapadeog.github.io/blog/fr/categories/.net/</loc>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://golapadeog.github.io/blog/fr/categories/azure/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <loc>https://golapadeog.github.io/blog/fr/2020/03/30/.net-comment-lire-un-tr%C3%A8s-gros-fichier-csv/</loc>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/tags/algorithm/</loc>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/tags/benchmark/</loc>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/series/benchmark/</loc>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/tags/c#/</loc>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/categories/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -198,18 +218,13 @@
   </url>
   
   <url>
-    <loc>https://golapadeog.github.io/blog/fr/series/cloud/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://golapadeog.github.io/blog/fr/tags/pattern/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <loc>https://golapadeog.github.io/blog/fr/tags/performance/</loc>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/series/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -229,7 +244,7 @@
   
   <url>
     <loc>https://golapadeog.github.io/blog/fr/tags/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+    <lastmod>2020-03-30T20:38:57+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -245,6 +260,31 @@
                 hreflang="fr"
                 href="https://golapadeog.github.io/blog/fr/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/tags/azure/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/categories/azure/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/series/cloud/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://golapadeog.github.io/blog/fr/tags/pattern/</loc>
+    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   
   <url>

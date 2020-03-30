@@ -22,6 +22,59 @@
 
       
       <item>
+        <title>[.NET] Comment lire un très gros fichier csv</title>
+        <link>https://golapadeog.github.io/blog/fr/2020/03/30/.net-comment-lire-un-tr%C3%A8s-gros-fichier-csv/</link>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Mon, 30 Mar 2020 20:38:57 +0200</atom:modified>
+        <guid>https://golapadeog.github.io/blog/fr/2020/03/30/.net-comment-lire-un-tr%C3%A8s-gros-fichier-csv/</guid>
+        <description>Le traitement d&amp;rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance.
+Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare ses colonnes par un caractère, mais c&amp;rsquo;est aussi:</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://golapadeog.github.io/blog/images/logo/dotnetcore.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>.net</category>
+            
+          
+            
+              <category>c#</category>
+            
+          
+            
+              <category>algorithm</category>
+            
+          
+            
+              <category>performance</category>
+            
+          
+            
+              <category>benchmark</category>
+            
+          
+        
+        
+          
+            
+              <category>.net</category>
+            
+          
+        
+        
+          
+            
+              <category>benchmark</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>[Azure] Pattern Request/Response avec Azure Service Bus</title>
         <link>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</link>
         <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
