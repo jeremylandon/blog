@@ -35,7 +35,7 @@ Bien entendu d'autres se sont pris la tête là-dessus, c'est pour cette raison 
 
 ## TextFieldParser
 
-Peu connue, mais le framework .NET propose une solution de base avec TextFieldParser.
+Peu connue, mais le framework .NET propose une solution de base avec **TextFieldParser**.
 
 {{< codes SampleCsvParser Foo >}}
   {{< code >}}
@@ -173,16 +173,19 @@ sources: [https://github.com/bytefish/TinyCsvParser](https://github.com/bytefish
 |------------------- |--------------:|--------------------------------------------:|
 |    TextFieldParser |   6,617.43 ms |                                          0% |
 |          CsvHelper |   4,018.37 ms |     <span style="color: green">-39 %</span> |
-|      TinyCsvParser |   1,062.29 ms | **<span style="color: green">-84 %</span>** |
+|      **TinyCsvParser** |   1,062.29 ms | **<span style="color: green">-84 %</span>** |
 
-Doit-on d'office exclure CsvHelper?
+Doit-on d'office exclure **CsvHelper**?
 Non, comme toujours en développement rien n'est blanc ou noir.
-Dans ce cas spécifique (un csv propre, une configuration de base et une lecture d'un gros fichier) TinyCsvParser est préférable en revanche dans d'autres scénarii CsvHelper apporte des fonctionnalités très intéressantes (comme l'auto-mapping) qui peuvent faire gagner un précieux temps de développement et de maintenance.
+Dans ce cas spécifique *(un csv propre, une configuration de base et une lecture d'un gros fichier)* **TinyCsvParser** est préférable en revanche dans d'autres scénarii **CsvHelper** apporte des fonctionnalités très intéressantes *(comme l'auto-mapping)* qui peuvent faire gagner un précieux temps de développement et de maintenance.
 Bref cela dépend de la situation comme toujours.
 
-Mais comment expliquer de tels décalages ? Principalement cela est dû au traitement des lignes du CSV pour gérer tous les cas et la création des entités.
+{{< boxmd >}}
+**Mais comment expliquer de tels décalages ?**
+{{< /boxmd >}}
 
-On a tendance à se ruer sur des framework pour des choses simples, c'est framework sont là pour gérer tous les cas ce qui apporte un confort de développement mais aussi une lourdeur dans les traitements.
+Principalement cela est dû au traitement des lignes du CSV pour gérer tous les cas et la création des entités.
+Nous avons tendance à se ruer sur des framework pour des choses simples, c'est framework sont là pour gérer tous les cas ce qui apporte un confort de développement mais aussi une lourdeur dans les traitements.
 J'ai récemment dû parser un fichier de 30Go "propre" (virgule + parfois des guillemet) dont je connais parfaitement le format, et j'ai voulu voir combien coûte "la gestion de tous les cas".
 
 ## Solution personnalisée
@@ -245,7 +248,7 @@ J'ai récemment dû parser un fichier de 30Go "propre" (virgule + parfois des gu
   {{< /code >}}
 {{< /codes >}}
 
-L'algorithme d'analyse des lignes csv est simple mais correspond à mon besoin.
+L'algorithme d'analyse des lignes csv est simple et limitée mais correspond à mon besoin.
 Et voici le résultat :
 
 |             Method |          Mean |                                           % |
@@ -255,7 +258,7 @@ Et voici le résultat :
 |      TinyCsvParser |   1,062.29 ms | **<span style="color: green">-84 %</span>** |
 |             Custom |   1,083.97 ms |     <span style="color: green">-83 %</span> |
 
-Comment TinyCsvParser peut-il encore être plus performant ? Simplement car ce framework utilise le base le parallélisme. Nous allons en faire de même:
+Comment **TinyCsvParser** peut-il encore être plus performant ? Simplement car ce framework utilise le base le parallélisme. Nous allons en faire de même:
 
 ## Solution personnalisée avec parallélisme
 
@@ -410,14 +413,18 @@ Comment TinyCsvParser peut-il encore être plus performant ? Simplement car ce f
 |             Custom |   1,083.97 ms |     <span style="color: green">-83 %</span> |
 | **CustomParallel** | **632.97 ms** | **<span style="color: green">-90 %</span>** |
 
-Le temps est divisé par 2 par rapport à TinyCsvParser. Au final, sur mon fichier de 30Go je suis passé de 7min à 3min20 de traitement.
+{{< notice success >}}
+**<span style="color: green">Le temps est divisé par 2</span>** par rapport à **TinyCsvParser**. Au final, sur mon fichier de 30Go je suis passé de **7min** à **3min20** de traitement de manière simple.
+{{< /notice >}}
 
 ## Conclusion
 
 Les performances d'une solution personnalisée laissent rêveur, néanmoins ce code ne répond qu'à un seul et unique cas: **les très gros fichiers csv propre et simple**.
-Mais dans le cas où vous ayez un grand nombre de fichier csv avec des "qualités" variables, il est fortement recommandé de passer par un framework tel que CsvHelper ou TinyCsvParser où un grand nombre de bons développeurs ont pu analyser les performances de chaque ligne.
+Mais dans le cas où vous ayez un grand nombre de fichier csv avec des "qualités" variables, il est fortement recommandé de passer par un framework tel que **CsvHelper** ou **TinyCsvParser** où un grand nombre de bons développeurs ont pu analyser les performances de chaque ligne de code permettant de gérer tout les cas.
 
+{{< alert info >}}
 *NB: Il est intéressant de se rendre compte que le classement est totalement chamboulé sur des petits fichiers csv (exemple avec un csv de 10 lignes):*
+{{< /alert >}}
 
 |          Method |           Mean |                                           % |
 |---------------- |---------------:|--------------------------------------------:|
@@ -427,7 +434,9 @@ Mais dans le cas où vous ayez un grand nombre de fichier csv avec des "qualité
 |      **Custom** |   **50.99 us** | **<span style="color: green">-79 %</span>** |
 |  CustomParallel |      113.25 us |     <span style="color: green">-55 %</span> |
 
+{{< notice info >}}
 *Ce qui prouve encore qu'il n'y a pas de magie en développement, que tout dépend du contexte et annexement que [le parallélisme peut être un piège.](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism)*
+{{< /notice >}}
 
 ## Source
 
