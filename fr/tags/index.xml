@@ -23,24 +23,6 @@
 
       
       <item>
-        <title>.net</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/.net/</link>
-        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://golapadeog.github.io/blog/fr/tags/.net/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>algorithm</title>
         <link>https://golapadeog.github.io/blog/fr/tags/algorithm/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
@@ -77,12 +59,30 @@
       </item>
       
       <item>
-        <title>c#</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/c#/</link>
+        <title>csharp</title>
+        <link>https://golapadeog.github.io/blog/fr/tags/csharp/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/c#/</guid>
+        <guid>https://golapadeog.github.io/blog/fr/tags/csharp/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>dotnet</title>
+        <link>https://golapadeog.github.io/blog/fr/tags/dotnet/</link>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://golapadeog.github.io/blog/fr/tags/dotnet/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

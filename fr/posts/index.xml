@@ -23,11 +23,11 @@
       
       <item>
         <title>[.NET] Comment lire un très gros fichier csv</title>
-        <link>https://golapadeog.github.io/blog/fr/2020/03/30/.net-comment-lire-un-tr%C3%A8s-gros-fichier-csv/</link>
+        <link>https://golapadeog.github.io/blog/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Mon, 30 Mar 2020 20:38:57 +0200</atom:modified>
-        <guid>https://golapadeog.github.io/blog/fr/2020/03/30/.net-comment-lire-un-tr%C3%A8s-gros-fichier-csv/</guid>
+        <atom:modified>Tue, 31 Mar 2020 13:01:20 +0200</atom:modified>
+        <guid>https://golapadeog.github.io/blog/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</guid>
         <description>Le traitement d&amp;rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance.
 Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare ses colonnes par un caractère, mais c&amp;rsquo;est aussi:</description>
         
@@ -38,11 +38,11 @@ Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare s
         
           
             
-              <category>.net</category>
+              <category>dotnet</category>
             
           
             
-              <category>c#</category>
+              <category>csharp</category>
             
           
             
@@ -61,7 +61,7 @@ Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare s
         
           
             
-              <category>.net</category>
+              <category>dotnet</category>
             
           
         
@@ -76,11 +76,11 @@ Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare s
       
       <item>
         <title>[Azure] Pattern Request/Response avec Azure Service Bus</title>
-        <link>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</link>
+        <link>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/</link>
         <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Tue, 24 Mar 2020 19:30:08 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request/response-avec-azure-service-bus/</guid>
+        <atom:modified>Tue, 31 Mar 2020 13:01:20 +0200</atom:modified>
+        <guid>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/</guid>
         <description>Une des façons les plus simples et courantes d&amp;rsquo;utiliser les services de messagerie tels qu&amp;rsquo;Azure Service Bus est pour effectuer une communication unidirectionnel.
 source:https://docs.</description>
         
@@ -89,6 +89,14 @@ source:https://docs.</description>
         
         
         
+          
+            
+              <category>dotnet</category>
+            
+          
+            
+              <category>csharp</category>
+            
           
             
               <category>azure</category>
