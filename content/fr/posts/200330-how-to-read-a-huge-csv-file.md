@@ -1,18 +1,19 @@
 ---
 title: "[.NET] Comment lire un très gros fichier csv"
+slug: "dotnet comment lire un tres gros fichier csv"
 date: 2020-03-30
 description: ''
 draft: false
 tags:
-  - .net
-  - c#
+  - dotnet
+  - csharp
   - algorithm
   - performance
   - benchmark
 series:
   - benchmark
 categories:
-  - .net
+  - dotnet
 libraries:
   - chart
 image: images/logo/dotnetcore.png

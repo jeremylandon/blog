@@ -1,9 +1,12 @@
 ---
 title: "[Azure] Pattern Request/Response avec Azure Service Bus"
+slug: "azure pattern request-response avec azure service bus"
 date: 2020-03-22
 description: ""
 draft: false
 tags:
+  - dotnet
+  - csharp
   - azure
   - pattern
 series:
