@@ -195,12 +195,12 @@ static async Task Main()
 
 ## Résulat
 
-![result-single](/blog/images/content/200322-request-response-pattern-with-azure-service-bus/4.png)
+![result-single](/images/content/200322-request-response-pattern-with-azure-service-bus/4.png)
 
 
 **Et aucun problème avec plusieurs envoyeur, chacun reçoit le message de réponse qui lui est destiné**.
 
-![result-multiple](/blog/images/content/200322-request-response-pattern-with-azure-service-bus/5.png)
+![result-multiple](/images/content/200322-request-response-pattern-with-azure-service-bus/5.png)
 
 **Voilà!**
 
