@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Posts on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://golapadeog.github.io/blog/ko/posts/</link>
+    <link>https://blog.jeremylandon.com/ko/posts/</link>
     <description>Recent content in Posts on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -15,7 +15,7 @@
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
     
-        <atom:link href="https://golapadeog.github.io/blog/ko/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/ko/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     

@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://golapadeog.github.io/blog/ko/tags/</link>
+    <link>https://blog.jeremylandon.com/ko/tags/</link>
     <description>Recent content in Tags on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -15,7 +15,7 @@
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
     
-        <atom:link href="https://golapadeog.github.io/blog/ko/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/ko/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -23,11 +23,11 @@
       
       <item>
         <title>index</title>
-        <link>https://golapadeog.github.io/blog/ko/tags/index/</link>
+        <link>https://blog.jeremylandon.com/ko/tags/index/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/ko/tags/index/</guid>
+        <guid>https://blog.jeremylandon.com/ko/tags/index/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

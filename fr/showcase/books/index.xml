@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>books on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://golapadeog.github.io/blog/fr/showcase/books/</link>
+    <link>https://blog.jeremylandon.com/fr/showcase/books/</link>
     <description>Recent content in books on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://golapadeog.github.io/blog/fr/showcase/books/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/fr/showcase/books/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>Team Foundation Server 2015 - ENI</title>
-        <link>https://golapadeog.github.io/blog/fr/showcase/books/tfs2015/</link>
+        <link>https://blog.jeremylandon.com/fr/showcase/books/tfs2015/</link>
         <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Sat, 22 Feb 2020 16:28:54 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/fr/showcase/books/tfs2015/</guid>
+        <guid>https://blog.jeremylandon.com/fr/showcase/books/tfs2015/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

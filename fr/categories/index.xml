@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Categories on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://golapadeog.github.io/blog/fr/categories/</link>
+    <link>https://blog.jeremylandon.com/fr/categories/</link>
     <description>Recent content in Categories on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://golapadeog.github.io/blog/fr/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/fr/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>dotnet</title>
-        <link>https://golapadeog.github.io/blog/fr/categories/dotnet/</link>
+        <link>https://blog.jeremylandon.com/fr/categories/dotnet/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/categories/dotnet/</guid>
+        <guid>https://blog.jeremylandon.com/fr/categories/dotnet/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>azure</title>
-        <link>https://golapadeog.github.io/blog/fr/categories/azure/</link>
+        <link>https://blog.jeremylandon.com/fr/categories/azure/</link>
         <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/categories/azure/</guid>
+        <guid>https://blog.jeremylandon.com/fr/categories/azure/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -60,11 +60,11 @@
       
       <item>
         <title>flutter</title>
-        <link>https://golapadeog.github.io/blog/fr/categories/flutter/</link>
+        <link>https://blog.jeremylandon.com/fr/categories/flutter/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/categories/flutter/</guid>
+        <guid>https://blog.jeremylandon.com/fr/categories/flutter/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

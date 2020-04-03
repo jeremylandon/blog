@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Series on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://golapadeog.github.io/blog/fr/series/</link>
+    <link>https://blog.jeremylandon.com/fr/series/</link>
     <description>Recent content in Series on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://golapadeog.github.io/blog/fr/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/fr/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>benchmark</title>
-        <link>https://golapadeog.github.io/blog/fr/series/benchmark/</link>
+        <link>https://blog.jeremylandon.com/fr/series/benchmark/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/series/benchmark/</guid>
+        <guid>https://blog.jeremylandon.com/fr/series/benchmark/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>cloud</title>
-        <link>https://golapadeog.github.io/blog/fr/series/cloud/</link>
+        <link>https://blog.jeremylandon.com/fr/series/cloud/</link>
         <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/series/cloud/</guid>
+        <guid>https://blog.jeremylandon.com/fr/series/cloud/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -60,11 +60,11 @@
       
       <item>
         <title>exception</title>
-        <link>https://golapadeog.github.io/blog/fr/series/exception/</link>
+        <link>https://blog.jeremylandon.com/fr/series/exception/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/series/exception/</guid>
+        <guid>https://blog.jeremylandon.com/fr/series/exception/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

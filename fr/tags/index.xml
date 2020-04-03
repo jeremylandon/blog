@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://golapadeog.github.io/blog/fr/tags/</link>
+    <link>https://blog.jeremylandon.com/fr/tags/</link>
     <description>Recent content in Tags on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://golapadeog.github.io/blog/fr/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>algorithm</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/algorithm/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/algorithm/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/algorithm/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/algorithm/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>benchmark</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/benchmark/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/benchmark/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/benchmark/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/benchmark/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -60,11 +60,11 @@
       
       <item>
         <title>csharp</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/csharp/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/csharp/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/csharp/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/csharp/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -78,11 +78,11 @@
       
       <item>
         <title>dotnet</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/dotnet/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/dotnet/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/dotnet/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/dotnet/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -96,11 +96,11 @@
       
       <item>
         <title>performance</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/performance/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/performance/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/performance/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/performance/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -114,11 +114,11 @@
       
       <item>
         <title>azure</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/azure/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/azure/</link>
         <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/azure/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/azure/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -132,11 +132,11 @@
       
       <item>
         <title>pattern</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/pattern/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/pattern/</link>
         <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/pattern/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/pattern/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -150,11 +150,11 @@
       
       <item>
         <title>dart</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/dart/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/dart/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/dart/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/dart/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -168,11 +168,11 @@
       
       <item>
         <title>exception</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/exception/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/exception/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/exception/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/exception/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -186,11 +186,11 @@
       
       <item>
         <title>flutter</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/flutter/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/flutter/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/flutter/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/flutter/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -204,11 +204,11 @@
       
       <item>
         <title>ios</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/ios/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/ios/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/ios/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/ios/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -222,11 +222,11 @@
       
       <item>
         <title>mobile</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/mobile/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/mobile/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/mobile/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/mobile/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -240,11 +240,11 @@
       
       <item>
         <title>index</title>
-        <link>https://golapadeog.github.io/blog/fr/tags/index/</link>
+        <link>https://blog.jeremylandon.com/fr/tags/index/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://golapadeog.github.io/blog/fr/tags/index/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/index/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

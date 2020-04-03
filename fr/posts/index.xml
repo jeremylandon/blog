@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Posts on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://golapadeog.github.io/blog/fr/posts/</link>
+    <link>https://blog.jeremylandon.com/fr/posts/</link>
     <description>Recent content in Posts on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
@@ -15,7 +15,7 @@
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
     
-        <atom:link href="https://golapadeog.github.io/blog/fr/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/fr/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -23,16 +23,16 @@
       
       <item>
         <title>[.NET] Comment lire un très gros fichier csv</title>
-        <link>https://golapadeog.github.io/blog/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</link>
+        <link>https://blog.jeremylandon.com/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Tue, 31 Mar 2020 13:01:20 +0200</atom:modified>
-        <guid>https://golapadeog.github.io/blog/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</guid>
+        <guid>https://blog.jeremylandon.com/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</guid>
         <description>Le traitement d&amp;rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance.
 Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare ses colonnes par un caractère, mais c&amp;rsquo;est aussi:</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
-        <media:content url="https://golapadeog.github.io/blog/images/logo/dotnetcore.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://blog.jeremylandon.com/images/logo/dotnetcore.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -76,16 +76,16 @@ Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare s
       
       <item>
         <title>[Azure] Pattern Request/Response avec Azure Service Bus</title>
-        <link>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/</link>
+        <link>https://blog.jeremylandon.com/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/</link>
         <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Tue, 31 Mar 2020 13:01:20 +0200</atom:modified>
-        <guid>https://golapadeog.github.io/blog/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/</guid>
+        <atom:modified>Fri, 03 Apr 2020 19:22:02 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/</guid>
         <description>Une des façons les plus simples et courantes d&amp;rsquo;utiliser les services de messagerie tels qu&amp;rsquo;Azure Service Bus est pour effectuer une communication unidirectionnel.
 source:https://docs.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
-        <media:content url="https://golapadeog.github.io/blog/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://blog.jeremylandon.com/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -125,16 +125,16 @@ source:https://docs.</description>
       
       <item>
         <title>[Flutter] Exception lors d&#39;une copie sous IOS</title>
-        <link>https://golapadeog.github.io/blog/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</link>
+        <link>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Tue, 24 Mar 2020 19:30:08 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</guid>
+        <guid>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</guid>
         <description>Lors d&amp;rsquo;une tentative d&amp;rsquo;un copier/coller (pression longue) sur un champ Text sur IOS le message suivant peut apparaitre :
  The getter &amp;lsquo;pasteButtonLabel&amp;rsquo; was called on null.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
-        <media:content url="https://golapadeog.github.io/blog/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://blog.jeremylandon.com/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

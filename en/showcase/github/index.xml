@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>github on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://golapadeog.github.io/blog/en/showcase/github/</link>
+    <link>https://blog.jeremylandon.com/en/showcase/github/</link>
     <description>Recent content in github on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 01 Jan 2030 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://golapadeog.github.io/blog/en/showcase/github/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/en/showcase/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>String Similarity</title>
-        <link>https://golapadeog.github.io/blog/en/showcase/github/string-similarity/</link>
+        <link>https://blog.jeremylandon.com/en/showcase/github/string-similarity/</link>
         <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Sat, 22 Feb 2020 16:28:54 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/en/showcase/github/string-similarity/</guid>
+        <guid>https://blog.jeremylandon.com/en/showcase/github/string-similarity/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>Csv To Json</title>
-        <link>https://golapadeog.github.io/blog/en/showcase/github/angular-translate-csv-to-json/</link>
+        <link>https://blog.jeremylandon.com/en/showcase/github/angular-translate-csv-to-json/</link>
         <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Sat, 22 Feb 2020 16:28:54 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/en/showcase/github/angular-translate-csv-to-json/</guid>
+        <guid>https://blog.jeremylandon.com/en/showcase/github/angular-translate-csv-to-json/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -60,11 +60,11 @@
       
       <item>
         <title>Flutter Naver Login</title>
-        <link>https://golapadeog.github.io/blog/en/showcase/github/flutter-naver-login/</link>
+        <link>https://blog.jeremylandon.com/en/showcase/github/flutter-naver-login/</link>
         <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Sat, 22 Feb 2020 16:28:54 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/en/showcase/github/flutter-naver-login/</guid>
+        <guid>https://blog.jeremylandon.com/en/showcase/github/flutter-naver-login/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -78,11 +78,11 @@
       
       <item>
         <title>cordova-plugin-kakao-sdk</title>
-        <link>https://golapadeog.github.io/blog/en/showcase/github/cordova-plugin-kakao-sdk/</link>
+        <link>https://blog.jeremylandon.com/en/showcase/github/cordova-plugin-kakao-sdk/</link>
         <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Sat, 22 Feb 2020 16:28:54 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/en/showcase/github/cordova-plugin-kakao-sdk/</guid>
+        <guid>https://blog.jeremylandon.com/en/showcase/github/cordova-plugin-kakao-sdk/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -96,11 +96,11 @@
       
       <item>
         <title>Recipe Zoho Mail</title>
-        <link>https://golapadeog.github.io/blog/en/showcase/github/recipe-zoho-mail/</link>
+        <link>https://blog.jeremylandon.com/en/showcase/github/recipe-zoho-mail/</link>
         <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Sat, 22 Feb 2020 16:28:54 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/en/showcase/github/recipe-zoho-mail/</guid>
+        <guid>https://blog.jeremylandon.com/en/showcase/github/recipe-zoho-mail/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -114,11 +114,11 @@
       
       <item>
         <title>EtherAddressLookup Edge</title>
-        <link>https://golapadeog.github.io/blog/en/showcase/github/ether-address-lookup-edge/</link>
+        <link>https://blog.jeremylandon.com/en/showcase/github/ether-address-lookup-edge/</link>
         <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Sat, 22 Feb 2020 16:28:54 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/en/showcase/github/ether-address-lookup-edge/</guid>
+        <guid>https://blog.jeremylandon.com/en/showcase/github/ether-address-lookup-edge/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

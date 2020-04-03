@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>exception on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://golapadeog.github.io/blog/fr/series/exception/</link>
+    <link>https://blog.jeremylandon.com/fr/series/exception/</link>
     <description>Recent content in exception on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://golapadeog.github.io/blog/fr/series/exception/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/fr/series/exception/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,16 +24,16 @@
       
       <item>
         <title>[Flutter] Exception lors d&#39;une copie sous IOS</title>
-        <link>https://golapadeog.github.io/blog/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</link>
+        <link>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Tue, 24 Mar 2020 19:30:08 +0100</atom:modified>
-        <guid>https://golapadeog.github.io/blog/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</guid>
+        <guid>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</guid>
         <description>Lors d&amp;rsquo;une tentative d&amp;rsquo;un copier/coller (pression longue) sur un champ Text sur IOS le message suivant peut apparaitre :
  The getter &amp;lsquo;pasteButtonLabel&amp;rsquo; was called on null.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
-        <media:content url="https://golapadeog.github.io/blog/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://blog.jeremylandon.com/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
