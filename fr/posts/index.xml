@@ -79,7 +79,7 @@ Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare s
         <link>https://blog.jeremylandon.com/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/</link>
         <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Fri, 03 Apr 2020 19:22:02 +0200</atom:modified>
+        <atom:modified>Sat, 04 Apr 2020 03:56:40 +0200</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/</guid>
         <description>Une des façons les plus simples et courantes d&amp;rsquo;utiliser les services de messagerie tels qu&amp;rsquo;Azure Service Bus est pour effectuer une communication unidirectionnel.
 source:https://docs.</description>

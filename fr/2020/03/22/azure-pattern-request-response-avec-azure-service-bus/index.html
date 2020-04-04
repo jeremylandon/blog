@@ -1198,7 +1198,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="">
 <meta name="created" content="2020-03-22T00:00:00&#43;0000">
-<meta name="modified" content="2020-04-03T19:22:02&#43;0200">
+<meta name="modified" content="2020-04-04T03:56:40&#43;0200">
 <meta property="article:published_time" content="2020-03-22T00:00:00&#43;0000">
 
 <meta name="author" content="Jérémy Landon">
@@ -1245,7 +1245,7 @@
     "@type": "WebPage",
     "headline": "[Azure] Pattern Request/Response avec Azure Service Bus",
     "datePublished": "2020-03-22T00:00:00Z",
-    "dateModified": "2020-04-03T19:22:02+02:00",
+    "dateModified": "2020-04-04T03:56:40+02:00",
     "url" : "https://blog.jeremylandon.com/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/",
     "description": "Une des façons les plus simples et courantes d\u0026rsquo;utiliser les services de messagerie tels qu\u0026rsquo;Azure Service Bus est pour effectuer une communication …",
     "keywords": ["dotnet","csharp","azure","pattern"],
@@ -1483,7 +1483,7 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Écrit le">📅&nbsp;Mar 22, 2020 </time> &middot; <span class="single__info" title="Temps de lecture"> ☕ 5 min de lecture </span>
+  <time class="single__info" title="Écrit le">📅&nbsp;Mar 22, 2020 </time> &middot; <span class="single__info" title="Temps de lecture"> ☕ 6 min de lecture </span>
   <span class="single__info">
     
   </span>
@@ -1541,7 +1541,9 @@ if (!doNotTrack) {
       <em>3. Eve reçoit le message de Bob à partir Q1</em></p>
 <div class="box"><strong>Mais comment Bob peut-il savoir que le traitement de Eve est terminé ?</strong><br />
 <em>Ou plus généralement comment ces 2 services peuvent-ils communiquer de manière bidirectionnelle?</em></div>
-<p>C&rsquo;est là que le pattern <strong>Request/Response (ou Request/Reply)</strong> intervient. Ce pattern utilise un routage de message afin d&rsquo;obtenir une communication bidirectionnel entre deux services.<br />
+<p>C&rsquo;est là que le pattern <strong>Request/Response (ou Request/Reply)</strong> intervient.</p>
+<h2 id="le-pattern-requestresponse">Le pattern Request/Response</h2>
+<p>Ce pattern utilise un routage de message afin d&rsquo;obtenir une communication bidirectionnel entre deux services.<br />
 Fonctionnellement c&rsquo;est très simple, l&rsquo;envoyeur envoie un message sur une file d&rsquo;attente et attend une réponse sur une autre file d&rsquo;attente.<br />
 <figure >
   
@@ -1573,15 +1575,27 @@ Dans la version &ldquo;la plus simple&rdquo; (<strong>Request/Response simple</s
     
   </figcaption>
   
-</figure></p>
-<h2 id="requestresponse-multiplexé">Request/Response multiplexé</h2>
-<p>Pour garantir que Bob soit le seul à récupérer le message de réponse qui lui est destiné, nous allons utiliser <strong>les sessions</strong>.<br />
+</figure><br />
+Naturellement une idée pourrait venir en tête assez rapidement : Bob créé une file d&rsquo;attente à lui et attend la réponse dessus. Une fois la réponse obtenue il supprime la file d&rsquo;attente.<br />
+C&rsquo;est une bonne logique, <strong>mais qui n&rsquo;est pas à faire</strong>, car:</p>
+<ul>
+<li>elle implique une gestion des services morts <em>(que faire si le processus crash sans avoir supprimé son service ? Doit-on supprimer le service avec les lettres mortes associées qui fournissent de précisieuses informations pour régler un potentiel bug ?&hellip;)</em></li>
+<li>elle n&rsquo;est évidemment pas performante <em>(il faudra à chaque fois créer et supprimer la queue, dans des fréquences parfois élevées)</em></li>
+<li>elle introduit une pollution du Service Bus Namespace qui le rend difficile/impossible à analyser</li>
+</ul>
+<p>Enfin c&rsquo;est une solution personnalisée, et le standard est toujours à privilégier. N&rsquo;en existe-t-il pas un ?<br />
+Justement si, grace au <a href="https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html">protocole AMQP</a> qui apporte une <strong>notion de groupe</strong>, retranscrite chez Microsoft sous le nom <strong>session</strong> qui résout très simplement et rapidement cette problématique.</p>
+<h2 id="les-sessions-groupe">Les sessions (groupe)</h2>
+<p>Pour garantir que Bob soit le seul à récupérer le message de réponse qui lui est destiné, nous allons utiliser <strong>les sessions</strong> (ou plus précisement <strong>les groupes du protocole AMQP</strong>), qui pour faire simple apporte une multipléxage et ainsi plusieurs utilisateurs peuvent écouter la même file tout en ayant chacun leur propre groupe de message.<br />
 <strong>Bob écoute et verrouille une session spécifique sur la file d&rsquo;attente</strong>, ainsi lui seul pourra écouter ses messages <em>(à l&rsquo;image d&rsquo;une sous file d&rsquo;attente réservée à Bob)</em>.<br />
 Bob devra fournir des informations supplémentaires à son message afin que le réceptionneur (Eve) puisse envoyer correctement le message de réponse.<br />
-Techniquement cela se traduit par deux propriétés :</p>
+Techniquement cela se traduit par deux propriétés défini par le protocole AMQP 1.0 :</p>
+<div class="notices warning" >
+  le nom des champs du protocole AMQP ne sont pas forcement les mêmes que ceux de l&rsquo;API <em>(ex: <strong>group-id</strong> dans le protocole = <strong>SessionId</strong> dans l&rsquo;API)</em>
+</div>
 <ul>
-<li><strong><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.servicebus.message.replyto?view=azure-dotnet">ReplyTo</a></strong>: chemin d&rsquo;accès où Bob attend la réponse. Eve y enverra son message de réponse.</li>
-<li><strong><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.servicebus.message.replytosessionid?view=azure-dotnet">ReplyToSessionId</a></strong>: l&rsquo;id de la session écoutée par Bob. Eve assignera cette valeur à la propriété SessionId de son message de réponse.</li>
+<li><strong><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.servicebus.message.replyto?view=azure-dotnet">ReplyTo</a></strong> (<strong>reply-to</strong>): chemin d&rsquo;accès où Bob attend la réponse. Eve y enverra son message de réponse.</li>
+<li><strong><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.servicebus.message.replytosessionid?view=azure-dotnet">ReplyToSessionId</a></strong> (<strong>reply-to-group-id</strong>): l&rsquo;id de la session écoutée par Bob. Eve assignera cette valeur à la propriété <strong>SessionId</strong> (<strong>group-id</strong>) de son message de réponse.</li>
 </ul>
 <h2 id="exemple">Exemple</h2>
 <p>L&rsquo;exemple sera réalisé avec <a href="https://www.nuget.org/packages/Microsoft.Azure.ServiceBus">Microsoft.Azure.ServiceBus</a> et de deux file d&rsquo;attente <em>(la logique reste la même avec les rubriques)</em>.<br />
@@ -1648,11 +1662,11 @@ Cela peut se fait via le portail Azure.<br />
 </span><span class="c1"></span>  <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="n">WhenAll</span><span class="p">(</span><span class="n">CreateQueueAsync</span><span class="p">(</span><span class="n">connectionString</span><span class="p">,</span> <span class="n">requestQueueName</span><span class="p">,</span> <span class="k">false</span><span class="p">),</span> <span class="n">CreateQueueAsync</span><span class="p">(</span><span class="n">connectionString</span><span class="p">,</span> <span class="n">replyQueueName</span><span class="p">,</span> <span class="k">true</span><span class="p">));</span>
 <span class="p">}</span>
 
-<span class="k">static</span> <span class="k">async</span> <span class="n">Task</span> <span class="n">CreateQueueAsync</span><span class="p">(</span><span class="kt">string</span> <span class="n">connectionString</span><span class="p">,</span> <span class="kt">string</span> <span class="n">queueName</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">requiresSession</span><span class="p">)</span>
+<span class="c1">// /!\ IT&#39;S JUST FOR DEMO
+</span><span class="c1"></span><span class="k">static</span> <span class="k">async</span> <span class="n">Task</span> <span class="n">CreateQueueAsync</span><span class="p">(</span><span class="kt">string</span> <span class="n">connectionString</span><span class="p">,</span> <span class="kt">string</span> <span class="n">queueName</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">requiresSession</span><span class="p">)</span>
 <span class="p">{</span>
   <span class="kt">var</span> <span class="n">managementClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ManagementClient</span><span class="p">(</span><span class="n">connectionString</span><span class="p">);</span>
-  <span class="c1">//it&#39;s just for the demo
-</span><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="n">managementClient</span><span class="p">.</span><span class="n">QueueExistsAsync</span><span class="p">(</span><span class="n">queueName</span><span class="p">))</span>
+  <span class="k">if</span> <span class="p">(</span><span class="k">await</span> <span class="n">managementClient</span><span class="p">.</span><span class="n">QueueExistsAsync</span><span class="p">(</span><span class="n">queueName</span><span class="p">))</span>
   <span class="p">{</span>
       <span class="k">await</span> <span class="n">managementClient</span><span class="p">.</span><span class="n">DeleteQueueAsync</span><span class="p">(</span><span class="n">queueName</span><span class="p">);</span>
   <span class="p">}</span>
@@ -1701,6 +1715,16 @@ Une fois le message envoyé Bob écoute sa session.</p>
 </span><span class="lnt">30
 </span><span class="lnt">31
 </span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-c#" data-lang="c#">
@@ -1711,27 +1735,37 @@ Une fois le message envoyé Bob écoute sa session.</p>
   <span class="p">{</span>
     <span class="k">return</span> <span class="k">new</span> <span class="n">Thread</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="p">=&gt;</span>
     <span class="p">{</span>
+      <span class="cm">/*** send message ***/</span>
       <span class="kt">var</span> <span class="n">messageSender</span> <span class="p">=</span> <span class="k">new</span> <span class="n">MessageSender</span><span class="p">(</span><span class="n">connectionString</span><span class="p">,</span> <span class="n">requestQueueName</span><span class="p">);</span>
-      <span class="kt">var</span> <span class="n">sessionId</span> <span class="p">=</span> <span class="n">Guid</span><span class="p">.</span><span class="n">NewGuid</span><span class="p">().</span><span class="n">ToString</span><span class="p">();</span>
+      <span class="kt">var</span> <span class="n">sessionId</span> <span class="p">=</span> <span class="s">&#34;session-&#34;</span> <span class="p">+</span> <span class="n">threadId</span><span class="p">;</span>
 
       <span class="kt">var</span> <span class="n">message</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Message</span>
       <span class="p">{</span>
-        <span class="n">MessageId</span> <span class="p">=</span> <span class="n">threadId</span><span class="p">,</span>
-        <span class="n">ReplyTo</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ServiceBusConnectionStringBuilder</span><span class="p">(</span><span class="n">connectionString</span><span class="p">)</span> <span class="p">{</span> <span class="n">EntityPath</span> <span class="p">=</span> <span class="n">replyQueueName</span> <span class="p">}.</span><span class="n">ToString</span><span class="p">(),</span>
-        <span class="n">ReplyToSessionId</span> <span class="p">=</span> <span class="n">sessionId</span><span class="p">,</span>
-        <span class="n">TimeToLive</span> <span class="p">=</span> <span class="n">TimeSpan</span><span class="p">.</span><span class="n">FromMinutes</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
+          <span class="n">MessageId</span> <span class="p">=</span> <span class="n">threadId</span><span class="p">,</span>
+          <span class="n">ReplyTo</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ServiceBusConnectionStringBuilder</span><span class="p">(</span><span class="n">connectionString</span><span class="p">)</span> <span class="p">{</span> <span class="n">EntityPath</span> <span class="p">=</span> <span class="n">replyQueueName</span> <span class="p">}.</span><span class="n">ToString</span><span class="p">(),</span>
+          <span class="n">ReplyToSessionId</span> <span class="p">=</span> <span class="n">sessionId</span><span class="p">,</span>
+          <span class="n">TimeToLive</span> <span class="p">=</span> <span class="n">TimeSpan</span><span class="p">.</span><span class="n">FromMinutes</span><span class="p">(</span><span class="m">2</span><span class="p">)</span>
       <span class="p">};</span>
 
       <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{threadId} send a message to &#39;{requestQueueName}&#39; with replyToSessionId=&#39;{message.ReplyToSessionId}&#39; and entityPath=&#39;{replyQueueName}&#39;\n&#34;</span><span class="p">);</span>
       <span class="k">await</span> <span class="n">messageSender</span><span class="p">.</span><span class="n">SendAsync</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+      <span class="k">await</span> <span class="n">messageSender</span><span class="p">.</span><span class="n">CloseAsync</span><span class="p">();</span>
+      <span class="cm">/*** send message ***/</span>
 
+      <span class="cm">/*** wait response ***/</span>
       <span class="n">SessionClient</span> <span class="n">sessionClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SessionClient</span><span class="p">(</span><span class="n">connectionString</span><span class="p">,</span> <span class="n">replyQueueName</span><span class="p">);</span>
       <span class="kt">var</span> <span class="n">session</span> <span class="p">=</span> <span class="k">await</span> <span class="n">sessionClient</span><span class="p">.</span><span class="n">AcceptMessageSessionAsync</span><span class="p">(</span><span class="n">sessionId</span><span class="p">);</span>
 
       <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{threadId}&#39;s waiting a reply message from &#39;{replyQueueName}&#39; with sessionId=&#39;{sessionId}&#39;...\n&#34;</span><span class="p">);</span>
-      <span class="n">Message</span> <span class="n">sessionMessage</span> <span class="p">=</span> <span class="k">await</span> <span class="n">session</span><span class="p">.</span><span class="n">ReceiveAsync</span><span class="p">();</span>
+
+      <span class="n">Message</span> <span class="n">sessionMessage</span> <span class="p">=</span> <span class="k">await</span> <span class="n">session</span><span class="p">.</span><span class="n">ReceiveAsync</span><span class="p">(</span><span class="n">TimeSpan</span><span class="p">.</span><span class="n">FromMinutes</span><span class="p">(</span><span class="m">2</span><span class="p">));</span>
 
       <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{threadId} received a reply message from &#39;{replyQueueName}&#39; with sessionId=&#39;{sessionMessage.SessionId} (original: {sessionId})&#39;\n&#34;</span><span class="p">);</span>
+
+      <span class="k">await</span> <span class="n">session</span><span class="p">.</span><span class="n">CompleteAsync</span><span class="p">(</span><span class="n">sessionMessage</span><span class="p">.</span><span class="n">SystemProperties</span><span class="p">.</span><span class="n">LockToken</span><span class="p">);</span>
+      <span class="k">await</span> <span class="n">session</span><span class="p">.</span><span class="n">CloseAsync</span><span class="p">();</span>
+      <span class="k">await</span> <span class="n">sessionClient</span><span class="p">.</span><span class="n">CloseAsync</span><span class="p">();</span>
+      <span class="cm">/*** wait response ***/</span>
     <span class="p">});</span>
   <span class="p">}</span>
 <span class="p">}</span>
@@ -1854,17 +1888,18 @@ Le message envoyé contient la propriété <strong>SessionId</strong> définie �
 <p><img src="/images/content/200322-request-response-pattern-with-azure-service-bus/5.png" alt="result-multiple" /></p>
 <p><strong>Voilà!</strong></p>
 <h2 id="sources">Sources</h2>
-<h3 id="repository">Repository:</h3>
+<h3 id="repository">Repository</h3>
 <ul>
 <li><a href="https://github.com/Golapadeog/sample-azure-service-bus-request-response">https://github.com/Golapadeog/sample-azure-service-bus-request-response</a></li>
 </ul>
-<h3 id="documentation">Documentation:</h3>
+<h3 id="documentation">Documentation</h3>
 <ul>
 <li><a href="https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReplyJmsExample.html">https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReplyJmsExample.html</a></li>
 <li><a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-request-response">https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-amqp-request-response</a></li>
 <li><a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messages-payloads">https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messages-payloads</a></li>
 <li><a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions">https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Request%E2%80%93response">https://en.wikipedia.org/wiki/Request%E2%80%93response</a></li>
+<li><a href="https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html">https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-messaging-v1.0-os.html</a></li>
 </ul>
 
     </article>
@@ -3121,7 +3156,8 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="toc toc__outer " data-dir="ltr" data-folding="true" data-ani="false">
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#requestresponse-multiplexé">Request/Response multiplexé</a></li>
+    <li><a href="#le-pattern-requestresponse">Le pattern Request/Response</a></li>
+    <li><a href="#les-sessions-groupe">Les sessions (groupe)</a></li>
     <li><a href="#exemple">Exemple</a>
       <ul>
         <li><a href="#creation-des-files-dattente">Creation des files d&rsquo;attente</a></li>
@@ -3133,8 +3169,8 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#résulat">Résulat</a></li>
     <li><a href="#sources">Sources</a>
       <ul>
-        <li><a href="#repository">Repository:</a></li>
-        <li><a href="#documentation">Documentation:</a></li>
+        <li><a href="#repository">Repository</a></li>
+        <li><a href="#documentation">Documentation</a></li>
       </ul>
     </li>
   </ul>
