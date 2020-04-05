@@ -1198,7 +1198,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="">
 <meta name="created" content="2020-04-06T00:00:00&#43;0000">
-<meta name="modified" content="2020-04-05T17:17:26&#43;0200">
+<meta name="modified" content="2020-04-06T00:17:43&#43;0200">
 <meta property="article:published_time" content="2020-04-06T00:00:00&#43;0000">
 
 <meta name="author" content="Jérémy Landon">
@@ -1245,7 +1245,7 @@
     "@type": "WebPage",
     "headline": "[Azure] Comment gérer les erreurs 429 sur Azure Cosmos DB",
     "datePublished": "2020-04-06T00:00:00Z",
-    "dateModified": "2020-04-05T17:17:26+02:00",
+    "dateModified": "2020-04-06T00:17:43+02:00",
     "url" : "https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/",
     "description": "Les erreurs HTTP 429 se produisent lorsque la consommation sur un conteneur est supérieure au débit provisionné. Consommation en RU par seconde  RU provisionné par …",
     "keywords": ["azure","dotnet","csharp","performance"],
@@ -1569,7 +1569,7 @@ Pour la deuxième solution cela demande de se poser la question suivante:<br />
 <p>Bien évidemment <strong>il n&rsquo;y a pas de réponse universelle à cette question</strong>, tout dépend de votre contexte.<br />
 Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.com/Golapadeog/7228a17b6287619f71ffd1ba60e4faa2">une méthode</a></strong> qui permet de limiter le nombre de tâche en parallèle de manière temporisé.</p>
 
-<div id="f824d58995a79265" class="codetab">
+<div id="a8731f5728ca5935" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">DelayParallelForEachAsync</button>
@@ -1580,7 +1580,7 @@ Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.co
   
 
 
-<div id="8a7ba7a45e617e55" class="codetab__content">
+<div id="d392f1d15fd8597a" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1616,6 +1616,15 @@ Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.co
 </span><span class="lnt">31
 </span><span class="lnt">32
 </span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">static</span> <span class="k">async</span> <span class="n">Task</span> <span class="n">DelayParallelForEachAsync</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;(</span>
@@ -1627,11 +1636,12 @@ Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.co
 <span class="p">{</span>
     <span class="kt">var</span> <span class="n">tasks</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Task</span><span class="p">&gt;();</span>
     <span class="kt">var</span> <span class="n">semaphore</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SemaphoreSlim</span><span class="p">(</span><span class="n">maxDegreeOfParallelism</span><span class="p">);</span>
+    <span class="k">using</span> <span class="nn">var</span> <span class="n">delayCts</span> <span class="p">=</span> <span class="k">new</span> <span class="n">CancellationTokenSource</span><span class="p">();</span>
+    <span class="k">using</span> <span class="nn">var</span> <span class="n">linkedCts</span> <span class="p">=</span> <span class="n">CancellationTokenSource</span><span class="p">.</span><span class="n">CreateLinkedTokenSource</span><span class="p">(</span><span class="n">cancellationToken</span><span class="p">,</span> <span class="n">delayCts</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
     <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">element</span> <span class="k">in</span> <span class="n">collection</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">await</span> <span class="n">semaphore</span><span class="p">.</span><span class="n">WaitAsync</span><span class="p">(</span><span class="n">cancellationToken</span><span class="p">).</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
-        <span class="n">tasks</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span>
-            <span class="n">Task</span><span class="p">.</span><span class="n">Run</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="p">=&gt;</span>
+        <span class="n">tasks</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">Task</span><span class="p">.</span><span class="n">Run</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="p">=&gt;</span>
             <span class="p">{</span>
                 <span class="n">Stopwatch</span> <span class="n">timer</span> <span class="p">=</span> <span class="n">Stopwatch</span><span class="p">.</span><span class="n">StartNew</span><span class="p">();</span>
                 <span class="k">try</span>
@@ -1640,15 +1650,23 @@ Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.co
                 <span class="p">}</span>
                 <span class="k">finally</span>
                 <span class="p">{</span>
-                    <span class="kt">var</span> <span class="n">waintingTime</span> <span class="p">=</span> <span class="n">millisecondsDelay</span> <span class="p">-</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">timer</span><span class="p">.</span><span class="n">ElapsedMilliseconds</span><span class="p">;</span>
-                    <span class="k">if</span> <span class="p">(</span><span class="n">waintingTime</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="p">(!</span><span class="n">linkedCts</span><span class="p">.</span><span class="n">IsCancellationRequested</span><span class="p">)</span>
                     <span class="p">{</span>
-                        <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="n">Delay</span><span class="p">(</span><span class="n">waintingTime</span><span class="p">,</span> <span class="n">cancellationToken</span><span class="p">).</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
+                        <span class="kt">var</span> <span class="n">waintingTime</span> <span class="p">=</span> <span class="n">millisecondsDelay</span> <span class="p">-</span> <span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">timer</span><span class="p">.</span><span class="n">ElapsedMilliseconds</span><span class="p">);</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="n">waintingTime</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+                        <span class="p">{</span>
+                            <span class="k">try</span>
+                            <span class="p">{</span>
+                                <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="n">Delay</span><span class="p">(</span><span class="n">waintingTime</span><span class="p">,</span> <span class="n">linkedCts</span><span class="p">.</span><span class="n">Token</span><span class="p">).</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
+                            <span class="p">}</span>
+                            <span class="k">catch</span> <span class="p">(</span><span class="n">OperationCanceledException</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+                        <span class="p">}</span>
                     <span class="p">}</span>
                     <span class="n">semaphore</span><span class="p">.</span><span class="n">Release</span><span class="p">();</span>
                 <span class="p">}</span>
             <span class="p">},</span> <span class="n">cancellationToken</span><span class="p">));</span>
     <span class="p">}</span>
+    <span class="n">delayCts</span><span class="p">.</span><span class="n">Cancel</span><span class="p">();</span>
     <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="n">WhenAll</span><span class="p">(</span><span class="n">tasks</span><span class="p">).</span><span class="n">ConfigureAwait</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
@@ -1687,7 +1705,7 @@ Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.co
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"f824d58995a79265\"");
+  var containerId = JSON.parse("\"a8731f5728ca5935\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
