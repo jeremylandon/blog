@@ -107,11 +107,8 @@ var maxDegreeOfParallelism = 10;
 
 await Enumerable.Range(0, 50).DelayParallelForEachAsync(async (index) =>
 {
-    await Task.Run(async () =>
-    {
-        var foo = Foo.Create(Guid.NewGuid().ToString());
-        await conteneur.CreateItemAsync(foo, new PartitionKey(foo.Pk));
-    });
+    var foo = Foo.Create(Guid.NewGuid().ToString());
+    await conteneur.CreateItemAsync(foo, new PartitionKey(foo.Pk));
 }, maxDegreeOfParallelism, 1000);
 ```
 
