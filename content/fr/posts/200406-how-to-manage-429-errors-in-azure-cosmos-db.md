@@ -72,11 +72,12 @@ public static async Task DelayParallelForEachAsync<T>(
 {
     var tasks = new List<Task>();
     var semaphore = new SemaphoreSlim(maxDegreeOfParallelism);
+    using var delayCts = new CancellationTokenSource();
+    using var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken, delayCts.Token);
     foreach (var element in collection)
     {
         await semaphore.WaitAsync(cancellationToken).ConfigureAwait(false);
-        tasks.Add(
-            Task.Run(async () =>
+        tasks.Add(Task.Run(async () =>
             {
                 Stopwatch timer = Stopwatch.StartNew();
                 try
@@ -85,15 +86,23 @@ public static async Task DelayParallelForEachAsync<T>(
                 }
                 finally
                 {
-                    var waintingTime = millisecondsDelay - (int)timer.ElapsedMilliseconds;
-                    if (waintingTime > 0)
+                    if (!linkedCts.IsCancellationRequested)
                     {
-                        await Task.Delay(waintingTime, cancellationToken).ConfigureAwait(false);
+                        var waintingTime = millisecondsDelay - Convert.ToInt32(timer.ElapsedMilliseconds);
+                        if (waintingTime > 0)
+                        {
+                            try
+                            {
+                                await Task.Delay(waintingTime, linkedCts.Token).ConfigureAwait(false);
+                            }
+                            catch (OperationCanceledException) { }
+                        }
                     }
                     semaphore.Release();
                 }
             }, cancellationToken));
     }
+    delayCts.Cancel();
     await Task.WhenAll(tasks).ConfigureAwait(false);
 }
 ```
