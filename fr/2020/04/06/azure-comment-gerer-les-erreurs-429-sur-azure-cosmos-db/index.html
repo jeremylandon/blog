@@ -1198,7 +1198,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="">
 <meta name="created" content="2020-04-06T00:00:00&#43;0000">
-<meta name="modified" content="2020-04-05T17:10:46&#43;0200">
+<meta name="modified" content="2020-04-05T17:17:26&#43;0200">
 <meta property="article:published_time" content="2020-04-06T00:00:00&#43;0000">
 
 <meta name="author" content="Jérémy Landon">
@@ -1245,7 +1245,7 @@
     "@type": "WebPage",
     "headline": "[Azure] Comment gérer les erreurs 429 sur Azure Cosmos DB",
     "datePublished": "2020-04-06T00:00:00Z",
-    "dateModified": "2020-04-05T17:10:46+02:00",
+    "dateModified": "2020-04-05T17:17:26+02:00",
     "url" : "https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/",
     "description": "Les erreurs HTTP 429 se produisent lorsque la consommation sur un conteneur est supérieure au débit provisionné. Consommation en RU par seconde  RU provisionné par …",
     "keywords": ["azure","dotnet","csharp","performance"],
@@ -1569,7 +1569,7 @@ Pour la deuxième solution cela demande de se poser la question suivante:<br />
 <p>Bien évidemment <strong>il n&rsquo;y a pas de réponse universelle à cette question</strong>, tout dépend de votre contexte.<br />
 Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.com/Golapadeog/7228a17b6287619f71ffd1ba60e4faa2">une méthode</a></strong> qui permet de limiter le nombre de tâche en parallèle de manière temporisé.</p>
 
-<div id="a8b0cbfb4ae71747" class="codetab">
+<div id="f824d58995a79265" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">DelayParallelForEachAsync</button>
@@ -1657,30 +1657,24 @@ Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.co
 </div>
 
 
-<div id="5aa03ff091aa6d8d" class="codetab__content">
+<div id="02f41218a7a22fce" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">var</span> <span class="n">maxDegreeOfParallelism</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
 
 <span class="k">await</span> <span class="n">Enumerable</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">50</span><span class="p">).</span><span class="n">DelayParallelForEachAsync</span><span class="p">(</span><span class="k">async</span> <span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="p">=&gt;</span>
 <span class="p">{</span>
-    <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="n">Run</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="p">=&gt;</span>
-    <span class="p">{</span>
-        <span class="kt">var</span> <span class="n">foo</span> <span class="p">=</span> <span class="n">Foo</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="n">Guid</span><span class="p">.</span><span class="n">NewGuid</span><span class="p">().</span><span class="n">ToString</span><span class="p">());</span>
-        <span class="k">await</span> <span class="n">conteneur</span><span class="p">.</span><span class="n">CreateItemAsync</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="k">new</span> <span class="n">PartitionKey</span><span class="p">(</span><span class="n">foo</span><span class="p">.</span><span class="n">Pk</span><span class="p">));</span>
-    <span class="p">});</span>
+    <span class="kt">var</span> <span class="n">foo</span> <span class="p">=</span> <span class="n">Foo</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="n">Guid</span><span class="p">.</span><span class="n">NewGuid</span><span class="p">().</span><span class="n">ToString</span><span class="p">());</span>
+    <span class="k">await</span> <span class="n">conteneur</span><span class="p">.</span><span class="n">CreateItemAsync</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="k">new</span> <span class="n">PartitionKey</span><span class="p">(</span><span class="n">foo</span><span class="p">.</span><span class="n">Pk</span><span class="p">));</span>
 <span class="p">},</span> <span class="n">maxDegreeOfParallelism</span><span class="p">,</span> <span class="m">1000</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
@@ -1693,7 +1687,7 @@ Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.co
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"a8b0cbfb4ae71747\"");
+  var containerId = JSON.parse("\"f824d58995a79265\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
