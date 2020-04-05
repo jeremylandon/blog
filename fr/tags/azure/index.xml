@@ -14,13 +14,62 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 22 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>[Azure] Comment gérer les erreurs 429 sur Azure Cosmos DB</title>
+        <link>https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/</link>
+        <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 05 Apr 2020 17:10:46 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/</guid>
+        <description>Les erreurs HTTP 429 se produisent lorsque la consommation sur un conteneur est supérieure au débit provisionné.
+Consommation en RU par seconde  RU provisionné par seconde = HTTP 429.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+            
+              <category>dotnet</category>
+            
+          
+            
+              <category>csharp</category>
+            
+          
+            
+              <category>performance</category>
+            
+          
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+        
+        
+          
+            
+              <category>cloud</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>[Azure] Pattern Request/Response avec Azure Service Bus</title>

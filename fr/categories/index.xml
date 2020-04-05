@@ -14,7 +14,7 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,12 +23,12 @@
 
       
       <item>
-        <title>dotnet</title>
-        <link>https://blog.jeremylandon.com/fr/categories/dotnet/</link>
-        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+        <title>azure</title>
+        <link>https://blog.jeremylandon.com/fr/categories/azure/</link>
+        <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://blog.jeremylandon.com/fr/categories/dotnet/</guid>
+        <guid>https://blog.jeremylandon.com/fr/categories/azure/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -41,12 +41,12 @@
       </item>
       
       <item>
-        <title>azure</title>
-        <link>https://blog.jeremylandon.com/fr/categories/azure/</link>
-        <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+        <title>dotnet</title>
+        <link>https://blog.jeremylandon.com/fr/categories/dotnet/</link>
+        <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://blog.jeremylandon.com/fr/categories/azure/</guid>
+        <guid>https://blog.jeremylandon.com/fr/categories/dotnet/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
