@@ -58,58 +58,7 @@ Pour la deuxième solution cela demande de se poser la question suivante:
 Bien évidemment **il n'y a pas de réponse universelle à cette question**, tout dépend de votre contexte.
 Mais une fois la réponse trouvée voici **[une méthode](https://gist.github.com/Golapadeog/7228a17b6287619f71ffd1ba60e4faa2)** qui permet de limiter le nombre de tâche en parallèle de manière temporisé.
 
-{{< codes DelayParallelForEachAsync Sample  >}}
-
-{{< code >}}
-
-```csharp
-public static async Task DelayParallelForEachAsync<T>(
-    this IEnumerable<T> collection,
-    Func<T, Task> asyncItemAction,
-    int maxDegreeOfParallelism,
-    int millisecondsDelay,
-    CancellationToken cancellationToken = default)
-{
-    var tasks = new List<Task>();
-    var semaphore = new SemaphoreSlim(maxDegreeOfParallelism);
-    using var delayCts = new CancellationTokenSource();
-    using var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken, delayCts.Token);
-    foreach (var element in collection)
-    {
-        await semaphore.WaitAsync(cancellationToken).ConfigureAwait(false);
-        tasks.Add(Task.Run(async () =>
-            {
-                Stopwatch timer = Stopwatch.StartNew();
-                try
-                {
-                    await asyncItemAction(element).ConfigureAwait(false);
-                }
-                finally
-                {
-                    if (!linkedCts.IsCancellationRequested)
-                    {
-                        var waintingTime = millisecondsDelay - Convert.ToInt32(timer.ElapsedMilliseconds);
-                        if (waintingTime > 0)
-                        {
-                            try
-                            {
-                                await Task.Delay(waintingTime, linkedCts.Token).ConfigureAwait(false);
-                            }
-                            catch (OperationCanceledException) { }
-                        }
-                    }
-                    semaphore.Release();
-                }
-            }, cancellationToken));
-    }
-    delayCts.Cancel();
-    await Task.WhenAll(tasks).ConfigureAwait(false);
-}
-```
-
-{{< /code >}}
-
-{{< code >}}
+{{< gist Golapadeog 7228a17b6287619f71ffd1ba60e4faa2 >}}
 
 ```csharp
 var maxDegreeOfParallelism = 10;
@@ -120,10 +69,6 @@ await Enumerable.Range(0, 50).DelayParallelForEachAsync(async (index) =>
     await conteneur.CreateItemAsync(foo, new PartitionKey(foo.Pk));
 }, maxDegreeOfParallelism, 1000);
 ```
-
-{{< /code >}}
-
-{{< /codes >}}
 
 ### Recommencer
 
