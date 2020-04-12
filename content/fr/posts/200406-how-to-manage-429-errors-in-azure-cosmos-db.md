@@ -9,6 +9,7 @@ tags:
   - dotnet
   - csharp
   - performance
+  - cosmos
 series:
   - cloud
 categories:
