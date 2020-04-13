@@ -6,9 +6,9 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>exception on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
-    <link>https://blog.jeremylandon.com/fr/tags/exception/</link>
-    <description>Recent content in exception on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
+    <title>cosmos on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
+    <link>https://blog.jeremylandon.com/fr/tags/cosmos/</link>
+    <description>Recent content in cosmos on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
@@ -16,7 +16,7 @@
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://blog.jeremylandon.com/fr/tags/exception/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://blog.jeremylandon.com/fr/tags/cosmos/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -72,53 +72,53 @@
       </item>
       
       <item>
-        <title>[Flutter] Exception lors d&#39;une copie sous IOS</title>
-        <link>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</link>
-        <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+        <title>[Azure] Comment gérer les erreurs 429 sur Azure Cosmos DB</title>
+        <link>https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/</link>
+        <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Tue, 24 Mar 2020 19:30:08 +0100</atom:modified>
-        <guid>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</guid>
-        <description>Lors d&amp;rsquo;une tentative d&amp;rsquo;un copier/coller (pression longue) sur un champ Text sur IOS le message suivant peut apparaitre :
- The getter &amp;lsquo;pasteButtonLabel&amp;rsquo; was called on null.</description>
+        <atom:modified>Sun, 12 Apr 2020 04:11:12 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/</guid>
+        <description>Les erreurs HTTP 429 se produisent lorsque la consommation sur un conteneur est supérieure au débit provisionné.
+Consommation en RU par seconde  RU provisionné par seconde = HTTP 429.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
-        <media:content url="https://blog.jeremylandon.com/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://blog.jeremylandon.com/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
           
             
-              <category>flutter</category>
+              <category>azure</category>
             
           
             
-              <category>dart</category>
+              <category>dotnet</category>
             
           
             
-              <category>ios</category>
+              <category>csharp</category>
             
           
             
-              <category>mobile</category>
+              <category>performance</category>
             
           
             
-              <category>exception</category>
-            
-          
-        
-        
-          
-            
-              <category>flutter</category>
+              <category>cosmos</category>
             
           
         
         
           
             
-              <category>exception</category>
+              <category>azure</category>
+            
+          
+        
+        
+          
+            
+              <category>cloud</category>
             
           
         

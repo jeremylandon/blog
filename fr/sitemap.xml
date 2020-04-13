@@ -163,23 +163,23 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/2020/04/12/azure-comment-augmenter-le-nombre-de-conteneur-sur-lemulateur-cosmos-db/</loc>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/azure/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/azure/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -199,27 +199,27 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/series/cloud/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/csharp/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/tags/cosmos/</loc>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/tags/exception/</loc>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/performance/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/series/exception/</loc>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -239,7 +239,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-04-08T23:14:10+02:00</lastmod>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -255,6 +255,26 @@
                 hreflang="fr"
                 href="https://blog.jeremylandon.com/fr/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/</loc>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/csharp/</loc>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/performance/</loc>
+    <lastmod>2020-04-12T04:11:12+02:00</lastmod>
   </url>
   
   <url>
@@ -339,16 +359,6 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/dart/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/exception/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/series/exception/</loc>
     <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   

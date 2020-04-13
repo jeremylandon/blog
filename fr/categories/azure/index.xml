@@ -14,7 +14,7 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/categories/azure/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,11 +23,60 @@
 
       
       <item>
+        <title>[Azure] Comment augmenter le nombre de conteneur sur l&#39;émulateur Cosmos DB</title>
+        <link>https://blog.jeremylandon.com/fr/2020/04/12/azure-comment-augmenter-le-nombre-de-conteneur-sur-lemulateur-cosmos-db/</link>
+        <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 12 Apr 2020 04:11:12 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/04/12/azure-comment-augmenter-le-nombre-de-conteneur-sur-lemulateur-cosmos-db/</guid>
+        <description>Vous avez rencontré cette erreur en essayant de créer une nouveau conteneur sur l&#39;émulateur local de Cosmos DB:
+&amp;ldquo;Sorry, we are currently experiencing high demand in this region, and cannot fulfill your request at this time.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+            
+              <category>Cosmos</category>
+            
+          
+            
+              <category>exception</category>
+            
+          
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+        
+        
+          
+            
+              <category>exception</category>
+            
+          
+            
+              <category>cloud</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>[Azure] Comment gérer les erreurs 429 sur Azure Cosmos DB</title>
         <link>https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/</link>
         <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Wed, 08 Apr 2020 23:14:10 +0200</atom:modified>
+        <atom:modified>Sun, 12 Apr 2020 04:11:12 +0200</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/</guid>
         <description>Les erreurs HTTP 429 se produisent lorsque la consommation sur un conteneur est supérieure au débit provisionné.
 Consommation en RU par seconde  RU provisionné par seconde = HTTP 429.</description>
@@ -52,6 +101,10 @@ Consommation en RU par seconde  RU provisionné par seconde = HTTP 429.</descrip
           
             
               <category>performance</category>
+            
+          
+            
+              <category>cosmos</category>
             
           
         
