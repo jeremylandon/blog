@@ -26,16 +26,22 @@ Vous avez rencontré cette erreur en essayant de créer une nouveau conteneur su
 Par défaut l'émulateur Cosmos DB ne gère que **25 conteneurs de taille fixe** ou **5 conteneurs illimités** _(ou un mixe des deux sachant qu'un conteneur de taille illimité équivaut à 5 conteneurs de taille fixe)_.
 Il est possible d'augmenter cette limite jusqu'à **250 conteneurs de taille fixe** _(en acceptant de supprimer toutes ces collections)_, pour ce faire :
 
-- **Quittez l'émulateur Cosmos**: cela prend plusieurs longues minutes => le plus rapide est d'arrêter les processus Cosmos DB comme un gros cochon :pig_nose:
-  - Azure Cosmos Master Service
-  - Azure Cosmos Server Service
-  - DocumentDB.GatewayService
-  - Microsoft Azure Cosmos Emulator
-- **Supprimez les données de l'émulateur** en supprimant tous les fichiers de ce dossier: **%LOCALAPPDATA%\CosmosDBEmulator**
-- Lancer l'émulateur avec les **paramètre PartitionCount <= 250**:
+- **Quittez l'émulateur Cosmos**: cela prend plusieurs longues minutes => le plus rapide est d'arrêter les processus Cosmos DB comme un cochon :pig_nose: _(Azure Cosmos Master Service / Azure Cosmos Server Service / DocumentDB.GatewayService / Microsoft Azure Cosmos Emulator)_.
+- **Supprimez les données de l'émulateur** en supprimant tous les fichiers de ce dossier: **%LOCALAPPDATA%\CosmosDBEmulator**.
+- Lancer l'émulateur avec les **paramètre PartitionCount <= 250**.
 
 ```powershell
-C:\Program Files\Azure Cosmos DB Emulator\CosmosDB.Emulator.exe /PartitionCount=250
+<# kill cosmos like a :pig_nose: #>
+taskkill /im "CosmosDB.Emulator.exe" /f
+taskkill /im "Microsoft.Azure.Cosmos.Server.exe" /f
+taskkill /im "Microsoft.Azure.Cosmos.Master.exe" /f
+taskkill /im "Microsoft.Azure.Cosmos.GatewayService.exe" /f
+
+<# remove cosmos datas #>
+Remove-Item "$env:LOCALAPPDATA\CosmosDBEmulator\*" -Recurse -Force
+
+<# run cosmos with 250 partitions #>
+& "C:\Program Files\Azure Cosmos DB Emulator\CosmosDB.Emulator.exe" /PartitionCount=250
 ```
 
 **Voilà!** :ok_hand:
