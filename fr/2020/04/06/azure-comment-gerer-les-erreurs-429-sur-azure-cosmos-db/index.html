@@ -1198,7 +1198,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="">
 <meta name="created" content="2020-04-06T00:00:00&#43;0000">
-<meta name="modified" content="2020-04-12T04:11:12&#43;0200">
+<meta name="modified" content="2020-04-19T02:37:09&#43;0200">
 <meta property="article:published_time" content="2020-04-06T00:00:00&#43;0000">
 
 <meta name="author" content="Jérémy Landon">
@@ -1245,7 +1245,7 @@
     "@type": "WebPage",
     "headline": "[Azure] Comment gérer les erreurs 429 sur Azure Cosmos DB",
     "datePublished": "2020-04-06T00:00:00Z",
-    "dateModified": "2020-04-12T04:11:12+02:00",
+    "dateModified": "2020-04-19T02:37:09+02:00",
     "url" : "https://blog.jeremylandon.com/fr/2020/04/06/azure-comment-gerer-les-erreurs-429-sur-azure-cosmos-db/",
     "description": "Les erreurs HTTP 429 se produisent lorsque la consommation sur un conteneur est supérieure au débit provisionné. Consommation en RU par seconde  RU provisionné par …",
     "keywords": ["azure","dotnet","csharp","performance","cosmos"],
@@ -1567,12 +1567,13 @@ Et directement via le SDK au travers de la propriété <strong><a href="https://
 </div><h4 id="la-fréquence">La fréquence</h4>
 <p>La fréquence de lancement des requêtes est primordiale et aussi la plus compliquée à déterminer <em>(nous n&rsquo;allons ici pas parler des Bulk insert/update qui feront l&rsquo;objet d&rsquo;un autre article)</em>.</p>
 <p>Supposons le cas où vous ayez 50 requêtes à 10 RU chacune, sur une provision à 400 RU/s le lancement de toutes les requêtes en parallèle provoquera des erreurs 429.<br />
-Deux solutions sont possibles : <strong>augmenter temporairement le provisionnement</strong> ou <strong>lisser les requêtes dans le temps</strong>.<br />
-Pour la deuxième solution cela demande de se poser la question suivante:<br />
-<div class="alert alert-info" role="alert" data-dir="ltr"><strong>Combien de RU puis-je consommer par seconde sans que cela ne provoque d&rsquo;erreurs ailleur dans mon application ?</strong></div>
+Deux solutions sont possibles : <strong>augmenter temporairement le provisionnement</strong> ou <strong>lisser les requêtes dans le temps (par seconde)</strong>.<br />
+Nous allons nous attarder sur la deuxième solution: le lissage dans le temps n&rsquo;a pas pour but de séquentialiser 1 à 1 nos requêtes, ou faire 1 requête par seconde, ça serait une catastrophe niveau performance et nous perdrions tout l&rsquo;intérêt de la puissance du parallélisme que nous offre Cosmos DB, <u>l&rsquo;objectif sera de trouver le bon compromis entre performance et usage selon notre contexte et nos ressources</u>.<br />
+Il faudra donc se poser la question suivante:<br />
+<div class="alert alert-info" role="alert" data-dir="ltr"><strong>Combien de RU puis-je consommer par seconde sans que cela ne provoque d&rsquo;erreurs/latences ailleur dans mon application ?</strong></div>
 </p>
-<p>Bien évidemment <strong>il n&rsquo;y a pas de réponse universelle à cette question</strong>, tout dépend de votre contexte.<br />
-Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.com/Golapadeog/7228a17b6287619f71ffd1ba60e4faa2">une méthode</a></strong> qui permet de limiter le nombre de tâche en parallèle de manière temporisé.</p>
+<p>Bien évidemment <strong>il n&rsquo;y a pas de réponse universelle à cette question</strong>, tout dépend de votre contexte (ressources / usages / fréquences&hellip;).<br />
+Mais une fois la réponse trouvée ou supposément trouvée voici <strong><a href="https://gist.github.com/Golapadeog/7228a17b6287619f71ffd1ba60e4faa2">une méthode d&rsquo;extension que vous pouvez retrouver sur mon gist</a></strong> qui permet de limiter le nombre de tâche en parallèle de manière temporisée et ainsi répondre par exemple au besoin: &ldquo;<strong>je veux X traitements toutes les secondes</strong>&quot;.</p>
 <script type="application/javascript" src="https://gist.github.com/Golapadeog/7228a17b6287619f71ffd1ba60e4faa2.js"></script>
 
 <div class="highlight"><div class="chroma">
@@ -1584,15 +1585,19 @@ Mais une fois la réponse trouvée voici <strong><a href="https://gist.github.co
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">var</span> <span class="n">maxDegreeOfParallelism</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+<span class="c1">// the RUs is limited by second.
+</span><span class="c1"></span><span class="kt">var</span> <span class="n">millisecondsDelay</span> <span class="p">=</span> <span class="n">TimeSpan</span><span class="p">.</span><span class="n">FromSeconds</span><span class="p">(</span><span class="m">1</span><span class="p">).</span><span class="n">TotalMilliseconds</span><span class="p">;</span>
 
 <span class="k">await</span> <span class="n">Enumerable</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">50</span><span class="p">).</span><span class="n">DelayParallelForEachAsync</span><span class="p">(</span><span class="k">async</span> <span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="p">=&gt;</span>
 <span class="p">{</span>
     <span class="kt">var</span> <span class="n">foo</span> <span class="p">=</span> <span class="n">Foo</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="n">Guid</span><span class="p">.</span><span class="n">NewGuid</span><span class="p">().</span><span class="n">ToString</span><span class="p">());</span>
     <span class="k">await</span> <span class="n">conteneur</span><span class="p">.</span><span class="n">CreateItemAsync</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="k">new</span> <span class="n">PartitionKey</span><span class="p">(</span><span class="n">foo</span><span class="p">.</span><span class="n">Pk</span><span class="p">));</span>
-<span class="p">},</span> <span class="n">maxDegreeOfParallelism</span><span class="p">,</span> <span class="m">1000</span><span class="p">);</span>
+<span class="p">},</span> <span class="n">maxDegreeOfParallelism</span><span class="p">,</span> <span class="n">millisecondsDelay</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="recommencer">Recommencer</h3>
@@ -1640,7 +1645,8 @@ Il faut néanmoins prendre en compte plusieurs aspects de <strong>AutoPilot</str
 <p>Si malgré toutes les actions précédentes des erreurs 429 apparaissent toujours et sont problématiques, <strong>alors cela signifie simplement que votre conteneur est sous provisionnée par rapport à votre besoin</strong>.<br />
 Pour aider à choisir le provisionnement adapté Microsoft met à disposition une calculatrice à capacité: <strong><a href="https://cosmos.azure.com/capacitycalculator/">https://cosmos.azure.com/capacitycalculator/</a></strong>.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Les erreurs HTTP 429 peuvent ne pas être problématiques en fonction de l&rsquo;usage fait du conteneur. Elles doivent avant toute chose être un point d&rsquo;alerte pour se poser des questions sur les performances du code/requêtes et le provisionnement des conteneurs.</p>
+<p>Les erreurs HTTP 429 ne posent pas de problèmes tant qu&rsquo;elles sont gérées et restent occasionnelles.<br />
+Elles doivent avant toute chose être un point d&rsquo;alerte pour se poser des questions sur les performances du code/requêtes et le provisionnement des conteneurs.</p>
 <h2 id="sources">Sources</h2>
 <h3 id="repository">Repository</h3>
 <ul>
