@@ -1198,7 +1198,7 @@
 <meta name="description" content="&#34;Sorry, we are currently experiencing high demand in this region, and cannot fulfill your request at this time. We work continuously to bring more and more capacity online, and encourage you to try again&#34;" />
 <meta name="keywords" content="">
 <meta name="created" content="2020-04-12T00:00:00&#43;0000">
-<meta name="modified" content="2020-04-12T04:11:12&#43;0200">
+<meta name="modified" content="2020-04-14T18:56:57&#43;0200">
 <meta property="article:published_time" content="2020-04-12T00:00:00&#43;0000">
 
 <meta name="author" content="Jérémy Landon">
@@ -1245,7 +1245,7 @@
     "@type": "WebPage",
     "headline": "[Azure] Comment augmenter le nombre de conteneur sur l'émulateur Cosmos DB",
     "datePublished": "2020-04-12T00:00:00Z",
-    "dateModified": "2020-04-12T04:11:12+02:00",
+    "dateModified": "2020-04-14T18:56:57+02:00",
     "url" : "https://blog.jeremylandon.com/fr/2020/04/12/azure-comment-augmenter-le-nombre-de-conteneur-sur-lemulateur-cosmos-db/",
     "description": "\"Sorry, we are currently experiencing high demand in this region, and cannot fulfill your request at this time. We work continuously to bring more and more capacity online, and encourage you to try again\"",
     "keywords": ["azure","Cosmos","exception"],
@@ -1483,7 +1483,7 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Écrit le">📅&nbsp;Apr 12, 2020 </time> &middot; <span class="single__info" title="Temps de lecture"> ☕ 1 min de lecture </span>
+  <time class="single__info" title="Écrit le">📅&nbsp;Apr 12, 2020 </time> &middot; <span class="single__info" title="Temps de lecture"> ☕ 2 min de lecture </span>
   <span class="single__info">
     
   </span>
@@ -1520,23 +1520,36 @@ if (!doNotTrack) {
 <p>Par défaut l'émulateur Cosmos DB ne gère que <strong>25 conteneurs de taille fixe</strong> ou <strong>5 conteneurs illimités</strong> <em>(ou un mixe des deux sachant qu&rsquo;un conteneur de taille illimité équivaut à 5 conteneurs de taille fixe)</em>.<br />
 Il est possible d&rsquo;augmenter cette limite jusqu'à <strong>250 conteneurs de taille fixe</strong> <em>(en acceptant de supprimer toutes ces collections)</em>, pour ce faire :</p>
 <ul>
-<li><strong>Quittez l'émulateur Cosmos</strong>: cela prend plusieurs longues minutes =&gt; le plus rapide est d&rsquo;arrêter les processus Cosmos DB comme un gros cochon 🐽
-<ul>
-<li>Azure Cosmos Master Service</li>
-<li>Azure Cosmos Server Service</li>
-<li>DocumentDB.GatewayService</li>
-<li>Microsoft Azure Cosmos Emulator</li>
-</ul>
-</li>
-<li><strong>Supprimez les données de l'émulateur</strong> en supprimant tous les fichiers de ce dossier: <strong>%LOCALAPPDATA%\CosmosDBEmulator</strong></li>
-<li>Lancer l'émulateur avec les <strong>paramètre PartitionCount &lt;= 250</strong>:</li>
+<li><strong>Quittez l'émulateur Cosmos</strong>: cela prend plusieurs longues minutes =&gt; le plus rapide est d&rsquo;arrêter les processus Cosmos DB comme un cochon 🐽 <em>(Azure Cosmos Master Service / Azure Cosmos Server Service / DocumentDB.GatewayService / Microsoft Azure Cosmos Emulator)</em>.</li>
+<li><strong>Supprimez les données de l'émulateur</strong> en supprimant tous les fichiers de ce dossier: <strong>%LOCALAPPDATA%\CosmosDBEmulator</strong>.</li>
+<li>Lancer l'émulateur avec les <strong>paramètre PartitionCount &lt;= 250</strong>.</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">C:</span><span class="p">\</span><span class="n">Program</span> <span class="n">Files</span><span class="p">\</span><span class="n">Azure</span> <span class="n">Cosmos</span> <span class="n">DB</span> <span class="n">Emulator</span><span class="p">\</span><span class="n">CosmosDB</span><span class="p">.</span><span class="n">Emulator</span><span class="p">.</span><span class="n">exe</span> <span class="p">/</span><span class="n">PartitionCount</span><span class="p">=</span><span class="n">250</span>
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="cm">&lt;# kill cosmos like a 🐽 #&gt;</span>
+<span class="n">taskkill</span> <span class="p">/</span><span class="n">im</span> <span class="s2">&#34;CosmosDB.Emulator.exe&#34;</span> <span class="p">/</span><span class="n">f</span>
+<span class="n">taskkill</span> <span class="p">/</span><span class="n">im</span> <span class="s2">&#34;Microsoft.Azure.Cosmos.Server.exe&#34;</span> <span class="p">/</span><span class="n">f</span>
+<span class="n">taskkill</span> <span class="p">/</span><span class="n">im</span> <span class="s2">&#34;Microsoft.Azure.Cosmos.Master.exe&#34;</span> <span class="p">/</span><span class="n">f</span>
+<span class="n">taskkill</span> <span class="p">/</span><span class="n">im</span> <span class="s2">&#34;Microsoft.Azure.Cosmos.GatewayService.exe&#34;</span> <span class="p">/</span><span class="n">f</span>
+
+<span class="cm">&lt;# remove cosmos datas #&gt;</span>
+<span class="nb">Remove-Item</span> <span class="s2">&#34;$env:LOCALAPPDATA\CosmosDBEmulator\*&#34;</span> <span class="n">-Recurse</span> <span class="n">-Force</span>
+
+<span class="cm">&lt;# run cosmos with 250 partitions #&gt;</span>
+<span class="p">&amp;</span> <span class="s2">&#34;C:\Program Files\Azure Cosmos DB Emulator\CosmosDB.Emulator.exe&#34;</span> <span class="p">/</span><span class="n">PartitionCount</span><span class="p">=</span><span class="n">250</span>
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>Voilà!</strong> 👌</p>

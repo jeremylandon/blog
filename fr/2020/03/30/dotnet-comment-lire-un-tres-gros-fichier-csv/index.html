@@ -1198,7 +1198,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="">
 <meta name="created" content="2020-03-30T00:00:00&#43;0000">
-<meta name="modified" content="2020-03-31T13:01:20&#43;0200">
+<meta name="modified" content="2020-04-19T02:03:30&#43;0200">
 <meta property="article:published_time" content="2020-03-30T00:00:00&#43;0000">
 
 <meta name="author" content="Jérémy Landon">
@@ -1245,7 +1245,7 @@
     "@type": "WebPage",
     "headline": "[.NET] Comment lire un très gros fichier csv",
     "datePublished": "2020-03-30T00:00:00Z",
-    "dateModified": "2020-03-31T13:01:20+02:00",
+    "dateModified": "2020-04-19T02:03:30+02:00",
     "url" : "https://blog.jeremylandon.com/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/",
     "description": "Le traitement d\u0026rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance. Pour rappel un fichier csv n\u0026rsquo;est pas seulement un format qui …",
     "keywords": ["dotnet","csharp","algorithm","performance","benchmark"],
@@ -1529,16 +1529,16 @@ Pour rappel un fichier csv n&rsquo;est pas seulement un format qui sépare ses c
 <li>des colonnes parfois inexistantes,</li>
 <li>des lignes vides,</li>
 <li>des guillemets pour représenter une colonne,</li>
-<li>des guillemets dans des guillemets pour représenter des guillemets dans une colonnes…</li>
+<li>des guillemets dans des guillemets pour représenter des guillemets dans une colonne…</li>
 <li>…</li>
 </ul>
 <p>Bref, la liste est encore longue et ça peut vite devenir un vrai casse tête de gérer tous les cas.<br />
-A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à des objets de notre code et que dans le cas d&rsquo;un très gros fichier il n&rsquo;est pas envisageable de charger le fichier en mémoire et qu&rsquo;il faudra lire à même le stream ce qui peut apporter d&rsquo;autres problématiques <em>(heureusement en .NET cette dernière problématique reste extrêmement simple à solutionner)</em>.</p>
-<p>Bien entendu d&rsquo;autres se sont pris la tête là-dessus, c&rsquo;est pour cette raison qu&rsquo;il existe un grand nombre de framework de lecture/écriture de fichier csv qui gère la totalité des problématique liées à ce format.</p>
+A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à des objets de notre code, que dans le cas d&rsquo;un très gros fichier il n&rsquo;est pas envisageable de charger le fichier en mémoire et qu&rsquo;il faudra lire à même le stream ce qui peut apporter d&rsquo;autres problématiques <em>(heureusement en .NET cette dernière problématique reste extrêmement simple à solutionner)</em> cela peut devenir relativement compliqué.</p>
+<p>Bien entendu d&rsquo;autres se sont pris la tête là-dessus, c&rsquo;est pour cette raison qu&rsquo;il existe un grand nombre de framework de lecture/écriture de fichier csv qui gère la totalité des problématiques liées à ce format.</p>
 <h2 id="textfieldparser">TextFieldParser</h2>
-<p>Peu connue, mais le framework .NET propose une solution de base avec <strong>TextFieldParser</strong>.</p>
+<p>Le framework .NET propose une solution de base avec <strong>TextFieldParser</strong>.</p>
 
-<div id="58cc5360c576fa3c" class="codetab">
+<div id="1fd23b22d09bf43d" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
@@ -1547,8 +1547,8 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
     
   </div>
   
-  
-<div id="c810a5d49805701d" class="codetab__content">
+
+<div id="56f39b5fb4553912" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1590,8 +1590,8 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 </div>
 </div>
 
-  
-<div id="ba25846412000b7b" class="codetab__content">
+
+<div id="0ebd3268ce8f729c" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1638,7 +1638,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"58cc5360c576fa3c\"");
+  var containerId = JSON.parse("\"1fd23b22d09bf43d\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -1675,7 +1675,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <h2 id="csvhelper">CsvHelper</h2>
 <p>sources: <a href="https://github.com/JoshClose/CsvHelper">https://github.com/JoshClose/CsvHelper</a></p>
 
-<div id="f29cba5f58fc2b46" class="codetab">
+<div id="38c07b8d75d8a1cb" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
@@ -1684,8 +1684,8 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
     
   </div>
   
-  
-<div id="cc06cc5a4c3b5340" class="codetab__content">
+
+<div id="b73052e424b83bab" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1721,8 +1721,8 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 </div>
 </div>
 
-  
-<div id="5543dc190f51ba79" class="codetab__content">
+
+<div id="f64c0a694938a7d9" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1755,7 +1755,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"f29cba5f58fc2b46\"");
+  var containerId = JSON.parse("\"38c07b8d75d8a1cb\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -1792,7 +1792,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <h2 id="tinycsvparser">TinyCsvParser</h2>
 <p>sources: <a href="https://github.com/bytefish/TinyCsvParser">https://github.com/bytefish/TinyCsvParser</a></p>
 
-<div id="0d2480d40565aeb6" class="codetab">
+<div id="88b9138043c8439a" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
@@ -1801,8 +1801,8 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
     
   </div>
   
-  
-<div id="698bda9340e0e03a" class="codetab__content">
+
+<div id="056b8e4794e3511a" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1834,8 +1834,8 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 </div>
 </div>
 
-  
-<div id="b8deb0ffface023a" class="codetab__content">
+
+<div id="d475b31266afe205" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1868,7 +1868,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"0d2480d40565aeb6\"");
+  var containerId = JSON.parse("\"88b9138043c8439a\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -1924,7 +1924,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 </tr>
 <tr>
 <td><strong>TinyCsvParser</strong></td>
-<td align="right">1,062.29 ms</td>
+<td align="right"><strong>1,062.29 ms</strong></td>
 <td align="right"><strong><span style="color: green">-84 %</span></strong></td>
 </tr>
 </tbody>
@@ -1935,21 +1935,21 @@ Dans ce cas spécifique <em>(un csv propre, une configuration de base et une lec
 Bref cela dépend de la situation comme toujours.</p>
 <div class="box"><strong>Mais comment expliquer de tels décalages ?</strong></div>
 <p>Principalement cela est dû au traitement des lignes du CSV pour gérer tous les cas et la création des entités.<br />
-Nous avons tendance à se ruer sur des framework pour des choses simples, c&rsquo;est framework sont là pour gérer tous les cas ce qui apporte un confort de développement mais aussi une lourdeur dans les traitements.<br />
-J&rsquo;ai récemment dû parser un fichier de 30Go &ldquo;propre&rdquo; (virgule + parfois des guillemet) dont je connais parfaitement le format, et j&rsquo;ai voulu voir combien coûte &ldquo;la gestion de tous les cas&rdquo;.</p>
+Nous avons tendance à se ruer sur des framework pour des choses simples, ces framework sont là pour gérer tous les cas ce qui apporte un confort de développement, de la fiabilité mais malheureusement aussi une lourdeur dans les traitements.<br />
+J&rsquo;ai récemment dû parser un fichier de 30Go &ldquo;propre&rdquo; <em>(virgule + parfois des guillemets)</em> dont je connais parfaitement le format, et j&rsquo;ai voulu voir combien coûte &ldquo;la gestion de tous les cas&rdquo;.</p>
 <h2 id="solution-personnalisée">Solution personnalisée</h2>
 
-<div id="9f48a86848b9a7c8" class="codetab">
+<div id="7ae383d0c6fbde5f" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
     
-      <button class="codetab__link" aria-label="Tab link">Foo</button>
+      <button class="codetab__link" aria-label="Tab link">ExtractFields</button>
     
   </div>
   
-  
-<div id="c7cee3065e3971e1" class="codetab__content">
+
+<div id="eeac0a862c2fa93b" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1981,8 +1981,8 @@ J&rsquo;ai récemment dû parser un fichier de 30Go &ldquo;propre&rdquo; (virgul
 </div>
 </div>
 
-  
-<div id="53897599c73c958a" class="codetab__content">
+
+<div id="b3378b1d2aa281b2" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -2016,38 +2016,50 @@ J&rsquo;ai récemment dû parser un fichier de 30Go &ldquo;propre&rdquo; (virgul
 </span><span class="lnt">29
 </span><span class="lnt">30
 </span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">static</span> <span class="n">Foo</span> <span class="n">CreateFromCsvLine</span><span class="p">(</span><span class="kt">string</span> <span class="n">line</span><span class="p">)</span>
+<pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">Foo</span>
 <span class="p">{</span>
-    <span class="k">return</span> <span class="n">CreateFromFields</span><span class="p">(</span><span class="n">ExtractFields</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="m">3</span><span class="p">));</span>
-<span class="p">}</span>
+  <span class="p">...</span>
 
-<span class="k">private</span> <span class="k">static</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">ExtractFields</span><span class="p">(</span><span class="kt">string</span> <span class="n">line</span><span class="p">,</span> <span class="kt">int</span> <span class="n">propertyCount</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="kt">var</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[</span><span class="n">propertyCount</span><span class="p">];</span>
-    <span class="kt">var</span> <span class="n">index</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="n">isInQuotes</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
-    <span class="kt">var</span> <span class="n">chars</span> <span class="p">=</span> <span class="n">line</span><span class="p">.</span><span class="n">ToCharArray</span><span class="p">();</span>
-    <span class="n">StringBuilder</span> <span class="n">str</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">);</span>  
-    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">t</span> <span class="k">in</span> <span class="n">chars</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">t</span> <span class="p">==</span> <span class="sc">&#39;&#34;&#39;</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">isInQuotes</span> <span class="p">=</span> <span class="p">!</span><span class="n">isInQuotes</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">t</span> <span class="p">==</span> <span class="sc">&#39;,&#39;</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">isInQuotes</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">result</span><span class="p">[</span><span class="n">index</span><span class="p">++]</span> <span class="p">=</span> <span class="n">str</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
-            <span class="n">str</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
-        <span class="p">}</span>
-        <span class="k">else</span>
-        <span class="p">{</span>
-            <span class="n">str</span><span class="p">.</span><span class="n">Append</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>  
-    <span class="n">result</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">=</span> <span class="n">str</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>  
-    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="n">Foo</span> <span class="n">CreateFromCsvLine</span><span class="p">(</span><span class="kt">string</span> <span class="n">line</span><span class="p">)</span>
+  <span class="p">{</span>
+      <span class="k">return</span> <span class="n">CreateFromFields</span><span class="p">(</span><span class="n">ExtractFields</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="m">3</span><span class="p">));</span>
+  <span class="p">}</span>
+
+  <span class="k">private</span> <span class="k">static</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">ExtractFields</span><span class="p">(</span><span class="kt">string</span> <span class="n">line</span><span class="p">,</span> <span class="kt">int</span> <span class="n">propertyCount</span><span class="p">)</span>
+  <span class="p">{</span>
+      <span class="kt">var</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[</span><span class="n">propertyCount</span><span class="p">];</span>
+      <span class="kt">var</span> <span class="n">index</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+      <span class="kt">bool</span> <span class="n">isInQuotes</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+      <span class="kt">var</span> <span class="n">chars</span> <span class="p">=</span> <span class="n">line</span><span class="p">.</span><span class="n">ToCharArray</span><span class="p">();</span>
+      <span class="n">StringBuilder</span> <span class="n">str</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">);</span>
+      <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">t</span> <span class="k">in</span> <span class="n">chars</span><span class="p">)</span>
+      <span class="p">{</span>
+          <span class="k">if</span> <span class="p">(</span><span class="n">t</span> <span class="p">==</span> <span class="sc">&#39;&#34;&#39;</span><span class="p">)</span>
+          <span class="p">{</span>
+              <span class="n">isInQuotes</span> <span class="p">=</span> <span class="p">!</span><span class="n">isInQuotes</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">t</span> <span class="p">==</span> <span class="sc">&#39;,&#39;</span> <span class="p">&amp;&amp;</span> <span class="p">!</span><span class="n">isInQuotes</span><span class="p">)</span>
+          <span class="p">{</span>
+              <span class="n">result</span><span class="p">[</span><span class="n">index</span><span class="p">++]</span> <span class="p">=</span> <span class="n">str</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+              <span class="n">str</span><span class="p">.</span><span class="n">Clear</span><span class="p">();</span>
+          <span class="p">}</span>
+          <span class="k">else</span>
+          <span class="p">{</span>
+              <span class="n">str</span><span class="p">.</span><span class="n">Append</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+          <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="n">result</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">=</span> <span class="n">str</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+
+      <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
@@ -2059,7 +2071,7 @@ J&rsquo;ai récemment dû parser un fichier de 30Go &ldquo;propre&rdquo; (virgul
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"9f48a86848b9a7c8\"");
+  var containerId = JSON.parse("\"7ae383d0c6fbde5f\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -2115,8 +2127,8 @@ Et voici le résultat :</p>
 <td align="right"><span style="color: green">-39 %</span></td>
 </tr>
 <tr>
-<td>TinyCsvParser</td>
-<td align="right">1,062.29 ms</td>
+<td><strong>TinyCsvParser</strong></td>
+<td align="right"><strong>1,062.29 ms</strong></td>
 <td align="right"><strong><span style="color: green">-84 %</span></strong></td>
 </tr>
 <tr>
@@ -2126,10 +2138,10 @@ Et voici le résultat :</p>
 </tr>
 </tbody>
 </table>
-<p>Comment <strong>TinyCsvParser</strong> peut-il encore être plus performant ? Simplement car ce framework utilise le base le parallélisme. Nous allons en faire de même:</p>
+<p>Comment <strong>TinyCsvParser</strong> peut-il encore être plus performant ? Simplement car ce framework utilise de base le parallélisme. Nous allons en faire de même pour la science.</p>
 <h2 id="solution-personnalisée-avec-parallélisme">Solution personnalisée avec parallélisme</h2>
 
-<div id="5ccaa67cc9d43f8d" class="codetab">
+<div id="29ef42505ab95160" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
@@ -2138,8 +2150,8 @@ Et voici le résultat :</p>
     
   </div>
   
-  
-<div id="57ea8b8dcac5d11c" class="codetab__content">
+
+<div id="89bd7c8e1e26b98b" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -2160,6 +2172,7 @@ Et voici le résultat :</p>
 </span><span class="lnt">16
 </span><span class="lnt">17
 </span><span class="lnt">18
+</span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="na">[Benchmark]</span>
@@ -2169,7 +2182,8 @@ Et voici le résultat :</p>
     <span class="kt">var</span> <span class="n">enumerator</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StreamReaderEnumerable</span><span class="p">(</span><span class="n">streamReader</span><span class="p">);</span>
     <span class="kt">var</span> <span class="n">po</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ParallelOptions</span>
     <span class="p">{</span>
-        <span class="n">MaxDegreeOfParallelism</span> <span class="p">=</span> <span class="n">Environment</span><span class="p">.</span><span class="n">ProcessorCount</span>
+        <span class="c1">// just for demo
+</span><span class="c1"></span>        <span class="n">MaxDegreeOfParallelism</span> <span class="p">=</span> <span class="n">Environment</span><span class="p">.</span><span class="n">ProcessorCount</span>
     <span class="p">};</span>
 
     <span class="kt">var</span> <span class="n">action</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;(</span><span class="n">line</span> <span class="p">=&gt;</span>
@@ -2185,8 +2199,8 @@ Et voici le résultat :</p>
 </div>
 </div>
 
-  
-<div id="d4b013c2e827a10b" class="codetab__content">
+
+<div id="575a19a5c3a1a412" class="codetab__content">
   <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">  1
@@ -2342,7 +2356,7 @@ Et voici le résultat :</p>
     <span class="p">}</span>
 
     <span class="k">private</span> <span class="kt">string</span> <span class="n">_current</span><span class="p">;</span>
-    <span class="c1">// Implement the IEnumerator(T).Current publicly, but implement 
+    <span class="c1">// Implement the IEnumerator(T).Current publicly, but implement
 </span><span class="c1"></span>    <span class="c1">// IEnumerator.Current, which is also required, privately.
 </span><span class="c1"></span>    <span class="k">public</span> <span class="kt">string</span> <span class="n">Current</span>
     <span class="p">{</span>
@@ -2419,7 +2433,7 @@ Et voici le résultat :</p>
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"5ccaa67cc9d43f8d\"");
+  var containerId = JSON.parse("\"29ef42505ab95160\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -2534,9 +2548,9 @@ Mais dans le cas où vous ayez un grand nombre de fichier csv avec des &ldquo;qu
 </tbody>
 </table>
 <div class="notices info" >
-  <em>Ce qui prouve encore qu&rsquo;il n&rsquo;y a pas de magie en développement, que tout dépend du contexte et annexement que <a href="https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism">le parallélisme peut être un piège.</a></em>
+  <em>Ce qui prouve encore qu&rsquo;il n&rsquo;y a pas de magie en développement, que tout dépend du contexte et annexement que le parallélisme est très souvent profitable et recommandé mais <a href="https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism">peut aussi être un piège.</a></em>
 </div>
-<h2 id="source">Source</h2>
+<h2 id="sources">Sources</h2>
 <h3 id="documentation">Documentation</h3>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualbasic.fileio.textfieldparser">https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualbasic.fileio.textfieldparser</a></li>
@@ -3824,7 +3838,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#solution-personnalisée">Solution personnalisée</a></li>
     <li><a href="#solution-personnalisée-avec-parallélisme">Solution personnalisée avec parallélisme</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
-    <li><a href="#source">Source</a>
+    <li><a href="#sources">Sources</a>
       <ul>
         <li><a href="#documentation">Documentation</a></li>
       </ul>

@@ -48,7 +48,7 @@
         <link>https://blog.jeremylandon.com/fr/2020/04/12/azure-comment-augmenter-le-nombre-de-conteneur-sur-lemulateur-cosmos-db/</link>
         <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Sun, 12 Apr 2020 04:11:12 +0200</atom:modified>
+        <atom:modified>Tue, 14 Apr 2020 18:56:57 +0200</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2020/04/12/azure-comment-augmenter-le-nombre-de-conteneur-sur-lemulateur-cosmos-db/</guid>
         <description>Vous avez rencontré cette erreur en essayant de créer une nouveau conteneur sur l&#39;émulateur local de Cosmos DB:
 &amp;ldquo;Sorry, we are currently experiencing high demand in this region, and cannot fulfill your request at this time.</description>
@@ -150,7 +150,7 @@ Consommation en RU par seconde  RU provisionné par seconde = HTTP 429.</descrip
         <link>https://blog.jeremylandon.com/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Tue, 31 Mar 2020 13:01:20 +0200</atom:modified>
+        <atom:modified>Sun, 19 Apr 2020 02:03:30 +0200</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</guid>
         <description>Le traitement d&amp;rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance.
 Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare ses colonnes par un caractère, mais c&amp;rsquo;est aussi:</description>
