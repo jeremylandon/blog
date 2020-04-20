@@ -1,7 +1,7 @@
 ---
 title: "[.NET] Comment réinitialiser une collection proprement: clear(), new() ou null ?"
 slug: "dotnet comment reinitialiser une collection proprement clear new ou null"
-date: 2020-04-12
+date: 2020-04-20
 description: "On m'a récemment posé la question sur quelle est la “meilleur” méthode pour supprimer les éléments d'une collection à taille variable."
 draft: false
 tags:
