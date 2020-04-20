@@ -14,7 +14,7 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,12 +23,12 @@
 
       
       <item>
-        <title>azure</title>
-        <link>https://blog.jeremylandon.com/fr/tags/azure/</link>
-        <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+        <title>benchmark</title>
+        <link>https://blog.jeremylandon.com/fr/tags/benchmark/</link>
+        <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://blog.jeremylandon.com/fr/tags/azure/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/benchmark/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -41,12 +41,66 @@
       </item>
       
       <item>
-        <title>benchmark</title>
-        <link>https://blog.jeremylandon.com/fr/tags/benchmark/</link>
+        <title>csharp</title>
+        <link>https://blog.jeremylandon.com/fr/tags/csharp/</link>
+        <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/csharp/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>dotnet</title>
+        <link>https://blog.jeremylandon.com/fr/tags/dotnet/</link>
+        <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/dotnet/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>performance</title>
+        <link>https://blog.jeremylandon.com/fr/tags/performance/</link>
+        <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/performance/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>azure</title>
+        <link>https://blog.jeremylandon.com/fr/tags/azure/</link>
         <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://blog.jeremylandon.com/fr/tags/benchmark/</guid>
+        <guid>https://blog.jeremylandon.com/fr/tags/azure/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -77,66 +131,12 @@
       </item>
       
       <item>
-        <title>csharp</title>
-        <link>https://blog.jeremylandon.com/fr/tags/csharp/</link>
-        <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/csharp/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>dotnet</title>
-        <link>https://blog.jeremylandon.com/fr/tags/dotnet/</link>
-        <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/dotnet/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
         <title>exception</title>
         <link>https://blog.jeremylandon.com/fr/tags/exception/</link>
         <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/exception/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>performance</title>
-        <link>https://blog.jeremylandon.com/fr/tags/performance/</link>
-        <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/performance/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
