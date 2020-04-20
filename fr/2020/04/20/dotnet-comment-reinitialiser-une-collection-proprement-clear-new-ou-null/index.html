@@ -1198,7 +1198,7 @@
 <meta name="description" content="On m&#39;a récemment posé la question sur quelle est la “meilleur” méthode pour supprimer les éléments d&#39;une collection à taille variable." />
 <meta name="keywords" content="">
 <meta name="created" content="2020-04-20T00:00:00&#43;0000">
-<meta name="modified" content="2020-04-20T09:55:17&#43;0200">
+<meta name="modified" content="2020-04-20T19:45:31&#43;0200">
 <meta property="article:published_time" content="2020-04-20T00:00:00&#43;0000">
 
 <meta name="author" content="Jérémy Landon">
@@ -1245,7 +1245,7 @@
     "@type": "WebPage",
     "headline": "[.NET] Comment réinitialiser une collection proprement: clear(), new() ou null ?",
     "datePublished": "2020-04-20T00:00:00Z",
-    "dateModified": "2020-04-20T09:55:17+02:00",
+    "dateModified": "2020-04-20T19:45:31+02:00",
     "url" : "https://blog.jeremylandon.com/fr/2020/04/20/dotnet-comment-reinitialiser-une-collection-proprement-clear-new-ou-null/",
     "description": "On m'a récemment posé la question sur quelle est la “meilleur” méthode pour supprimer les éléments d'une collection à taille variable.",
     "keywords": ["dotnet","csharp","performance","benchmark"],
@@ -1770,7 +1770,7 @@ IL_00ab: <strong>stloc.0</strong></div>
 </div><p>Comme avec <strong>null</strong>, la collection est supprimée dû au fait que sa référence n&rsquo;est plus liée aux GC Roots et par effet de chaîne les objets rattachés aussi.</p>
 <h2 id="clear">Clear()</h2>
 <p>D&rsquo;après la documentation cette méthode &ldquo;<strong><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.clear?view">supprime tous les éléments</a></strong>&quot;.<br />
-En vérité <strong><a href="https://github.com/dotnet/runtime/blob/master/src/libraries/System.Collections/src/System/Collections/Generic/SortedList.cs">elle remplace les référence avec la collection</a>, c&rsquo;est le GC qui supprimera les objets de la mémoire.</strong><br />
+En vérité <strong><a href="https://github.com/dotnet/runtime/blob/master/src/libraries/System.Collections/src/System/Collections/Generic/SortedList.cs">elle remplace les références avec la collection</a>, c&rsquo;est le GC qui supprimera les objets de la mémoire.</strong><br />
 Le plus simple est de voir ce qui se passe en vrai.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1833,7 +1833,7 @@ Micro-optimisation mis à part, <strong>le code doit avant tout être compréhen
 <li>si je vois <strong>null</strong> c&rsquo;est que la collection ne sera plus utilisées plus tard dans le code et potentiellement que sa taille est problématique</li>
 <li>&hellip;</li>
 </ul>
-<p>Si on s&rsquo;attarde sur la micro-optimisation <em>(on parle de seulement quelques Ticks&hellip;)</em> un <strong>new List&lt;T&gt;(x)</strong> est plus performant qu&rsquo;un <strong>Clear()</strong> car dans ce dernier un parcour du tableau est requis <em>(avec une compléxité O(n))</em>, <u>en revanche le message fourni aux prochains développeurs peut être ambiguë à la première lecture</u> <em>(en bref cela ne vaut pas le coup dans la quasi totalité des cas)</em>.</p>
+<p>Si on s&rsquo;attarde sur la micro-optimisation <em>(on parle de seulement quelques Ticks&hellip;)</em> un <strong>new List&lt;T&gt;(x)</strong> est plus performant qu&rsquo;un <strong>Clear()</strong> car dans ce dernier un parcours du tableau est requis <em>(avec une compléxité O(n))</em>, <u>en revanche le message fourni aux prochains développeurs peut être ambigu à la première lecture</u> <em>(en bref cela ne vaut pas le coup dans la quasi totalité des cas)</em>.</p>
 <h2 id="sources">Sources</h2>
 <h3 id="documentation">Documentation</h3>
 <ul>
