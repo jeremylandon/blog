@@ -160,7 +160,7 @@ Comme avec **null**, la collection est supprimée dû au fait que sa référence
 ## Clear()
 
 D'après la documentation cette méthode "**[supprime tous les éléments](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.clear?view)**".
-En vérité **[elle remplace les référence avec la collection](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Collections/src/System/Collections/Generic/SortedList.cs), c'est le GC qui supprimera les objets de la mémoire.**
+En vérité **[elle remplace les références avec la collection](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Collections/src/System/Collections/Generic/SortedList.cs), c'est le GC qui supprimera les objets de la mémoire.**
 Le plus simple est de voir ce qui se passe en vrai.
 
 ```csharp
@@ -201,7 +201,7 @@ Micro-optimisation mis à part, **le code doit avant tout être compréhensible 
 - si je vois **null** c'est que la collection ne sera plus utilisées plus tard dans le code et potentiellement que sa taille est problématique
 - ...
 
-Si on s'attarde sur la micro-optimisation _(on parle de seulement quelques Ticks...)_ un **new List\<T\>(x)** est plus performant qu'un **Clear()** car dans ce dernier un parcour du tableau est requis _(avec une compléxité O(n))_, <u>en revanche le message fourni aux prochains développeurs peut être ambiguë à la première lecture</u> _(en bref cela ne vaut pas le coup dans la quasi totalité des cas)_.
+Si on s'attarde sur la micro-optimisation _(on parle de seulement quelques Ticks...)_ un **new List\<T\>(x)** est plus performant qu'un **Clear()** car dans ce dernier un parcours du tableau est requis _(avec une compléxité O(n))_, <u>en revanche le message fourni aux prochains développeurs peut être ambigu à la première lecture</u> _(en bref cela ne vaut pas le coup dans la quasi totalité des cas)_.
 
 ## Sources
 
