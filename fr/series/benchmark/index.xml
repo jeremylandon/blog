@@ -14,13 +14,62 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/series/benchmark/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>[.NET] Comment réinitialiser une collection proprement: clear(), new() ou null ?</title>
+        <link>https://blog.jeremylandon.com/fr/2020/04/12/dotnet-comment-reinitialiser-une-collection-proprement-clear-new-ou-null/</link>
+        <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Mon, 20 Apr 2020 09:54:04 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/04/12/dotnet-comment-reinitialiser-une-collection-proprement-clear-new-ou-null/</guid>
+        <description>On m&amp;rsquo;a récemment posé la question sur &amp;ldquo;quelle est la &amp;ldquo;meilleure&amp;rdquo; méthode pour supprimer les éléments d&amp;rsquo;une collection à taille variable&amp;rdquo;.
+ myCollection.Clear() myCollection = new List() myCollection = null  Selon moi comme toujours il n&amp;rsquo;y a pas de &amp;ldquo;meilleure&amp;rdquo; solution ou même de &amp;ldquo;méthode magique&amp;quot;, tout dépend de ce qu&amp;rsquo;on veut réellement faire et ce qu&amp;rsquo;on veut transmettre comme message aux prochains développeurs qui liront le code.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/dotnetcore.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+            
+              <category>csharp</category>
+            
+          
+            
+              <category>performance</category>
+            
+          
+            
+              <category>benchmark</category>
+            
+          
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+        
+        
+          
+            
+              <category>benchmark</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>[.NET] Comment lire un très gros fichier csv</title>
