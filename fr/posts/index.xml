@@ -22,6 +22,58 @@
 
       
       <item>
+        <title>[Flutter] Comment valider une souscription avec in_app_purchase ?</title>
+        <link>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</link>
+        <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Mon, 27 Apr 2020 01:03:10 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</guid>
+        <description>J&amp;rsquo;ai eu la mauvaise surprise le mois dernier de voir tous mes abonnements sur android se faire rembourser automatiquement au bout de 3 jours.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+            
+              <category>dart</category>
+            
+          
+            
+              <category>ios</category>
+            
+          
+            
+              <category>android</category>
+            
+          
+            
+              <category>mobile</category>
+            
+          
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>[.NET] Comment réinitialiser une collection proprement: clear(), new() ou null ?</title>
         <link>https://blog.jeremylandon.com/fr/2020/04/20/dotnet-comment-reinitialiser-une-collection-proprement-clear-new-ou-null/</link>
         <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
@@ -77,7 +129,7 @@
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Tue, 14 Apr 2020 18:56:57 +0200</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2020/04/12/azure-comment-augmenter-le-nombre-de-conteneur-sur-lemulateur-cosmos-db/</guid>
-        <description>Vous avez rencontré cette erreur en essayant de créer une nouveau conteneur sur l&#39;émulateur local de Cosmos DB:
+        <description>Vous avez rencontré cette erreur en essayant de créer une nouveau conteneur sur l&amp;rsquo;émulateur local de Cosmos DB:
 &amp;ldquo;Sorry, we are currently experiencing high demand in this region, and cannot fulfill your request at this time.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>

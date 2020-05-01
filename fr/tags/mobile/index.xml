@@ -14,13 +14,65 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>[Flutter] Comment valider une souscription avec in_app_purchase ?</title>
+        <link>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</link>
+        <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Mon, 27 Apr 2020 01:03:10 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</guid>
+        <description>J&amp;rsquo;ai eu la mauvaise surprise le mois dernier de voir tous mes abonnements sur android se faire rembourser automatiquement au bout de 3 jours.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+            
+              <category>dart</category>
+            
+          
+            
+              <category>ios</category>
+            
+          
+            
+              <category>android</category>
+            
+          
+            
+              <category>mobile</category>
+            
+          
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>[Flutter] Exception lors d&#39;une copie sous IOS</title>

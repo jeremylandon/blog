@@ -1210,7 +1210,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="">
 
-<meta name="generator" content="Hugo 0.69.0" />
+<meta name="generator" content="Hugo 0.69.2" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1623,7 +1623,7 @@ Heureusement cette logique de relancement est déjà gérée par le SDK via la p
 <span class="p">});</span>
 </code></pre></td></tr></table>
 </div>
-</div><div class="alert alert-warning" role="alert" data-dir="ltr"><strong>Super donc je n&rsquo;ai qu'à mettre cette propriété à 1 000 000 et le problème est réglé !</strong></div>
+</div><div class="alert alert-warning" role="alert" data-dir="ltr"><strong>Super donc je n&rsquo;ai qu&rsquo;à mettre cette propriété à 1 000 000 et le problème est réglé !</strong></div>
 
 <p>En théorie oui… <strong>mais dans la quasi-totalité des cas c&rsquo;est une très mauvaise idée</strong>. En effet créer un très grand nombre de tentative :</p>
 <ul>
@@ -1633,13 +1633,13 @@ Heureusement cette logique de relancement est déjà gérée par le SDK via la p
 </ul>
 <p>Concernant le nombre à mettre, il n&rsquo;y a pas de “nombre magique” cela est à adapter en fonction du besoin <em>(Microsoft recommande néanmoins par exemple de passer cette valeur à 30 durant l&rsquo;insertion d&rsquo;un grand nombre d&rsquo;entité)</em>.</p>
 <h3 id="autopilot">AutoPilot</h3>
-<p>En preview à l'écriture de cet article, Cosmos <strong><a href="https://docs.microsoft.com/en-us/azure/cosmos-db/autopilot-faq">AutoPilot</a></strong> permet de mettre à l'échelle automatiquement le conteneur selon une plage de RU donnée.<br />
+<p>En preview à l&rsquo;écriture de cet article, Cosmos <strong><a href="https://docs.microsoft.com/en-us/azure/cosmos-db/autopilot-faq">AutoPilot</a></strong> permet de mettre à l&rsquo;échelle automatiquement le conteneur selon une plage de RU donnée.<br />
 <img src="/images/content/200406-how-to-manage-429-errors-in-azure-cosmos-db/2.png" alt="auto pilot" /><br />
 Il faut néanmoins prendre en compte plusieurs aspects de <strong>AutoPilot</strong>:</p>
 <ul>
 <li>Il possède <strong>sa propre tarification</strong> <em>(plus élevée que le provisionné)</em></li>
 <li>Il <strong>n&rsquo;empêche pas les 429</strong> mais les limites fortement <em>(dans l&rsquo;illustration si vous dépassé les 4000 RU/s les requêtes passeront en 429)</em></li>
-<li>A l'écriture de l&rsquo;article <strong>il n&rsquo;est pas encore possible de provisionner un conteneur en AutoPilot via le SDK</strong> <em>(<a href="https://docs.microsoft.com/en-us/azure/cosmos-db/autopilot-faq#is-there-cli-or-sdk-support-to-create-containers-or-databases-with-autopilot-mode">mais ceci est prévu</a>)</em></li>
+<li>A l&rsquo;écriture de l&rsquo;article <strong>il n&rsquo;est pas encore possible de provisionner un conteneur en AutoPilot via le SDK</strong> <em>(<a href="https://docs.microsoft.com/en-us/azure/cosmos-db/autopilot-faq#is-there-cli-or-sdk-support-to-create-containers-or-databases-with-autopilot-mode">mais ceci est prévu</a>)</em></li>
 </ul>
 <h3 id="augmenter-le-provisionnement">Augmenter le provisionnement</h3>
 <p>Si malgré toutes les actions précédentes des erreurs 429 apparaissent toujours et sont problématiques, <strong>alors cela signifie simplement que votre conteneur est sous provisionnée par rapport à votre besoin</strong>.<br />

@@ -1210,7 +1210,7 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="">
 
-<meta name="generator" content="Hugo 0.69.0" />
+<meta name="generator" content="Hugo 0.69.2" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1538,7 +1538,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <h2 id="textfieldparser">TextFieldParser</h2>
 <p>Le framework .NET propose une solution de base avec <strong>TextFieldParser</strong>.</p>
 
-<div id="1fd23b22d09bf43d" class="codetab">
+<div id="06a85a490055e909" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
@@ -1638,7 +1638,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"1fd23b22d09bf43d\"");
+  var containerId = JSON.parse("\"06a85a490055e909\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -1675,7 +1675,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <h2 id="csvhelper">CsvHelper</h2>
 <p>sources: <a href="https://github.com/JoshClose/CsvHelper">https://github.com/JoshClose/CsvHelper</a></p>
 
-<div id="38c07b8d75d8a1cb" class="codetab">
+<div id="3d2c0ec2656c91d2" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
@@ -1755,7 +1755,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"38c07b8d75d8a1cb\"");
+  var containerId = JSON.parse("\"3d2c0ec2656c91d2\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -1792,7 +1792,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <h2 id="tinycsvparser">TinyCsvParser</h2>
 <p>sources: <a href="https://github.com/bytefish/TinyCsvParser">https://github.com/bytefish/TinyCsvParser</a></p>
 
-<div id="88b9138043c8439a" class="codetab">
+<div id="cc6cbe517c96147d" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
@@ -1868,7 +1868,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"88b9138043c8439a\"");
+  var containerId = JSON.parse("\"cc6cbe517c96147d\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -1939,7 +1939,7 @@ Nous avons tendance à se ruer sur des framework pour des choses simples, ces fr
 J&rsquo;ai récemment dû parser un fichier de 30Go &ldquo;propre&rdquo; <em>(virgule + parfois des guillemets)</em> dont je connais parfaitement le format, et j&rsquo;ai voulu voir combien coûte &ldquo;la gestion de tous les cas&rdquo;.</p>
 <h2 id="solution-personnalisée">Solution personnalisée</h2>
 
-<div id="7ae383d0c6fbde5f" class="codetab">
+<div id="e004e7717029e56c" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
@@ -2071,7 +2071,7 @@ J&rsquo;ai récemment dû parser un fichier de 30Go &ldquo;propre&rdquo; <em>(vi
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"7ae383d0c6fbde5f\"");
+  var containerId = JSON.parse("\"e004e7717029e56c\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -2141,7 +2141,7 @@ Et voici le résultat :</p>
 <p>Comment <strong>TinyCsvParser</strong> peut-il encore être plus performant ? Simplement car ce framework utilise de base le parallélisme. Nous allons en faire de même pour la science.</p>
 <h2 id="solution-personnalisée-avec-parallélisme">Solution personnalisée avec parallélisme</h2>
 
-<div id="29ef42505ab95160" class="codetab">
+<div id="b74dbcb284efe091" class="codetab">
   <div class="codetab__links">
     
       <button class="codetab__link" aria-label="Tab link">SampleCsvParser</button>
@@ -2433,7 +2433,7 @@ Et voici le résultat :</p>
 <script>
   'use strict';
 
-  var containerId = JSON.parse("\"29ef42505ab95160\"");
+  var containerId = JSON.parse("\"b74dbcb284efe091\"");
   var containerElem = document.getElementById(containerId);
   var codetabLinks = null;
   var codetabContents = null;
@@ -2507,7 +2507,7 @@ Et voici le résultat :</p>
   <strong><span style="color: green">Le temps est divisé par 2</span></strong> par rapport à <strong>TinyCsvParser</strong>. Au final, sur mon fichier de 30Go je suis passé de <strong>7min</strong> à <strong>3min20</strong> de traitement de manière simple.
 </div>
 <h2 id="conclusion">Conclusion</h2>
-<p>Les performances d&rsquo;une solution personnalisée laissent rêveur, néanmoins ce code ne répond qu'à un seul et unique cas: <strong>les très gros fichiers csv propre et simple</strong>.<br />
+<p>Les performances d&rsquo;une solution personnalisée laissent rêveur, néanmoins ce code ne répond qu&rsquo;à un seul et unique cas: <strong>les très gros fichiers csv propre et simple</strong>.<br />
 Mais dans le cas où vous ayez un grand nombre de fichier csv avec des &ldquo;qualités&rdquo; variables, il est fortement recommandé de passer par un framework tel que <strong>CsvHelper</strong> ou <strong>TinyCsvParser</strong> où un grand nombre de bons développeurs ont pu analyser les performances de chaque ligne de code permettant de gérer tout les cas.</p>
 <div class="alert alert-info" role="alert" data-dir="ltr"><em>NB: Il est intéressant de se rendre compte que le classement est totalement chamboulé sur des petits fichiers csv (exemple avec un csv de 10 lignes):</em></div>
 

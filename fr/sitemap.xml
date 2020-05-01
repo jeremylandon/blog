@@ -163,23 +163,18 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/2020/04/20/dotnet-comment-reinitialiser-une-collection-proprement-clear-new-ou-null/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/benchmark/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/series/benchmark/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/tags/android/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -195,6 +190,91 @@
                 hreflang="fr"
                 href="https://blog.jeremylandon.com/fr/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/dart/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/flutter/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/flutter/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/flutter/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/ios/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/mobile/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/04/20/dotnet-comment-reinitialiser-une-collection-proprement-clear-new-ou-null/</loc>
+    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/benchmark/</loc>
+    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/benchmark/</loc>
+    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
   </url>
   
   <url>
@@ -215,46 +295,6 @@
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/performance/</loc>
     <lastmod>2020-04-20T19:45:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/tags/"
-                />
   </url>
   
   <url>
@@ -359,31 +399,6 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/dart/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/flutter/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/categories/flutter/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/ios/</loc>
-    <lastmod>2020-03-24T19:30:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/mobile/</loc>
     <lastmod>2020-03-24T19:30:08+01:00</lastmod>
   </url>
   

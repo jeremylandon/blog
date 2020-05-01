@@ -29,7 +29,7 @@
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         <atom:modified>Tue, 14 Apr 2020 18:56:57 +0200</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2020/04/12/azure-comment-augmenter-le-nombre-de-conteneur-sur-lemulateur-cosmos-db/</guid>
-        <description>Vous avez rencontré cette erreur en essayant de créer une nouveau conteneur sur l&#39;émulateur local de Cosmos DB:
+        <description>Vous avez rencontré cette erreur en essayant de créer une nouveau conteneur sur l&amp;rsquo;émulateur local de Cosmos DB:
 &amp;ldquo;Sorry, we are currently experiencing high demand in this region, and cannot fulfill your request at this time.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>

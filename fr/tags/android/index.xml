@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>android on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
+    <link>https://blog.jeremylandon.com/fr/tags/android/</link>
+    <description>Recent content in android on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
+    <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.jeremylandon.com/fr/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>[Flutter] Comment valider une souscription avec in_app_purchase ?</title>
+        <link>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</link>
+        <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Mon, 27 Apr 2020 01:03:10 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</guid>
+        <description>J&amp;rsquo;ai eu la mauvaise surprise le mois dernier de voir tous mes abonnements sur android se faire rembourser automatiquement au bout de 3 jours.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+            
+              <category>dart</category>
+            
+          
+            
+              <category>ios</category>
+            
+          
+            
+              <category>android</category>
+            
+          
+            
+              <category>mobile</category>
+            
+          
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
