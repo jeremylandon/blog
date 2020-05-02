@@ -14,13 +14,58 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>[.NET] SynchronizationContext, ConfigureAwait et optimisations</title>
+        <link>https://blog.jeremylandon.com/fr/2020/04/27/dotnet-synchronizationcontext-configureawait-et-optimisations/</link>
+        <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 03 May 2020 00:16:41 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/04/27/dotnet-synchronizationcontext-configureawait-et-optimisations/</guid>
+        <description>Qu&amp;rsquo;est-ce qu&amp;rsquo;un SynchronizationContext ? Le SynchronizationContext permet d&amp;rsquo;applique une logique sur les opérations asynchrones et synchrones afin de s&amp;rsquo;adapter à un contexte voulu.
+Par défaut la classe SynchronizationContext n&amp;rsquo;est qu&amp;rsquo;une base de travail, elle ne synchronise rien, elle expose entre autres une méthode virtuelle Post qui a pour rôle de distribuer un message au contexte (la &amp;ldquo;logique de synchronisation&amp;rdquo; se fera en grande partie ici).</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/dotnetcore.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+            
+              <category>csharp</category>
+            
+          
+            
+              <category>performance</category>
+            
+          
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+        
+        
+          
+            
+              <category>performance</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>[.NET] Comment réinitialiser une collection proprement: clear(), new() ou null ?</title>

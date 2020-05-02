@@ -163,6 +163,11 @@
   </url>
   
   <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/04/27/dotnet-synchronizationcontext-configureawait-et-optimisations/</loc>
+    <lastmod>2020-05-03T00:16:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</loc>
     <lastmod>2020-04-27T01:03:10+02:00</lastmod>
   </url>
@@ -174,7 +179,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+    <lastmod>2020-05-03T00:16:41+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -193,8 +198,23 @@
   </url>
   
   <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/csharp/</loc>
+    <lastmod>2020-05-03T00:16:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.jeremylandon.com/fr/tags/dart/</loc>
     <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
+    <lastmod>2020-05-03T00:16:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/dotnet/</loc>
+    <lastmod>2020-05-03T00:16:41+02:00</lastmod>
   </url>
   
   <url>
@@ -223,8 +243,18 @@
   </url>
   
   <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/performance/</loc>
+    <lastmod>2020-05-03T00:16:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/performance/</loc>
+    <lastmod>2020-05-03T00:16:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+    <lastmod>2020-05-03T00:16:41+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -244,7 +274,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+    <lastmod>2020-05-03T00:16:41+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -274,26 +304,6 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/series/benchmark/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/csharp/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/categories/dotnet/</loc>
-    <lastmod>2020-04-20T19:45:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/performance/</loc>
     <lastmod>2020-04-20T19:45:31+02:00</lastmod>
   </url>
   

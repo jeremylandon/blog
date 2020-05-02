@@ -41,12 +41,48 @@
       </item>
       
       <item>
+        <title>csharp</title>
+        <link>https://blog.jeremylandon.com/fr/tags/csharp/</link>
+        <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/csharp/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>dart</title>
         <link>https://blog.jeremylandon.com/fr/tags/dart/</link>
         <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/dart/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>dotnet</title>
+        <link>https://blog.jeremylandon.com/fr/tags/dotnet/</link>
+        <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/dotnet/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -113,66 +149,30 @@
       </item>
       
       <item>
+        <title>performance</title>
+        <link>https://blog.jeremylandon.com/fr/tags/performance/</link>
+        <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/performance/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>benchmark</title>
         <link>https://blog.jeremylandon.com/fr/tags/benchmark/</link>
         <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/benchmark/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>csharp</title>
-        <link>https://blog.jeremylandon.com/fr/tags/csharp/</link>
-        <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/csharp/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>dotnet</title>
-        <link>https://blog.jeremylandon.com/fr/tags/dotnet/</link>
-        <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/dotnet/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>performance</title>
-        <link>https://blog.jeremylandon.com/fr/tags/performance/</link>
-        <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/performance/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
