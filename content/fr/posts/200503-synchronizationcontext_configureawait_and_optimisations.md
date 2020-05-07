@@ -1,6 +1,7 @@
 ---
 title: "[.NET] SynchronizationContext, ConfigureAwait et optimisations"
 slug: "dotnet synchronizationcontext configureawait et optimisations"
+description: "Le SynchronizationContext permet d'applique une logique sur les opérations asynchrones et synchrones afin de s'adapter à un contexte voulu"
 date: 2020-04-27
 draft: false
 tags:
