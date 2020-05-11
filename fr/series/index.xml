@@ -14,7 +14,7 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/series/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,12 +23,12 @@
 
       
       <item>
-        <title>flutter</title>
-        <link>https://blog.jeremylandon.com/fr/series/flutter/</link>
-        <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+        <title>performance</title>
+        <link>https://blog.jeremylandon.com/fr/series/performance/</link>
+        <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://blog.jeremylandon.com/fr/series/flutter/</guid>
+        <guid>https://blog.jeremylandon.com/fr/series/performance/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -41,12 +41,12 @@
       </item>
       
       <item>
-        <title>performance</title>
-        <link>https://blog.jeremylandon.com/fr/series/performance/</link>
+        <title>flutter</title>
+        <link>https://blog.jeremylandon.com/fr/series/flutter/</link>
         <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
-        <guid>https://blog.jeremylandon.com/fr/series/performance/</guid>
+        <guid>https://blog.jeremylandon.com/fr/series/flutter/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

@@ -163,23 +163,13 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/2020/04/27/dotnet-synchronizationcontext-configureawait-et-optimisations/</loc>
-    <lastmod>2020-05-07T09:27:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</loc>
-    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/android/</loc>
-    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/2020/05/03/dotnet-synchronizationcontext-configureawait-et-optimisations/</loc>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-05-07T09:27:07+02:00</lastmod>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -199,22 +189,82 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/csharp/</loc>
-    <lastmod>2020-05-07T09:27:07+02:00</lastmod>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/dotnet/</loc>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/performance/</loc>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/performance/</loc>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/</loc>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/04/27/flutter-comment-valider-une-souscription-avec-in_app_purchase/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/android/</loc>
+    <lastmod>2020-04-27T01:03:10+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/dart/</loc>
     <lastmod>2020-04-27T01:03:10+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
-    <lastmod>2020-05-07T09:27:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/categories/dotnet/</loc>
-    <lastmod>2020-05-07T09:27:07+02:00</lastmod>
   </url>
   
   <url>
@@ -240,56 +290,6 @@
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/mobile/</loc>
     <lastmod>2020-04-27T01:03:10+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/performance/</loc>
-    <lastmod>2020-05-07T09:27:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/series/performance/</loc>
-    <lastmod>2020-05-07T09:27:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-05-07T09:27:07+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-05-07T09:27:07+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/tags/"
-                />
   </url>
   
   <url>
