@@ -163,13 +163,13 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/2020/05/03/dotnet-synchronizationcontext-configureawait-et-optimisations/</loc>
-    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/2020/05/17/redis-implementation-dune-semaphore-distribuee-en-dotnet/</loc>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -188,33 +188,43 @@
   </url>
   
   <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/concurrence/</loc>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.jeremylandon.com/fr/tags/csharp/</loc>
-    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
-    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/dotnet/</loc>
-    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/performance/</loc>
-    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/series/performance/</loc>
-    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/tags/redis/</loc>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/redis/</loc>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -234,7 +244,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -250,6 +260,16 @@
                 hreflang="fr"
                 href="https://blog.jeremylandon.com/fr/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/05/03/dotnet-synchronizationcontext-configureawait-et-optimisations/</loc>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/performance/</loc>
+    <lastmod>2020-05-11T19:32:50+02:00</lastmod>
   </url>
   
   <url>

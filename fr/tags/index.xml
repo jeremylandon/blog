@@ -14,7 +14,7 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,9 +23,27 @@
 
       
       <item>
+        <title>concurrence</title>
+        <link>https://blog.jeremylandon.com/fr/tags/concurrence/</link>
+        <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/concurrence/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>csharp</title>
         <link>https://blog.jeremylandon.com/fr/tags/csharp/</link>
-        <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/csharp/</guid>
@@ -43,7 +61,7 @@
       <item>
         <title>dotnet</title>
         <link>https://blog.jeremylandon.com/fr/tags/dotnet/</link>
-        <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/dotnet/</guid>
@@ -61,10 +79,28 @@
       <item>
         <title>performance</title>
         <link>https://blog.jeremylandon.com/fr/tags/performance/</link>
-        <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/performance/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>redis</title>
+        <link>https://blog.jeremylandon.com/fr/tags/redis/</link>
+        <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/redis/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

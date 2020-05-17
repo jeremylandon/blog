@@ -14,13 +14,66 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>[Redis] Implémentation d&#39;une sémaphore distribuée en .NET</title>
+        <link>https://blog.jeremylandon.com/fr/2020/05/17/redis-implementation-dune-semaphore-distribuee-en-dotnet/</link>
+        <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 17 May 2020 11:47:46 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/05/17/redis-implementation-dune-semaphore-distribuee-en-dotnet/</guid>
+        <description>J&amp;rsquo;ai récemment eu besoin de limiter l&amp;rsquo;utilisation d&amp;rsquo;une portion de mon code entre différents services (à la manière d&amp;rsquo;une sémaphore).
+J&amp;rsquo;utilise RedLock.net (lock distribué) pour gérer la concurrence mais ce dernier ne fait qu&amp;rsquo;un verrou unitaire (concurrence = 1) et donc ne répondait pas à mon besoin.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/redis.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+            
+              <category>redis</category>
+            
+          
+            
+              <category>csharp</category>
+            
+          
+            
+              <category>performance</category>
+            
+          
+            
+              <category>concurrence</category>
+            
+          
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+        
+        
+          
+            
+              <category>redis</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>[.NET] SynchronizationContext, ConfigureAwait et optimisations</title>
