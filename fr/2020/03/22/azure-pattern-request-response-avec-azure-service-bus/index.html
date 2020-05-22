@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>[Azure] Pattern Request/Response avec Azure Service Bus – Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1196,7 +1204,10 @@
 
     
 <meta name="description" content="" />
-<meta name="keywords" content="">
+
+
+<meta name="keywords" content="dotnet,csharp,azure,pattern">
+
 <meta name="created" content="2020-03-22T00:00:00&#43;0000">
 <meta name="modified" content="2020-04-19T11:18:35&#43;0200">
 <meta property="article:published_time" content="2020-03-22T00:00:00&#43;0000">
@@ -1210,7 +1221,16 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="">
 
-<meta name="generator" content="Hugo 0.70.0" />
+  
+    <meta property="og:image" content="https://blog.jeremylandon.com/images/logo/azure.png">
+    <meta property="og:image:url" content="https://blog.jeremylandon.com/images/logo/azure.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:app:name:iphone" content="Jérémy Landon - Dev, Cloud, DevOps &amp; more">
+    <meta property="twitter:title" content="[Azure] Pattern Request/Response avec Azure Service Bus">
+    <meta property="twitter:description" content="">
+  
+
+<meta name="generator" content="Hugo 0.71.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1218,7 +1238,9 @@
 <meta name="msapplication-navbutton-color" content="#fff">
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
 <link rel="canonical" href="https://blog.jeremylandon.com/fr/2020/03/22/azure-pattern-request-response-avec-azure-service-bus/">
+
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -1324,6 +1346,11 @@ if (!doNotTrack) {
     </script>
     <div id="container">
         
+
+
+
+
+
         <div class="wrapper" data-type="posts" data-kind="page">
             <nav class="navbar" role="navigation" aria-label="main navigation" data-dir="ltr">
   <div class="navbar__brand">
@@ -1370,24 +1397,32 @@ if (!doNotTrack) {
   <span aria-hidden="true"></span>
 </a>
 <div class="navbarm__collapse" data-open="false">
-  <ul>
+  <ul dir="ltr">
     
     
       
       
       
       
-      <li class="navbarm__menu--item active">
-        <a href="/fr/posts">articles</a>
-      </li>
+
+      
+        <li class="navbarm__menu--item active">
+          <a href="/fr/posts">articles</a>
+        </li>
+      
+      
     
       
       
       
       
-      <li class="navbarm__menu--item ">
-        <a href="/fr/showcase">showcase</a>
-      </li>
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/fr/showcase">showcase</a>
+        </li>
+      
+      
     
 
     
@@ -1474,11 +1509,10 @@ if (!doNotTrack) {
   
 </nav>
   
-  <noscript>
-    Veuillez activer Javascript pour voir le contenu
-  </noscript>
-  <div class="single hide">
-    <script>document.querySelector('.single').classList.remove('hide')</script>
+  
+  <div class="single ">
+    <div class="single__nojs">Veuillez activer Javascript pour voir le contenu</div>
+    <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
     <h2 class="single__title" data-ani="false">[Azure] Pattern Request/Response avec Azure Service Bus</h2>
     <div class="single__meta">
       
@@ -1489,42 +1523,32 @@ if (!doNotTrack) {
   </span>
 </div>
       
-<div class="single__tags caption">
-
+<ul class="single__tags caption">
   
-    🏷️
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/dotnet/" class="single__tag" title="dotnet">#dotnet</a></li>
+  🏷️
   
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/csharp/" class="single__tag" title="csharp">#csharp</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/csharp/" class="single__tag" title="csharp">#csharp</a></li>
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/azure/" class="single__tag" title="azure">#azure</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/dotnet/" class="single__tag" title="dotnet">#dotnet</a></li>
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/pattern/" class="single__tag" title="pattern">#pattern</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/azure/" class="single__tag" title="azure">#azure</a></li>
 
-</div>
+  <li><a href="https://blog.jeremylandon.com/fr/tags/pattern/" class="single__tag" title="pattern">#pattern</a></li>
+
+</ul>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
       <p>Une des façons les plus simples et courantes d&rsquo;utiliser les services de messagerie tels qu&rsquo;Azure Service Bus est pour effectuer une communication unidirectionnel.<br />
+
+
 <figure >
   
-    
-    <img data-src="/images/content/200322-request-response-pattern-with-azure-service-bus/0.png" alt="request" data-caption="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="600px" height=""/>
+    <img data-src="/images/content/200322-request-response-pattern-with-azure-service-bus/0.png" alt="request" data-caption="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='600px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:600px;height:;"/>
     
   
-  <figcaption style="text-align: center;">
+    <figcaption style="text-align: center;">
     <strong>source</strong>:
     
     https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview
@@ -1534,7 +1558,8 @@ if (!doNotTrack) {
     
   </figcaption>
   
-</figure></p>
+</figure>
+</p>
 <p><em>Exemple: Bob en tant qu&rsquo;envoyeur de message et Eve en tant que réceptionniste.</em><br />
       <em>1. Eve écoute la file d&rsquo;attente Q1</em><br />
       <em>2. Bob envoie un message sur Q1</em><br />
@@ -1545,13 +1570,14 @@ if (!doNotTrack) {
 <h2 id="le-pattern-requestresponse">Le pattern Request/Response</h2>
 <p>Ce pattern utilise un routage de message afin d&rsquo;obtenir une communication bidirectionnel entre deux services.<br />
 Fonctionnellement c&rsquo;est très simple, l&rsquo;envoyeur envoie un message sur une file d&rsquo;attente et attend une réponse sur une autre file d&rsquo;attente.<br />
+
+
 <figure >
   
-    
-    <img data-src="/images/content/200322-request-response-pattern-with-azure-service-bus/1.png" alt="request/response simple" data-caption="https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReplyJmsExample.html" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="400px" height=""/>
+    <img data-src="/images/content/200322-request-response-pattern-with-azure-service-bus/1.png" alt="request/response simple" data-caption="https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReplyJmsExample.html" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='400px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:400px;height:;"/>
     
   
-  <figcaption style="text-align: center;">
+    <figcaption style="text-align: center;">
     <strong>source</strong>:
     
     https://www.enterpriseintegrationpatterns.com/patterns/messaging/RequestReplyJmsExample.html
@@ -1561,21 +1587,24 @@ Fonctionnellement c&rsquo;est très simple, l&rsquo;envoyeur envoie un message s
     
   </figcaption>
   
-</figure></p>
+</figure>
+</p>
 <p>Il existe 4 types de routage principaux qui sont très bien détaillés ici : <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messages-payloads#message-routing-and-correlation">https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messages-payloads</a><br />
 Dans la version &ldquo;la plus simple&rdquo; (<strong>Request/Response simple</strong>), <strong>il n&rsquo;existe aucune garantie que Bob reçoit son message de réponse</strong>. En effet si un nouvel utilisateur nommé Alice écoute la même file d&rsquo;attente, elle pourrait intercepter le message destiné à Bob.<br />
+
+
 <figure >
   
-    
-    <img data-src="/images/content/200322-request-response-pattern-with-azure-service-bus/2.png" alt="request/response simple" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="400px" height=""/>
+    <img data-src="/images/content/200322-request-response-pattern-with-azure-service-bus/2.png" alt="request/response simple" data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='400px' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:400px;height:;"/>
     
   
-  <figcaption style="text-align: center;">
+    <figcaption style="text-align: center;">
     <strong>Concurrence entre Bob et Alice</strong>:
     
   </figcaption>
   
-</figure><br />
+</figure>
+<br />
 Naturellement une idée pourrait venir en tête assez rapidement : Bob créé une file d&rsquo;attente à lui et attend la réponse dessus. Une fois la réponse obtenue il supprime la file d&rsquo;attente.<br />
 C&rsquo;est une logique correcte, <strong>mais qui n&rsquo;est pas à faire</strong>, car:</p>
 <ul>
@@ -1603,13 +1632,14 @@ Techniquement cela se traduit par deux propriétés définies par le protocole A
 <p>L&rsquo;exemple sera réalisé avec <a href="https://www.nuget.org/packages/Microsoft.Azure.ServiceBus">Microsoft.Azure.ServiceBus</a> et de deux files d&rsquo;attente.<br />
 <strong>Techniquement il est indispensable que la file d&rsquo;attente de réponse n&rsquo;accepte que les sessions.</strong><br />
 Cela peut se faire via le portail Azure.<br />
+
+
 <figure >
   
-    
-    <img data-src="/images/content/200322-request-response-pattern-with-azure-service-bus/3.png" alt="activate session" data-caption="https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="" height=""/>
+    <img data-src="/images/content/200322-request-response-pattern-with-azure-service-bus/3.png" alt="activate session" data-caption="https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:;height:;"/>
     
   
-  <figcaption style="text-align: center;">
+    <figcaption style="text-align: center;">
     <strong>source</strong>:
     
     https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions
@@ -1619,7 +1649,8 @@ Cela peut se faire via le portail Azure.<br />
     
   </figcaption>
   
-</figure></p>
+</figure>
+</p>
 <p>Ou via le code avec la propriété <strong><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.servicebus.messaging.queuedescription.requiressession?view=azure-dotnet">RequiresSession</a></strong>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1910,6 +1941,7 @@ Le message de réponse envoyé doit contenir la propriété <strong>SessionId</s
 </ul>
 
     </article>
+    
     <script>
   'use strict';
   
@@ -2766,7 +2798,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var clipInit = false;
     var preChromaElem = document.querySelectorAll('pre.chroma');
     var langCodeElem = document.querySelectorAll('.language-code');
-    var dolorCodeElem = document.querySelectorAll('div.language-\\$');
+    var dollarCodeElem = document.querySelectorAll('div.language-\\$');
     var gtCodeElem = document.querySelectorAll('div.language-\\>');
 
     var makeClipboard = function(elem) {
@@ -2823,7 +2855,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var newClipboardElem = document.createElement('span');
             newClipboardElem.setAttribute('class', 'copy-to-clipboard');
             newClipboardElem.setAttribute('title', 'Copy to clipboard');
-            closest(code, 'div.chroma').append(newClipboardElem);
+            elem.parentNode.parentNode.insertBefore(newClipboardElem, elem.parentNode.nextElementSibling);
           }
         }
       }
@@ -2850,8 +2882,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }) : null;
 
-    dolorCodeElem ? 
-    dolorCodeElem.forEach(function(elem) {
+    dollarCodeElem ? 
+    dollarCodeElem.forEach(function(elem) {
       elem.querySelectorAll('code').forEach(function (codeElem) {
         makeSymbolClipboard(codeElem);
       });
@@ -2867,8 +2899,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     
-    dolorCodeElem ?
-    dolorCodeElem.forEach(function(elem) {
+    dollarCodeElem ?
+    dollarCodeElem.forEach(function(elem) {
       var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
       lnts ? 
       lnts.forEach(function(lnt) {
@@ -3146,7 +3178,12 @@ document.addEventListener('DOMContentLoaded', function () {
 </footer>
         </div>
         
-<div class="wrapper__right hide" dir="ltr">
+
+
+
+
+
+<div class="wrapper__right hide" data-pad="true" dir="ltr">
   <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
   
     

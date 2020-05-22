@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>[Redis] Implémentation d&#39;une sémaphore distribuée en .NET – Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1196,7 +1204,10 @@
 
     
 <meta name="description" content="J&#39;ai récemment eu besoin de limiter l&#39;utilisation d&#39;une portion de mon code entre différents services (à la manière d&#39;une sémaphore)." />
-<meta name="keywords" content="">
+
+
+<meta name="keywords" content="dotnet,redis,csharp,performance,concurrence">
+
 <meta name="created" content="2020-05-17T00:00:00&#43;0000">
 <meta name="modified" content="2020-05-17T11:47:46&#43;0200">
 <meta property="article:published_time" content="2020-05-17T00:00:00&#43;0000">
@@ -1210,7 +1221,16 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="J&#39;ai récemment eu besoin de limiter l&#39;utilisation d&#39;une portion de mon code entre différents services (à la manière d&#39;une sémaphore).">
 
-<meta name="generator" content="Hugo 0.70.0" />
+  
+    <meta property="og:image" content="https://blog.jeremylandon.com/images/logo/redis.png">
+    <meta property="og:image:url" content="https://blog.jeremylandon.com/images/logo/redis.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:app:name:iphone" content="Jérémy Landon - Dev, Cloud, DevOps &amp; more">
+    <meta property="twitter:title" content="[Redis] Implémentation d&#39;une sémaphore distribuée en .NET">
+    <meta property="twitter:description" content="J&#39;ai récemment eu besoin de limiter l&#39;utilisation d&#39;une portion de mon code entre différents services (à la manière d&#39;une sémaphore).">
+  
+
+<meta name="generator" content="Hugo 0.71.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1218,7 +1238,9 @@
 <meta name="msapplication-navbutton-color" content="#fff">
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
 <link rel="canonical" href="https://blog.jeremylandon.com/fr/2020/05/17/redis-implementation-dune-semaphore-distribuee-en-dotnet/">
+
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -1324,6 +1346,11 @@ if (!doNotTrack) {
     </script>
     <div id="container">
         
+
+
+
+
+
         <div class="wrapper" data-type="posts" data-kind="page">
             <nav class="navbar" role="navigation" aria-label="main navigation" data-dir="ltr">
   <div class="navbar__brand">
@@ -1370,24 +1397,32 @@ if (!doNotTrack) {
   <span aria-hidden="true"></span>
 </a>
 <div class="navbarm__collapse" data-open="false">
-  <ul>
+  <ul dir="ltr">
     
     
       
       
       
       
-      <li class="navbarm__menu--item active">
-        <a href="/fr/posts">articles</a>
-      </li>
+
+      
+        <li class="navbarm__menu--item active">
+          <a href="/fr/posts">articles</a>
+        </li>
+      
+      
     
       
       
       
       
-      <li class="navbarm__menu--item ">
-        <a href="/fr/showcase">showcase</a>
-      </li>
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/fr/showcase">showcase</a>
+        </li>
+      
+      
     
 
     
@@ -1474,11 +1509,10 @@ if (!doNotTrack) {
   
 </nav>
   
-  <noscript>
-    Veuillez activer Javascript pour voir le contenu
-  </noscript>
-  <div class="single hide">
-    <script>document.querySelector('.single').classList.remove('hide')</script>
+  
+  <div class="single ">
+    <div class="single__nojs">Veuillez activer Javascript pour voir le contenu</div>
+    <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
     <h2 class="single__title" data-ani="false">[Redis] Implémentation d&#39;une sémaphore distribuée en .NET</h2>
     <div class="single__meta">
       
@@ -1489,36 +1523,22 @@ if (!doNotTrack) {
   </span>
 </div>
       
-<div class="single__tags caption">
-
+<ul class="single__tags caption">
   
-    🏷️
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/dotnet/" class="single__tag" title="dotnet">#dotnet</a></li>
+  🏷️
   
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/redis/" class="single__tag" title="redis">#redis</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/concurrence/" class="single__tag" title="concurrence">#concurrence</a></li>
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/csharp/" class="single__tag" title="csharp">#csharp</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/csharp/" class="single__tag" title="csharp">#csharp</a></li>
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/performance/" class="single__tag" title="performance">#performance</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/dotnet/" class="single__tag" title="dotnet">#dotnet</a></li>
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/concurrence/" class="single__tag" title="concurrence">#concurrence</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/performance/" class="single__tag" title="performance">#performance</a></li>
 
-</div>
+  <li><a href="https://blog.jeremylandon.com/fr/tags/redis/" class="single__tag" title="redis">#redis</a></li>
+
+</ul>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
@@ -1615,6 +1635,7 @@ En revanche je ne le recommande pas, même si cette implémentation est très pe
 </ul>
 
     </article>
+    
     <script>
   'use strict';
   
@@ -2495,7 +2516,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var clipInit = false;
     var preChromaElem = document.querySelectorAll('pre.chroma');
     var langCodeElem = document.querySelectorAll('.language-code');
-    var dolorCodeElem = document.querySelectorAll('div.language-\\$');
+    var dollarCodeElem = document.querySelectorAll('div.language-\\$');
     var gtCodeElem = document.querySelectorAll('div.language-\\>');
 
     var makeClipboard = function(elem) {
@@ -2552,7 +2573,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var newClipboardElem = document.createElement('span');
             newClipboardElem.setAttribute('class', 'copy-to-clipboard');
             newClipboardElem.setAttribute('title', 'Copy to clipboard');
-            closest(code, 'div.chroma').append(newClipboardElem);
+            elem.parentNode.parentNode.insertBefore(newClipboardElem, elem.parentNode.nextElementSibling);
           }
         }
       }
@@ -2579,8 +2600,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }) : null;
 
-    dolorCodeElem ? 
-    dolorCodeElem.forEach(function(elem) {
+    dollarCodeElem ? 
+    dollarCodeElem.forEach(function(elem) {
       elem.querySelectorAll('code').forEach(function (codeElem) {
         makeSymbolClipboard(codeElem);
       });
@@ -2596,8 +2617,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     
-    dolorCodeElem ?
-    dolorCodeElem.forEach(function(elem) {
+    dollarCodeElem ?
+    dollarCodeElem.forEach(function(elem) {
       var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
       lnts ? 
       lnts.forEach(function(lnt) {
@@ -2875,7 +2896,12 @@ document.addEventListener('DOMContentLoaded', function () {
 </footer>
         </div>
         
-<div class="wrapper__right hide" dir="ltr">
+
+
+
+
+
+<div class="wrapper__right hide" data-pad="true" dir="ltr">
   <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
   
     

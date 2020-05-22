@@ -432,7 +432,7 @@ source:https://docs.</description>
         <atom:modified>Tue, 24 Mar 2020 19:30:08 +0100</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</guid>
         <description>Lors d&amp;rsquo;une tentative d&amp;rsquo;un copier/coller (pression longue) sur un champ Text sur IOS le message suivant peut apparaitre :
- The getter &amp;lsquo;pasteButtonLabel&amp;rsquo; was called on null.</description>
+The getter &amp;lsquo;pasteButtonLabel&amp;rsquo; was called on null.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
         <media:content url="https://blog.jeremylandon.com/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>

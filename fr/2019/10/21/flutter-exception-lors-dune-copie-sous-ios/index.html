@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
 
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>[Flutter] Exception lors d&#39;une copie sous IOS – Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
@@ -529,12 +529,20 @@
           }
         }
 
-        var utterances = document.querySelector('iframe');
+        var utterances = document.getElementById('utterances');
         if (utterances) {
-          utterances.contentWindow.postMessage({
+          utterances.querySelector('iframe').contentWindow.postMessage({
             type: 'set-theme',
             theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
           }, 'https://utteranc.es');
+        }
+
+        var twitterCards = document.querySelectorAll('.twitter-timeline');
+        if (twitterCards) {
+          window.postMessage({
+            type: 'set-twitter-theme',
+            theme: selectedThemeVariant === 'light' || selectedThemeVariant === 'solarized' ? 'light' : 'dark',
+          });
         }
       });
     }) : null;
@@ -1196,7 +1204,10 @@
 
     
 <meta name="description" content="Exception : The getter &#34;pasteButtonLabel&#34; was called on null" />
-<meta name="keywords" content="">
+
+
+<meta name="keywords" content="flutter,dart,ios,mobile,exception">
+
 <meta name="created" content="2019-10-21T00:00:00&#43;0000">
 <meta name="modified" content="2020-03-24T19:30:08&#43;0100">
 <meta property="article:published_time" content="2019-10-21T00:00:00&#43;0000">
@@ -1210,7 +1221,16 @@
 <meta property="og:type" content="article">
 <meta property="og:description" content="Exception : The getter &#34;pasteButtonLabel&#34; was called on null">
 
-<meta name="generator" content="Hugo 0.70.0" />
+  
+    <meta property="og:image" content="https://blog.jeremylandon.com/images/logo/flutter.png">
+    <meta property="og:image:url" content="https://blog.jeremylandon.com/images/logo/flutter.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:app:name:iphone" content="Jérémy Landon - Dev, Cloud, DevOps &amp; more">
+    <meta property="twitter:title" content="[Flutter] Exception lors d&#39;une copie sous IOS">
+    <meta property="twitter:description" content="Exception : The getter &#34;pasteButtonLabel&#34; was called on null">
+  
+
+<meta name="generator" content="Hugo 0.71.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1218,7 +1238,9 @@
 <meta name="msapplication-navbutton-color" content="#fff">
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
 <link rel="canonical" href="https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/">
+
 <link rel="manifest" href="/manifest.json">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -1324,6 +1346,11 @@ if (!doNotTrack) {
     </script>
     <div id="container">
         
+
+
+
+
+
         <div class="wrapper" data-type="posts" data-kind="page">
             <nav class="navbar" role="navigation" aria-label="main navigation" data-dir="ltr">
   <div class="navbar__brand">
@@ -1370,24 +1397,32 @@ if (!doNotTrack) {
   <span aria-hidden="true"></span>
 </a>
 <div class="navbarm__collapse" data-open="false">
-  <ul>
+  <ul dir="ltr">
     
     
       
       
       
       
-      <li class="navbarm__menu--item active">
-        <a href="/fr/posts">articles</a>
-      </li>
+
+      
+        <li class="navbarm__menu--item active">
+          <a href="/fr/posts">articles</a>
+        </li>
+      
+      
     
       
       
       
       
-      <li class="navbarm__menu--item ">
-        <a href="/fr/showcase">showcase</a>
-      </li>
+
+      
+        <li class="navbarm__menu--item ">
+          <a href="/fr/showcase">showcase</a>
+        </li>
+      
+      
     
 
     
@@ -1474,11 +1509,10 @@ if (!doNotTrack) {
   
 </nav>
   
-  <noscript>
-    Veuillez activer Javascript pour voir le contenu
-  </noscript>
-  <div class="single hide">
-    <script>document.querySelector('.single').classList.remove('hide')</script>
+  
+  <div class="single ">
+    <div class="single__nojs">Veuillez activer Javascript pour voir le contenu</div>
+    <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
     <h2 class="single__title" data-ani="false">[Flutter] Exception lors d&#39;une copie sous IOS</h2>
     <div class="single__meta">
       
@@ -1489,47 +1523,35 @@ if (!doNotTrack) {
   </span>
 </div>
       
-<div class="single__tags caption">
-
+<ul class="single__tags caption">
   
-    🏷️
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/flutter/" class="single__tag" title="flutter">#flutter</a></li>
+  🏷️
   
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/dart/" class="single__tag" title="dart">#dart</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/dart/" class="single__tag" title="dart">#dart</a></li>
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/ios/" class="single__tag" title="ios">#ios</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/flutter/" class="single__tag" title="flutter">#flutter</a></li>
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/mobile/" class="single__tag" title="mobile">#mobile</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/ios/" class="single__tag" title="ios">#ios</a></li>
 
-  
-  
-    <li><a href="https://blog.jeremylandon.com/fr/tags/exception/" class="single__tag" title="exception">#exception</a></li>
-  
+  <li><a href="https://blog.jeremylandon.com/fr/tags/mobile/" class="single__tag" title="mobile">#mobile</a></li>
 
-</div>
+  <li><a href="https://blog.jeremylandon.com/fr/tags/exception/" class="single__tag" title="exception">#exception</a></li>
+
+</ul>
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
       <p>Lors d&rsquo;une tentative d&rsquo;un copier/coller (pression longue) sur un champ Text sur IOS le message suivant peut apparaitre :</p>
+
+
 <figure >
   
-    
-    <img data-src="/images/content/191021-flutter-throws-an-exception-when-trying-to-copy-on-ios/0.png" alt="The getter &#39;pasteButtonLabel&#39; was called on null." data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" width="" height=""/>
+    <img data-src="/images/content/191021-flutter-throws-an-exception-when-trying-to-copy-on-ios/0.png" alt="The getter &#39;pasteButtonLabel&#39; was called on null." data-caption="" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='' height='' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%23aaa' d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z'/%3E%3C/svg%3E" class="lazyload" style="width:;height:;"/>
     
   
 </figure>
+
 <div class="notices error" >
   <strong>The getter &lsquo;pasteButtonLabel&rsquo; was called on null.</strong><br />
 <strong>Receiver: null</strong><br />
@@ -1594,6 +1616,7 @@ Pour corriger ce point il faut modifier la logique de la méthode <strong>load(L
 </div>
 
     </article>
+    
     <script>
   'use strict';
   
@@ -2443,7 +2466,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var clipInit = false;
     var preChromaElem = document.querySelectorAll('pre.chroma');
     var langCodeElem = document.querySelectorAll('.language-code');
-    var dolorCodeElem = document.querySelectorAll('div.language-\\$');
+    var dollarCodeElem = document.querySelectorAll('div.language-\\$');
     var gtCodeElem = document.querySelectorAll('div.language-\\>');
 
     var makeClipboard = function(elem) {
@@ -2500,7 +2523,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var newClipboardElem = document.createElement('span');
             newClipboardElem.setAttribute('class', 'copy-to-clipboard');
             newClipboardElem.setAttribute('title', 'Copy to clipboard');
-            closest(code, 'div.chroma').append(newClipboardElem);
+            elem.parentNode.parentNode.insertBefore(newClipboardElem, elem.parentNode.nextElementSibling);
           }
         }
       }
@@ -2527,8 +2550,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }) : null;
 
-    dolorCodeElem ? 
-    dolorCodeElem.forEach(function(elem) {
+    dollarCodeElem ? 
+    dollarCodeElem.forEach(function(elem) {
       elem.querySelectorAll('code').forEach(function (codeElem) {
         makeSymbolClipboard(codeElem);
       });
@@ -2544,8 +2567,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     
-    dolorCodeElem ?
-    dolorCodeElem.forEach(function(elem) {
+    dollarCodeElem ?
+    dollarCodeElem.forEach(function(elem) {
       var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
       lnts ? 
       lnts.forEach(function(lnt) {
@@ -2823,7 +2846,12 @@ document.addEventListener('DOMContentLoaded', function () {
 </footer>
         </div>
         
-<div class="wrapper__right hide" dir="ltr">
+
+
+
+
+
+<div class="wrapper__right hide" data-pad="true" dir="ltr">
   <script>document.querySelector('.wrapper__right').classList.remove('hide')</script>
   
     
