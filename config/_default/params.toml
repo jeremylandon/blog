@@ -7,6 +7,7 @@ custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/
 useFaviconGenerator = true # https://www.favicon-generator.org/
 languagedir = "ltr" # ltr / rtl
 
+viewportSize = "wide" # widest, wider, wide, normal, narrow
 enableUiAnimation = false
 themeOptions = ["light", "dark"] # select options for site color theme
 notAllowedTypesInHome = ["contact", "talks", "about", "showcase"] # not allowed page types in home page. type can be set in front matter or default to folder name.
