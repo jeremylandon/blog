@@ -143,6 +143,27 @@
   </url>
   
   <url>
+    <loc>https://blog.jeremylandon.com/en/</loc>
+    <lastmod>2020-02-22T16:28:54+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/"
+                />
+  </url>
+  
+  <url>
     <loc>https://blog.jeremylandon.com/en/showcase/github/</loc>
     <lastmod>2020-02-22T16:28:54+01:00</lastmod>
     <xhtml:link
@@ -199,27 +220,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.jeremylandon.com/en/showcase/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/en/</loc>
-    <lastmod>2020-02-22T15:52:10+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/"
                 />
   </url>
   
