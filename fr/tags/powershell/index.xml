@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>powershell on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
+    <link>https://blog.jeremylandon.com/fr/tags/powershell/</link>
+    <description>Recent content in powershell on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
+    <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.jeremylandon.com/fr/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>[Azure] Autoriser un agent de build hébergé à déployer sur Azure</title>
+        <link>https://blog.jeremylandon.com/fr/2020/05/31/azure-autoriser-un-agent-de-build-heberge-a-deployer-sur-azure/</link>
+        <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Mon, 01 Jun 2020 09:59:32 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/05/31/azure-autoriser-un-agent-de-build-heberge-a-deployer-sur-azure/</guid>
+        <description>Azure DevOps (Travis, Google Cloud build &amp;amp; co) proposent des agents de build en mode Saas (hébergés par un tier).
+Ils sont très pratique car il n&amp;rsquo;y a aucune infrastructure à gérer mais ils peuvent poser problème lorsque la build doit se faire sur un service protégé.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>powershell</category>
+            
+          
+            
+              <category>azure devops</category>
+            
+          
+            
+              <category>build</category>
+            
+          
+            
+              <category>azure</category>
+            
+          
+            
+              <category>network security group</category>
+            
+          
+            
+              <category>nsg</category>
+            
+          
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+        
+        
+          
+            
+              <category>cloud</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

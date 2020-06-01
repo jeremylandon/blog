@@ -30,7 +30,7 @@
         <atom:modified>Mon, 20 Apr 2020 19:45:31 +0200</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2020/04/20/dotnet-comment-reinitialiser-une-collection-proprement-clear-new-ou-null/</guid>
         <description>On m&amp;rsquo;a récemment posé la question sur &amp;ldquo;quelle est la &amp;ldquo;meilleure&amp;rdquo; méthode pour supprimer les éléments d&amp;rsquo;une collection à taille variable&amp;rdquo;.
- myCollection.Clear() myCollection = new List() myCollection = null  Selon moi comme toujours il n&amp;rsquo;y a pas de &amp;ldquo;meilleure&amp;rdquo; solution ou même de &amp;ldquo;méthode magique&amp;quot;, tout dépend de ce qu&amp;rsquo;on veut réellement faire et ce qu&amp;rsquo;on veut transmettre comme message aux prochains développeurs qui liront le code.</description>
+ myCollection.Clear() myCollection = new List() myCollection = null  Selon moi comme toujours il n&amp;rsquo;y a pas de &amp;ldquo;meilleure&amp;rdquo; solution ou même de &amp;ldquo;méthode magique&amp;rdquo;, tout dépend de ce qu&amp;rsquo;on veut réellement faire et ce qu&amp;rsquo;on veut transmettre comme message aux prochains développeurs qui liront le code.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
         <media:content url="https://blog.jeremylandon.com/images/logo/dotnetcore.png" medium="image"><media:title type="html">featured image</media:title></media:content>

@@ -1230,7 +1230,7 @@
     <meta property="twitter:description" content="On m&#39;a récemment posé la question sur quelle est la “meilleur” méthode pour supprimer les éléments d&#39;une collection à taille variable.">
   
 
-<meta name="generator" content="Hugo 0.71.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 <meta name="msapplication-TileColor" content="#fff">
 
 <meta name="theme-color" content="#fff">
@@ -1546,7 +1546,7 @@ if (!doNotTrack) {
 <li>myCollection <strong>= new List<string>()</strong></li>
 <li>myCollection <strong>= null</strong></li>
 </ul>
-<p>Selon moi comme toujours il n&rsquo;y a pas de &ldquo;<strong>meilleure</strong>&rdquo; solution ou même de &ldquo;<strong>méthode magique</strong>&quot;, <u>tout dépend de ce qu&rsquo;on veut réellement faire et ce qu&rsquo;on veut transmettre comme message aux prochains développeurs qui liront le code</u>.</p>
+<p>Selon moi comme toujours il n&rsquo;y a pas de &ldquo;<strong>meilleure</strong>&rdquo; solution ou même de &ldquo;<strong>méthode magique</strong>&rdquo;, <u>tout dépend de ce qu&rsquo;on veut réellement faire et ce qu&rsquo;on veut transmettre comme message aux prochains développeurs qui liront le code</u>.</p>
 <div class="notices warning" >
   Nous ne traiterons pas le cas des collections <strong>thread safe</strong> de type ConcurrentBag &amp; co. où la notion de concurrence rentre en jeu <em>(en excluant ce point la logique reste identique)</em>.
 </div>
@@ -1792,7 +1792,7 @@ IL_00ab: <strong>stloc.0</strong></div>
 </div>
 </div><p>Comme avec <strong>null</strong>, la collection est supprimée dû au fait que sa référence n&rsquo;est plus liée aux GC Roots et par effet de chaîne les objets rattachés aussi.</p>
 <h2 id="clear">Clear()</h2>
-<p>D&rsquo;après la documentation cette méthode &ldquo;<strong><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.clear?view">supprime tous les éléments</a></strong>&quot;.<br />
+<p>D&rsquo;après la documentation cette méthode &ldquo;<strong><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.clear?view">supprime tous les éléments</a></strong>&rdquo;.<br />
 En vérité <strong><a href="https://github.com/dotnet/runtime/blob/master/src/libraries/System.Collections/src/System/Collections/Generic/SortedList.cs">elle remplace les références avec la collection</a>, c&rsquo;est le GC qui supprimera les objets de la mémoire.</strong><br />
 Le plus simple est de voir ce qui se passe en vrai.</p>
 <div class="highlight"><div class="chroma">

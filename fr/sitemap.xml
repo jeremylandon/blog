@@ -144,7 +144,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/</loc>
-    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -184,13 +184,33 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/2020/05/17/redis-implementation-dune-semaphore-distribuee-en-dotnet/</loc>
-    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/2020/05/31/azure-autoriser-un-agent-de-build-heberge-a-deployer-sur-azure/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/azure/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/azure/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/azure-devops/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/build/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -206,6 +226,71 @@
                 hreflang="fr"
                 href="https://blog.jeremylandon.com/fr/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/cloud/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/network-security-group/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/nsg/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/powershell/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
+    <lastmod>2020-06-01T09:59:32+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/05/17/redis-implementation-dune-semaphore-distribuee-en-dotnet/</loc>
+    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
   </url>
   
   <url>
@@ -241,46 +326,6 @@
   <url>
     <loc>https://blog.jeremylandon.com/fr/series/redis/</loc>
     <lastmod>2020-05-17T11:47:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-05-17T11:47:46+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/tags/"
-                />
   </url>
   
   <url>
@@ -351,21 +396,6 @@
   <url>
     <loc>https://blog.jeremylandon.com/fr/2020/04/12/azure-comment-augmenter-le-nombre-de-conteneur-sur-lemulateur-cosmos-db/</loc>
     <lastmod>2020-04-14T18:56:57+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/azure/</loc>
-    <lastmod>2020-04-19T11:18:35+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/categories/azure/</loc>
-    <lastmod>2020-04-19T11:18:35+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/series/cloud/</loc>
-    <lastmod>2020-04-19T11:18:35+02:00</lastmod>
   </url>
   
   <url>

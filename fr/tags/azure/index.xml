@@ -14,13 +14,70 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>[Azure] Autoriser un agent de build hébergé à déployer sur Azure</title>
+        <link>https://blog.jeremylandon.com/fr/2020/05/31/azure-autoriser-un-agent-de-build-heberge-a-deployer-sur-azure/</link>
+        <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Mon, 01 Jun 2020 09:59:32 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/05/31/azure-autoriser-un-agent-de-build-heberge-a-deployer-sur-azure/</guid>
+        <description>Azure DevOps (Travis, Google Cloud build &amp;amp; co) proposent des agents de build en mode Saas (hébergés par un tier).
+Ils sont très pratique car il n&amp;rsquo;y a aucune infrastructure à gérer mais ils peuvent poser problème lorsque la build doit se faire sur un service protégé.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>powershell</category>
+            
+          
+            
+              <category>azure devops</category>
+            
+          
+            
+              <category>build</category>
+            
+          
+            
+              <category>azure</category>
+            
+          
+            
+              <category>network security group</category>
+            
+          
+            
+              <category>nsg</category>
+            
+          
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+        
+        
+          
+            
+              <category>cloud</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>[Azure] Comment augmenter le nombre de conteneur sur l&#39;émulateur Cosmos DB</title>

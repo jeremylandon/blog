@@ -44,6 +44,63 @@
 
       
       <item>
+        <title>[Azure] Autoriser un agent de build hébergé à déployer sur Azure</title>
+        <link>https://blog.jeremylandon.com/fr/2020/05/31/azure-autoriser-un-agent-de-build-heberge-a-deployer-sur-azure/</link>
+        <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Mon, 01 Jun 2020 09:59:32 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/05/31/azure-autoriser-un-agent-de-build-heberge-a-deployer-sur-azure/</guid>
+        <description>Azure DevOps (Travis, Google Cloud build &amp;amp; co) proposent des agents de build en mode Saas (hébergés par un tier).
+Ils sont très pratique car il n&amp;rsquo;y a aucune infrastructure à gérer mais ils peuvent poser problème lorsque la build doit se faire sur un service protégé.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/azure.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>powershell</category>
+            
+          
+            
+              <category>azure devops</category>
+            
+          
+            
+              <category>build</category>
+            
+          
+            
+              <category>azure</category>
+            
+          
+            
+              <category>network security group</category>
+            
+          
+            
+              <category>nsg</category>
+            
+          
+        
+        
+          
+            
+              <category>azure</category>
+            
+          
+        
+        
+          
+            
+              <category>cloud</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>[Redis] Implémentation d&#39;une sémaphore distribuée en .NET</title>
         <link>https://blog.jeremylandon.com/fr/2020/05/17/redis-implementation-dune-semaphore-distribuee-en-dotnet/</link>
         <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
@@ -201,7 +258,7 @@ Par défaut la classe SynchronizationContext n&amp;rsquo;est qu&amp;rsquo;une ba
         <atom:modified>Mon, 20 Apr 2020 19:45:31 +0200</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2020/04/20/dotnet-comment-reinitialiser-une-collection-proprement-clear-new-ou-null/</guid>
         <description>On m&amp;rsquo;a récemment posé la question sur &amp;ldquo;quelle est la &amp;ldquo;meilleure&amp;rdquo; méthode pour supprimer les éléments d&amp;rsquo;une collection à taille variable&amp;rdquo;.
- myCollection.Clear() myCollection = new List() myCollection = null  Selon moi comme toujours il n&amp;rsquo;y a pas de &amp;ldquo;meilleure&amp;rdquo; solution ou même de &amp;ldquo;méthode magique&amp;quot;, tout dépend de ce qu&amp;rsquo;on veut réellement faire et ce qu&amp;rsquo;on veut transmettre comme message aux prochains développeurs qui liront le code.</description>
+ myCollection.Clear() myCollection = new List() myCollection = null  Selon moi comme toujours il n&amp;rsquo;y a pas de &amp;ldquo;meilleure&amp;rdquo; solution ou même de &amp;ldquo;méthode magique&amp;rdquo;, tout dépend de ce qu&amp;rsquo;on veut réellement faire et ce qu&amp;rsquo;on veut transmettre comme message aux prochains développeurs qui liront le code.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
         <media:content url="https://blog.jeremylandon.com/images/logo/dotnetcore.png" medium="image"><media:title type="html">featured image</media:title></media:content>
