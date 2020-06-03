@@ -23,6 +23,26 @@
   </url>
   
   <url>
+    <loc>https://blog.jeremylandon.com/en/showcase/github/dsemaphore-net/</loc>
+    <lastmod>2020-06-03T19:07:34+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/showcase/github/dsemaphore-net/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/showcase/github/dsemaphore-net/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/showcase/github/dsemaphore-net/"
+                />
+  </url>
+  
+  <url>
     <loc>https://blog.jeremylandon.com/en/showcase/github/angular-translate-csv-to-json/</loc>
     <lastmod>2020-02-22T16:28:54+01:00</lastmod>
     <xhtml:link
@@ -144,7 +164,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/en/</loc>
-    <lastmod>2020-02-22T16:28:54+01:00</lastmod>
+    <lastmod>2020-06-03T19:07:34+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
