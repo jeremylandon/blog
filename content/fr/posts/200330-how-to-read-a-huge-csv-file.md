@@ -19,6 +19,10 @@ libraries:
 image: images/logo/dotnetcore.png
 ---
 
+{{< alert warning >}}
+L'article a été mis à jour suite à un complément d'information fourni par le développeur principal de **TinyCsvParser**, cf conclusion
+{{< /alert >}}
+
 Le traitement d'un fichier csv de plusieurs Go peut vite être coûteux en terme de performance.
 Pour rappel un fichier csv n'est pas seulement un format qui sépare ses colonnes par un caractère, mais c'est aussi:
 
@@ -130,7 +134,7 @@ public sealed class CsvHelperFooMapping: ClassMap<Foo>
 
 ## TinyCsvParser
 
-sources: [https://github.com/bytefish/TinyCsvParser](https://github.com/bytefish/TinyCsvParser)
+sources: [https://github.com/bytefish/TinyCsvParser](https://github.com/bytefish/TinyCsvParser).
 
 {{< codes SampleCsvParser FooMapping >}}
 {{< code >}}
@@ -428,7 +432,7 @@ public class StreamReaderEnumerator : IEnumerator<string>
 ## Conclusion
 
 Les performances d'une solution personnalisée laissent rêveur, néanmoins ce code ne répond qu'à un seul et unique cas: **les très gros fichiers csv propre et simple**.
-Mais dans le cas où vous ayez un grand nombre de fichier csv avec des "qualités" variables, il est fortement recommandé de passer par un framework tel que **CsvHelper** ou **TinyCsvParser** où un grand nombre de bons développeurs ont pu analyser les performances de chaque ligne de code permettant de gérer tout les cas.
+Mais dans le cas où vous ayez un grand nombre de fichier csv avec des "qualités" variables, "il est fortement recommandé" de passer par un framework tel que **CsvHelper** ou **TinyCsvParser** où un grand nombre de bons développeurs ont pu analyser les performances de chaque ligne de code permettant de gérer tout les cas.
 
 {{< alert info >}}
 _NB: Il est intéressant de se rendre compte que le classement est totalement chamboulé sur des petits fichiers csv (exemple avec un csv de 10 lignes):_
@@ -446,6 +450,14 @@ _NB: Il est intéressant de se rendre compte que le classement est totalement ch
 _Ce qui prouve encore qu'il n'y a pas de magie en développement, que tout dépend du contexte et annexement que le parallélisme est très souvent profitable et recommandé mais [peut aussi être un piège.](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism)_
 {{< /notice >}}
 
+## Mise à jour (06/08/2020)
+
+J'ai eu le plaisir d'avoir **[un retour volontaire du développeur principal](https://github.com/Golapadeog/blog/issues/1)** de **TinyCsvParser**, ce dernier apporte une solution intéressante pour utiliser le framework avec un analyseur personnalisé _(Tokenizer)_, vous pouvez **[voir plus de détails directement sur le repo du projet](https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs)** ou l'exemple de ce post a été inclus et fournit plus de détail sur comment son framework fonctionne.
+
+Au delà de ça, son retour (**[présent ici](https://github.com/Golapadeog/blog/issues/1)**) me fait revoir/nuancer le message de ce post.
+En effet la réponse pour savoir si oui ou non un framework est à utiliser pour ce besoin spécifique est plus compliqué que de premier abord _(plus compliqué que beaucoup = framework / un cas = personnalisé ou framework)_.
+J'ai voulu dans un premier temps traiter le sujet ici, mais après réflexion beaucoup de paramètres rentrent en jeu _(le contexte, le budget, les compétences, le risque, les resources, le besoin...)_, cela fera l'objet d'un post annexe plus globale qui apportera non pas une réponse (je pense que cela est impossible) mais un point de vue sur la question.
+
 ## Sources
 
 ### Documentation
@@ -455,3 +467,5 @@ _Ce qui prouve encore qu'il n'y a pas de magie en développement, que tout dépe
 - [https://github.com/bytefish/TinyCsvParser](https://github.com/bytefish/TinyCsvParser)
 - [https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1.getenumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1.getenumerator)
 - [https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism)
+- [https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs](https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs)
+- [https://github.com/Golapadeog/blog/issues/1](https://github.com/Golapadeog/blog/issues/1)
