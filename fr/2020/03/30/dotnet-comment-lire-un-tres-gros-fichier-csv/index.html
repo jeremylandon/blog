@@ -1209,7 +1209,7 @@
 <meta name="keywords" content="dotnet,csharp,algorithm,performance,benchmark">
 
 <meta name="created" content="2020-03-30T00:00:00&#43;0000">
-<meta name="modified" content="2020-04-19T02:03:30&#43;0200">
+<meta name="modified" content="2020-06-08T18:40:57&#43;0200">
 <meta property="article:published_time" content="2020-03-30T00:00:00&#43;0000">
 
 <meta name="author" content="Jérémy Landon">
@@ -1267,9 +1267,9 @@
     "@type": "WebPage",
     "headline": "[.NET] Comment lire un très gros fichier csv",
     "datePublished": "2020-03-30T00:00:00Z",
-    "dateModified": "2020-04-19T02:03:30+02:00",
+    "dateModified": "2020-06-08T18:40:57+02:00",
     "url" : "https://blog.jeremylandon.com/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/",
-    "description": "Le traitement d\u0026rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance. Pour rappel un fichier csv n\u0026rsquo;est pas seulement un format qui …",
+    "description": "L\u0026rsquo;article a été mis à jour suite à un complément d\u0026rsquo;information fourni par le développeur principal de TinyCsvParser, cf conclusion\rLe traitement d\u0026rsquo;un …",
     "keywords": ["dotnet","csharp","algorithm","performance","benchmark"],
     "image" : "https://blog.jeremylandon.com/images/logo/dotnetcore.png",
     "mainEntityOfPage": {
@@ -1517,7 +1517,7 @@ if (!doNotTrack) {
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Écrit le">📅&nbsp;Mar 30, 2020 </time> &middot; <span class="single__info" title="Temps de lecture"> ☕ 9 min de lecture </span>
+  <time class="single__info" title="Écrit le">📅&nbsp;Mar 30, 2020 </time> &middot; <span class="single__info" title="Temps de lecture"> ☕ 10 min de lecture </span>
   <span class="single__info">
     
   </span>
@@ -1542,7 +1542,9 @@ if (!doNotTrack) {
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="false">
       
-      <p>Le traitement d&rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance.<br />
+      <div class="alert alert-warning" role="alert" data-dir="ltr">L&rsquo;article a été mis à jour suite à un complément d&rsquo;information fourni par le développeur principal de <strong>TinyCsvParser</strong>, cf conclusion</div>
+
+<p>Le traitement d&rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance.<br />
 Pour rappel un fichier csv n&rsquo;est pas seulement un format qui sépare ses colonnes par un caractère, mais c&rsquo;est aussi:</p>
 <ul>
 <li>des entêtes présentes ou non,</li>
@@ -1810,7 +1812,7 @@ A cela s&rsquo;ajoute qu&rsquo;il faut la plupart du temps lier les colonnes à 
   }
 </script>
 <h2 id="tinycsvparser">TinyCsvParser</h2>
-<p>sources: <a href="https://github.com/bytefish/TinyCsvParser">https://github.com/bytefish/TinyCsvParser</a></p>
+<p>sources: <a href="https://github.com/bytefish/TinyCsvParser">https://github.com/bytefish/TinyCsvParser</a>.</p>
 
 <div id="cc6cbe517c96147d" class="codetab">
   <div class="codetab__links">
@@ -2528,7 +2530,7 @@ Et voici le résultat :</p>
 </div>
 <h2 id="conclusion">Conclusion</h2>
 <p>Les performances d&rsquo;une solution personnalisée laissent rêveur, néanmoins ce code ne répond qu&rsquo;à un seul et unique cas: <strong>les très gros fichiers csv propre et simple</strong>.<br />
-Mais dans le cas où vous ayez un grand nombre de fichier csv avec des &ldquo;qualités&rdquo; variables, il est fortement recommandé de passer par un framework tel que <strong>CsvHelper</strong> ou <strong>TinyCsvParser</strong> où un grand nombre de bons développeurs ont pu analyser les performances de chaque ligne de code permettant de gérer tout les cas.</p>
+Mais dans le cas où vous ayez un grand nombre de fichier csv avec des &ldquo;qualités&rdquo; variables, &ldquo;il est fortement recommandé&rdquo; de passer par un framework tel que <strong>CsvHelper</strong> ou <strong>TinyCsvParser</strong> où un grand nombre de bons développeurs ont pu analyser les performances de chaque ligne de code permettant de gérer tout les cas.</p>
 <div class="alert alert-info" role="alert" data-dir="ltr"><em>NB: Il est intéressant de se rendre compte que le classement est totalement chamboulé sur des petits fichiers csv (exemple avec un csv de 10 lignes):</em></div>
 
 <table>
@@ -2570,6 +2572,11 @@ Mais dans le cas où vous ayez un grand nombre de fichier csv avec des &ldquo;qu
 <div class="notices info" >
   <em>Ce qui prouve encore qu&rsquo;il n&rsquo;y a pas de magie en développement, que tout dépend du contexte et annexement que le parallélisme est très souvent profitable et recommandé mais <a href="https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism">peut aussi être un piège.</a></em>
 </div>
+<h2 id="mise-à-jour-06082020">Mise à jour (06/08/2020)</h2>
+<p>J&rsquo;ai eu le plaisir d&rsquo;avoir <strong><a href="https://github.com/Golapadeog/blog/issues/1">un retour volontaire du développeur principal</a></strong> de <strong>TinyCsvParser</strong>, ce dernier apporte une solution intéressante pour utiliser le framework avec un analyseur personnalisé <em>(Tokenizer)</em>, vous pouvez <strong><a href="https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs">voir plus de détails directement sur le repo du projet</a></strong> ou l&rsquo;exemple de ce post a été inclus et fournit plus de détail sur comment son framework fonctionne.</p>
+<p>Au delà de ça, son retour (<strong><a href="https://github.com/Golapadeog/blog/issues/1">présent ici</a></strong>) me fait revoir/nuancer le message de ce post.<br />
+En effet la réponse pour savoir si oui ou non un framework est à utiliser pour ce besoin spécifique est plus compliqué que de premier abord <em>(plus compliqué que beaucoup = framework / un cas = personnalisé ou framework)</em>.<br />
+J&rsquo;ai voulu dans un premier temps traiter le sujet ici, mais après réflexion beaucoup de paramètres rentrent en jeu <em>(le contexte, le budget, les compétences, le risque, les resources, le besoin&hellip;)</em>, cela fera l&rsquo;objet d&rsquo;un post annexe plus globale qui apportera non pas une réponse (je pense que cela est impossible) mais un point de vue sur la question.</p>
 <h2 id="sources">Sources</h2>
 <h3 id="documentation">Documentation</h3>
 <ul>
@@ -2578,6 +2585,8 @@ Mais dans le cas où vous ayez un grand nombre de fichier csv avec des &ldquo;qu
 <li><a href="https://github.com/bytefish/TinyCsvParser">https://github.com/bytefish/TinyCsvParser</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1.getenumerator">https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1.getenumerator</a></li>
 <li><a href="https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism">https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism</a></li>
+<li><a href="https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs">https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs</a></li>
+<li><a href="https://github.com/Golapadeog/blog/issues/1">https://github.com/Golapadeog/blog/issues/1</a></li>
 </ul>
 
     </article>
@@ -3895,6 +3904,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#solution-personnalisée">Solution personnalisée</a></li>
     <li><a href="#solution-personnalisée-avec-parallélisme">Solution personnalisée avec parallélisme</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#mise-à-jour-06082020">Mise à jour (06/08/2020)</a></li>
     <li><a href="#sources">Sources</a>
       <ul>
         <li><a href="#documentation">Documentation</a></li>

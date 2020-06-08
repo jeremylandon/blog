@@ -174,10 +174,9 @@ Par défaut la classe SynchronizationContext n&amp;rsquo;est qu&amp;rsquo;une ba
         <link>https://blog.jeremylandon.com/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</link>
         <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Sun, 19 Apr 2020 02:03:30 +0200</atom:modified>
+        <atom:modified>Mon, 08 Jun 2020 18:40:57 +0200</atom:modified>
         <guid>https://blog.jeremylandon.com/fr/2020/03/30/dotnet-comment-lire-un-tres-gros-fichier-csv/</guid>
-        <description>Le traitement d&amp;rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance.
-Pour rappel un fichier csv n&amp;rsquo;est pas seulement un format qui sépare ses colonnes par un caractère, mais c&amp;rsquo;est aussi:</description>
+        <description>L&amp;rsquo;article a été mis à jour suite à un complément d&amp;rsquo;information fourni par le développeur principal de TinyCsvParser, cf conclusionLe traitement d&amp;rsquo;un fichier csv de plusieurs Go peut vite être coûteux en terme de performance.</description>
         
         <dc:creator>Jérémy Landon</dc:creator>
         <media:content url="https://blog.jeremylandon.com/images/logo/dotnetcore.png" medium="image"><media:title type="html">featured image</media:title></media:content>
