@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>postman on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
+    <link>https://blog.jeremylandon.com/fr/tags/postman/</link>
+    <description>Recent content in postman on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
+    <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.jeremylandon.com/fr/tags/postman/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>[Postman] Réaliser un polling avec Postman</title>
+        <link>https://blog.jeremylandon.com/fr/2020/06/15/postman-realiser-un-polling-avec-postman/</link>
+        <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 14 Jun 2020 03:06:33 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/06/15/postman-realiser-un-polling-avec-postman/</guid>
+        <description>J&amp;rsquo;ai eu besoin à de nombreuses reprises de réaliser des polling dans mes tests d&amp;rsquo;intégrations avec Postman. Je vous partage aujourd&amp;rsquo;hui les fonctions que j&amp;rsquo;utilise pour ça 🍻</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/postman.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>postman</category>
+            
+          
+            
+              <category>javascript</category>
+            
+          
+            
+              <category>test</category>
+            
+          
+            
+              <category>quality</category>
+            
+          
+        
+        
+          
+            
+              <category>postman</category>
+            
+          
+        
+        
+          
+            
+              <category>test</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

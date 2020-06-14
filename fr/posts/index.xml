@@ -22,6 +22,54 @@
 
       
       <item>
+        <title>[Postman] Réaliser un polling avec Postman</title>
+        <link>https://blog.jeremylandon.com/fr/2020/06/15/postman-realiser-un-polling-avec-postman/</link>
+        <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 14 Jun 2020 03:06:33 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/06/15/postman-realiser-un-polling-avec-postman/</guid>
+        <description>J&amp;rsquo;ai eu besoin à de nombreuses reprises de réaliser des polling dans mes tests d&amp;rsquo;intégrations avec Postman. Je vous partage aujourd&amp;rsquo;hui les fonctions que j&amp;rsquo;utilise pour ça 🍻</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/postman.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>postman</category>
+            
+          
+            
+              <category>javascript</category>
+            
+          
+            
+              <category>test</category>
+            
+          
+            
+              <category>quality</category>
+            
+          
+        
+        
+          
+            
+              <category>postman</category>
+            
+          
+        
+        
+          
+            
+              <category>test</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>[Azure] Autoriser un agent de build hébergé à déployer sur Azure</title>
         <link>https://blog.jeremylandon.com/fr/2020/05/31/azure-autoriser-un-agent-de-build-heberge-a-deployer-sur-azure/</link>
         <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
