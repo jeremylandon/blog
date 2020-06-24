@@ -530,11 +530,11 @@ source:https://docs.</description>
       
       <item>
         <title>[Flutter] Exception lors d&#39;une copie sous IOS</title>
-        <link>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</link>
+        <link>https://blog.jeremylandon.com/fr/2019/10/21/flutter-throws-an-exception-when-trying-to-copy-on-ios/</link>
         <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        <atom:modified>Tue, 24 Mar 2020 19:30:08 +0100</atom:modified>
-        <guid>https://blog.jeremylandon.com/fr/2019/10/21/flutter-exception-lors-dune-copie-sous-ios/</guid>
+        <atom:modified>Wed, 24 Jun 2020 20:03:07 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2019/10/21/flutter-throws-an-exception-when-trying-to-copy-on-ios/</guid>
         <description>Lors d&amp;rsquo;une tentative d&amp;rsquo;un copier/coller (pression longue) sur un champ Text sur IOS le message suivant peut apparaitre :
 The getter &amp;lsquo;pasteButtonLabel&amp;rsquo; was called on null.</description>
         
