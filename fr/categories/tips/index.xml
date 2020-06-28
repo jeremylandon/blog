@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>tips on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
+    <link>https://blog.jeremylandon.com/fr/categories/tips/</link>
+    <description>Recent content in tips on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
+    <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.jeremylandon.com/fr/categories/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>[Dev] Comment éviter les commits accidentels sur les fichiers de configuration</title>
+        <link>https://blog.jeremylandon.com/fr/2020/06/28/dev-how-to-prevent-accidental-commits-on-the-config-files/</link>
+        <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 28 Jun 2020 19:16:46 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/06/28/dev-how-to-prevent-accidental-commits-on-the-config-files/</guid>
+        <description>Il n&amp;rsquo;est pas rare lors de développements à plusieurs que chacun ait besoin de sa propre configuration afin de pouvoir développer convenablement en local.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/visualstudio.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>visual studio</category>
+            
+          
+            
+              <category>dotnet</category>
+            
+          
+            
+              <category>quality</category>
+            
+          
+            
+              <category>msbuild</category>
+            
+          
+            
+              <category>tips</category>
+            
+          
+        
+        
+          
+            
+              <category>tips</category>
+            
+          
+        
+        
+          
+            
+              <category>tools</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

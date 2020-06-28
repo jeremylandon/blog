@@ -14,13 +14,103 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>dotnet</title>
+        <link>https://blog.jeremylandon.com/fr/tags/dotnet/</link>
+        <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/dotnet/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>msbuild</title>
+        <link>https://blog.jeremylandon.com/fr/tags/msbuild/</link>
+        <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/msbuild/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>quality</title>
+        <link>https://blog.jeremylandon.com/fr/tags/quality/</link>
+        <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/quality/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>tips</title>
+        <link>https://blog.jeremylandon.com/fr/tags/tips/</link>
+        <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/tips/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>visual studio</title>
+        <link>https://blog.jeremylandon.com/fr/tags/visual-studio/</link>
+        <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/visual-studio/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>javascript</title>
@@ -47,24 +137,6 @@
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/postman/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>quality</title>
-        <link>https://blog.jeremylandon.com/fr/tags/quality/</link>
-        <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/quality/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -227,24 +299,6 @@
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/csharp/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>dotnet</title>
-        <link>https://blog.jeremylandon.com/fr/tags/dotnet/</link>
-        <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/dotnet/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>

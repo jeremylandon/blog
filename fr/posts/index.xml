@@ -22,6 +22,58 @@
 
       
       <item>
+        <title>[Dev] Comment éviter les commits accidentels sur les fichiers de configuration</title>
+        <link>https://blog.jeremylandon.com/fr/2020/06/28/dev-how-to-prevent-accidental-commits-on-the-config-files/</link>
+        <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 28 Jun 2020 19:16:46 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/06/28/dev-how-to-prevent-accidental-commits-on-the-config-files/</guid>
+        <description>Il n&amp;rsquo;est pas rare lors de développements à plusieurs que chacun ait besoin de sa propre configuration afin de pouvoir développer convenablement en local.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/visualstudio.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>visual studio</category>
+            
+          
+            
+              <category>dotnet</category>
+            
+          
+            
+              <category>quality</category>
+            
+          
+            
+              <category>msbuild</category>
+            
+          
+            
+              <category>tips</category>
+            
+          
+        
+        
+          
+            
+              <category>tips</category>
+            
+          
+        
+        
+          
+            
+              <category>tools</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>[Postman] Réaliser un polling avec Postman</title>
         <link>https://blog.jeremylandon.com/fr/2020/06/15/postman-realiser-un-polling-avec-postman/</link>
         <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>

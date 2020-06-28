@@ -164,7 +164,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -204,13 +204,13 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/2020/06/15/postman-realiser-un-polling-avec-postman/</loc>
-    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/2020/06/28/dev-how-to-prevent-accidental-commits-on-the-config-files/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -229,28 +229,23 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/javascript/</loc>
-    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/postman/</loc>
-    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/categories/postman/</loc>
-    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/tags/msbuild/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/quality/</loc>
-    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -270,7 +265,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -286,6 +281,46 @@
                 hreflang="fr"
                 href="https://blog.jeremylandon.com/fr/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/tips/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/tips/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/tools/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/visual-studio/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/06/15/postman-realiser-un-polling-avec-postman/</loc>
+    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/javascript/</loc>
+    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/postman/</loc>
+    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/postman/</loc>
+    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
   </url>
   
   <url>
@@ -355,11 +390,6 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/csharp/</loc>
-    <lastmod>2020-06-08T18:40:57+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
     <lastmod>2020-06-08T18:40:57+02:00</lastmod>
   </url>
   
