@@ -22,6 +22,56 @@
 
       
       <item>
+        <title>[Flutter] Exception en production avec flutter_local_notifications</title>
+        <link>https://blog.jeremylandon.com/fr/2020/07/12/exception-with-flutter_local_notifications/</link>
+        <pubDate>Sun, 12 Jul 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sat, 11 Jul 2020 23:40:25 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/07/12/exception-with-flutter_local_notifications/</guid>
+        <description>[ERROR:flutter/shell/platform/android/platform_view_android_jni.cc(39)] java.lang.AssertionError: AssertionError (GSON 2.8.5): java.lang.NoSuchFieldException: DrawableResource
+06-13 23:55:46.181 30973 30973 E flutter : at d.d.d.q.a(:101)
+06-13 23:55:46.181 30973 30973 E flutter : at d.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/flutter.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+            
+              <category>proguard</category>
+            
+          
+            
+              <category>dart</category>
+            
+          
+            
+              <category>exception</category>
+            
+          
+        
+        
+          
+            
+              <category>flutter</category>
+            
+          
+        
+        
+          
+            
+              <category>exception</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>[Dev] Comment éviter les commits accidentels sur les fichiers de configuration</title>
         <link>https://blog.jeremylandon.com/fr/2020/06/28/dev-how-to-prevent-accidental-commits-on-the-config-files/</link>
         <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>

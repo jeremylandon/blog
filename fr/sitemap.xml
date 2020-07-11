@@ -164,7 +164,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -204,13 +204,13 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/2020/06/28/dev-how-to-prevent-accidental-commits-on-the-config-files/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/2020/07/12/exception-with-flutter_local_notifications/</loc>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -229,23 +229,88 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/tags/dart/</loc>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/tags/dart/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/tags/dart/"
+                />
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/msbuild/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/tags/exception/</loc>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/tags/exception/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/tags/exception/"
+                />
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/quality/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/series/exception/</loc>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/series/exception/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/series/exception/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/flutter/</loc>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/tags/flutter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/tags/flutter/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/flutter/</loc>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/categories/flutter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/categories/flutter/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/proguard/</loc>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -265,7 +330,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -281,6 +346,26 @@
                 hreflang="fr"
                 href="https://blog.jeremylandon.com/fr/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/06/28/dev-how-to-prevent-accidental-commits-on-the-config-files/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/msbuild/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/quality/</loc>
+    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
   </url>
   
   <url>
@@ -434,53 +519,8 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/dart/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/tags/dart/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/tags/dart/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/flutter/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/tags/flutter/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/tags/flutter/"
-                />
-  </url>
-  
-  <url>
     <loc>https://blog.jeremylandon.com/fr/series/flutter/</loc>
     <lastmod>2020-04-27T01:03:10+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/categories/flutter/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/categories/flutter/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/categories/flutter/"
-                />
   </url>
   
   <url>
@@ -536,36 +576,6 @@
   <url>
     <loc>https://blog.jeremylandon.com/fr/tags/cosmos/</loc>
     <lastmod>2020-04-19T02:37:09+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/exception/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/tags/exception/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/tags/exception/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/series/exception/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/series/exception/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/series/exception/"
-                />
   </url>
   
   <url>
