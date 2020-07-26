@@ -164,7 +164,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/</loc>
-    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -204,13 +204,23 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/2020/07/12/exception-with-flutter_local_notifications/</loc>
-    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
+    <loc>https://blog.jeremylandon.com/fr/2020/07/26/dotnet-how-to-verify-the-apple-tokens/</loc>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/apple/</loc>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/apple/</loc>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -226,6 +236,81 @@
                 hreflang="fr"
                 href="https://blog.jeremylandon.com/fr/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/csharp/</loc>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/dotnet/</loc>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/ios/</loc>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/tags/ios/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/tags/ios/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/</loc>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
+    <lastmod>2020-07-26T14:07:19+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/07/12/exception-with-flutter_local_notifications/</loc>
+    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
   </url>
   
   <url>
@@ -309,52 +394,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-07-11T23:40:25+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>https://blog.jeremylandon.com/fr/2020/06/28/dev-how-to-prevent-accidental-commits-on-the-config-files/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/dotnet/</loc>
     <lastmod>2020-06-28T19:16:46+02:00</lastmod>
   </url>
   
@@ -474,16 +514,6 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/csharp/</loc>
-    <lastmod>2020-06-08T18:40:57+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/categories/dotnet/</loc>
-    <lastmod>2020-06-08T18:40:57+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.jeremylandon.com/fr/tags/performance/</loc>
     <lastmod>2020-06-08T18:40:57+02:00</lastmod>
   </url>
@@ -521,21 +551,6 @@
   <url>
     <loc>https://blog.jeremylandon.com/fr/series/flutter/</loc>
     <lastmod>2020-04-27T01:03:10+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/ios/</loc>
-    <lastmod>2020-06-24T20:03:07+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/tags/ios/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/tags/ios/"
-                />
   </url>
   
   <url>

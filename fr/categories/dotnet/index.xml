@@ -14,13 +14,61 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/categories/dotnet/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>[.NET] Comment vérifier les tokens Apple</title>
+        <link>https://blog.jeremylandon.com/fr/2020/07/26/dotnet-how-to-verify-the-apple-tokens/</link>
+        <pubDate>Sun, 26 Jul 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 26 Jul 2020 14:07:19 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/07/26/dotnet-how-to-verify-the-apple-tokens/</guid>
+        <description>Validation J&amp;rsquo;ai implémenté dans quelques applications Flutter le bouton Sign in with Apple. Le processus d&amp;rsquo;authentication est classique et repose sur du OAuth2 standard.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/dotnetcore.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+            
+              <category>csharp</category>
+            
+          
+            
+              <category>ios</category>
+            
+          
+            
+              <category>apple</category>
+            
+          
+        
+        
+          
+            
+              <category>dotnet</category>
+            
+          
+        
+        
+          
+            
+              <category>apple</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>[Redis] Implémentation d&#39;une sémaphore distribuée en .NET</title>
