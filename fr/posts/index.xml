@@ -22,6 +22,54 @@
 
       
       <item>
+        <title>[Azure Devops] Générer les applications Flutter android</title>
+        <link>https://blog.jeremylandon.com/fr/2020/08/23/azure-devops-generate-android-flutter-apps/</link>
+        <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 23 Aug 2020 02:02:22 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/08/23/azure-devops-generate-android-flutter-apps/</guid>
+        <description>Il est selon moi indispensable de passer la génération des applications au travers d&amp;rsquo;un système de build, pour le suivi, la praticité, la fiabilité et un gain de temps.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/azuredevops.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>azure devops</category>
+            
+          
+            
+              <category>flutter</category>
+            
+          
+            
+              <category>android</category>
+            
+          
+            
+              <category>mobile</category>
+            
+          
+        
+        
+          
+            
+              <category>azure devops</category>
+            
+          
+        
+        
+          
+            
+              <category>devops</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>[Flutter] Ignorer la taille de la police du système</title>
         <link>https://blog.jeremylandon.com/fr/2020/08/09/flutter-how-to-ignore-the-system-fontsize/</link>
         <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>

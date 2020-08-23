@@ -14,7 +14,7 @@
     <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
     <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 09 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://blog.jeremylandon.com/fr/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,7 +25,7 @@
       <item>
         <title>android</title>
         <link>https://blog.jeremylandon.com/fr/tags/android/</link>
-        <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/android/</guid>
@@ -41,12 +41,48 @@
       </item>
       
       <item>
+        <title>azure devops</title>
+        <link>https://blog.jeremylandon.com/fr/tags/azure-devops/</link>
+        <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/azure-devops/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
         <title>flutter</title>
         <link>https://blog.jeremylandon.com/fr/tags/flutter/</link>
-        <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/flutter/</guid>
+        <description></description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>mobile</title>
+        <link>https://blog.jeremylandon.com/fr/tags/mobile/</link>
+        <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        
+        <guid>https://blog.jeremylandon.com/fr/tags/mobile/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -65,24 +101,6 @@
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/ios/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>mobile</title>
-        <link>https://blog.jeremylandon.com/fr/tags/mobile/</link>
-        <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/mobile/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
@@ -335,24 +353,6 @@
         <author>contact@jeremylandon.com (Jérémy Landon)</author>
         
         <guid>https://blog.jeremylandon.com/fr/tags/azure/</guid>
-        <description></description>
-        
-        <dc:creator>Jérémy Landon</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>azure devops</title>
-        <link>https://blog.jeremylandon.com/fr/tags/azure-devops/</link>
-        <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
-        <author>contact@jeremylandon.com (Jérémy Landon)</author>
-        
-        <guid>https://blog.jeremylandon.com/fr/tags/azure-devops/</guid>
         <description></description>
         
         <dc:creator>Jérémy Landon</dc:creator>
