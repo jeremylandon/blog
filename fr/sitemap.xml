@@ -164,7 +164,7 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/</loc>
-    <lastmod>2020-08-23T02:02:22+02:00</lastmod>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -204,6 +204,96 @@
   </url>
   
   <url>
+    <loc>https://blog.jeremylandon.com/fr/2020/09/06/nodejs-how-to-sign-and-verify-a-message-with-node-js/</loc>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/</loc>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/javascript/</loc>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/nodejs/</loc>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/nodejs/</loc>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/security/</loc>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/series/</loc>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.jeremylandon.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.jeremylandon.com/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://blog.jeremylandon.com/fr/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.jeremylandon.com/fr/categories/tips/</loc>
+    <lastmod>2020-09-06T13:07:24+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.jeremylandon.com/fr/2020/08/23/azure-devops-generate-android-flutter-apps/</loc>
     <lastmod>2020-08-23T02:02:22+02:00</lastmod>
   </url>
@@ -221,26 +311,6 @@
   <url>
     <loc>https://blog.jeremylandon.com/fr/categories/azure-devops/</loc>
     <lastmod>2020-08-23T02:02:22+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/categories/</loc>
-    <lastmod>2020-08-23T02:02:22+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/categories/"
-                />
   </url>
   
   <url>
@@ -275,46 +345,6 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://blog.jeremylandon.com/fr/tags/mobile/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/series/</loc>
-    <lastmod>2020-08-23T02:02:22+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/</loc>
-    <lastmod>2020-08-23T02:02:22+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.jeremylandon.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://blog.jeremylandon.com/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://blog.jeremylandon.com/fr/tags/"
                 />
   </url>
   
@@ -464,11 +494,6 @@
   </url>
   
   <url>
-    <loc>https://blog.jeremylandon.com/fr/categories/tips/</loc>
-    <lastmod>2020-06-28T19:16:46+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.jeremylandon.com/fr/series/tools/</loc>
     <lastmod>2020-06-28T19:16:46+02:00</lastmod>
   </url>
@@ -480,11 +505,6 @@
   
   <url>
     <loc>https://blog.jeremylandon.com/fr/2020/06/15/postman-realiser-un-polling-avec-postman/</loc>
-    <lastmod>2020-06-14T03:06:33+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.jeremylandon.com/fr/tags/javascript/</loc>
     <lastmod>2020-06-14T03:06:33+02:00</lastmod>
   </url>
   

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>nodejs on Jérémy Landon - Dev, Cloud, DevOps &amp; more</title>
+    <link>https://blog.jeremylandon.com/fr/series/nodejs/</link>
+    <description>Recent content in nodejs on Jérémy Landon - Dev, Cloud, DevOps &amp; more</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <managingEditor>contact@jeremylandon.com (Jérémy Landon)</managingEditor>
+    <webMaster>contact@jeremylandon.com (Jérémy Landon)</webMaster>
+    <copyright>©{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 06 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.jeremylandon.com/fr/series/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>[NodeJs] Comment signer et vérifier un message avec Node.js</title>
+        <link>https://blog.jeremylandon.com/fr/2020/09/06/nodejs-how-to-sign-and-verify-a-message-with-node-js/</link>
+        <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
+        <author>contact@jeremylandon.com (Jérémy Landon)</author>
+        <atom:modified>Sun, 06 Sep 2020 13:07:24 +0200</atom:modified>
+        <guid>https://blog.jeremylandon.com/fr/2020/09/06/nodejs-how-to-sign-and-verify-a-message-with-node-js/</guid>
+        <description>J&amp;rsquo;ai eu récement eu le besoin de pouvoir vérifier la signature retournée par une API le tout via Node.js.
+Aujourd&amp;rsquo;hui je vous partage le code que j&amp;rsquo;utilise pour cela via un exemple et l&amp;rsquo;utilisation de la librarie node-rsa.</description>
+        
+        <dc:creator>Jérémy Landon</dc:creator>
+        <media:content url="https://blog.jeremylandon.com/images/logo/nodejs.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>nodejs</category>
+            
+          
+            
+              <category>javascript</category>
+            
+          
+            
+              <category>security</category>
+            
+          
+        
+        
+          
+            
+              <category>tips</category>
+            
+          
+        
+        
+          
+            
+              <category>nodejs</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
