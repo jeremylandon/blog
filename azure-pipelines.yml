@@ -14,7 +14,7 @@ steps:
   displayName: 'Checkout repository including submodules'
   submodules: true
 
-- task: HugoTask@1
+- task: HugoTask@2
   displayName: 'Generate Hugo site'
   inputs:
     source: 
