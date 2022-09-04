@@ -89,7 +89,7 @@ commento = false
   clientSecret = ""       # Your client secret
 
 [utterances]       # https://utteranc.es/
-  owner = "Golapadeog"              # Your GitHub ID
+  owner = "jeremylandon"              # Your GitHub ID
   repo = "blog"               # The repo to store comments
 
 [gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
@@ -129,7 +129,7 @@ commento = false
   phone = ""
   facebook = ""
   twitter = ""
-  github = "https://github.com/Golapadeog"
+  github = "https://github.com/jeremylandon"
   stack-overflow = "https://stackoverflow.com/users/4181832/j%c3%a9r%c3%a9my-landon"
   instagram = ""
   google-plus = ""

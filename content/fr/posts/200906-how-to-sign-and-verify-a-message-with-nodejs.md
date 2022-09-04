@@ -17,9 +17,9 @@ image: images/logo/nodejs.png
 J'ai eu récement eu le besoin de pouvoir vérifier la signature retournée par une API le tout via Node.js.
 Aujourd'hui je vous partage le code que j'utilise pour cela via un exemple et l'utilisation de la librarie **[node-rsa](https://github.com/rzcoder/node-rsa)**.
 
-{{< gist Golapadeog c7601dec28a531ef0cefe71b200b0f1e "signandverify.js" >}}
+{{< gist jeremylandon c7601dec28a531ef0cefe71b200b0f1e "signandverify.js" >}}
 
-Et vous pouvez testrer via un exemple **[Redpl.it](https://repl.it/@Golapadeog/sign-and-verify-signature-with-node-rsa)**
+Et vous pouvez testrer via un exemple **[Redpl.it](https://repl.it/@jeremylandon/sign-and-verify-signature-with-node-rsa)**
 
 **Voilà !**
 
@@ -28,5 +28,5 @@ Et vous pouvez testrer via un exemple **[Redpl.it](https://repl.it/@Golapadeog/s
 ### Documentation
 
 - [https://github.com/rzcoder/node-rsa](https://github.com/rzcoder/node-rsa)
-- [https://gist.github.com/Golapadeog/c7601dec28a531ef0cefe71b200b0f1e](https://gist.github.com/Golapadeog/c7601dec28a531ef0cefe71b200b0f1e)
-- [https://repl.it/@Golapadeog/sign-and-verify-signature-with-node-rsa](https://repl.it/@Golapadeog/sign-and-verify-signature-with-node-rsa)
+- [https://gist.github.com/jeremylandon/c7601dec28a531ef0cefe71b200b0f1e](https://gist.github.com/jeremylandon/c7601dec28a531ef0cefe71b200b0f1e)
+- [https://repl.it/@jeremylandon/sign-and-verify-signature-with-node-rsa](https://repl.it/@jeremylandon/sign-and-verify-signature-with-node-rsa)

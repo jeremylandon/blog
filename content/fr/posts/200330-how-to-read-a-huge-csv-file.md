@@ -452,9 +452,9 @@ _Ce qui prouve encore qu'il n'y a pas de magie en développement, que tout dépe
 
 ## Mise à jour (06/08/2020)
 
-J'ai eu le plaisir d'avoir **[un retour volontaire du développeur principal](https://github.com/Golapadeog/blog/issues/1)** de **TinyCsvParser**, ce dernier apporte une solution intéressante pour utiliser le framework avec un analyseur personnalisé _(Tokenizer)_, vous pouvez **[voir plus de détails directement sur le repo du projet](https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs)** ou l'exemple de ce post a été inclus et fournit plus de détail sur comment son framework fonctionne.
+J'ai eu le plaisir d'avoir **[un retour volontaire du développeur principal](https://github.com/jeremylandon/blog/issues/1)** de **TinyCsvParser**, ce dernier apporte une solution intéressante pour utiliser le framework avec un analyseur personnalisé _(Tokenizer)_, vous pouvez **[voir plus de détails directement sur le repo du projet](https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs)** ou l'exemple de ce post a été inclus et fournit plus de détail sur comment son framework fonctionne.
 
-Au delà de ça, son retour (**[présent ici](https://github.com/Golapadeog/blog/issues/1)**) me fait revoir/nuancer le message de ce post.
+Au delà de ça, son retour (**[présent ici](https://github.com/jeremylandon/blog/issues/1)**) me fait revoir/nuancer le message de ce post.
 En effet la réponse pour savoir si oui ou non un framework est à utiliser pour ce besoin spécifique est plus compliqué que de premier abord _(plus compliqué que beaucoup = framework / un cas = personnalisé ou framework)_.
 J'ai voulu dans un premier temps traiter le sujet ici, mais après réflexion beaucoup de paramètres rentrent en jeu _(le contexte, le budget, les compétences, le risque, les resources, le besoin...)_, cela fera l'objet d'un post annexe plus globale qui apportera non pas une réponse (je pense que cela est impossible) mais un point de vue sur la question.
 
@@ -468,4 +468,4 @@ J'ai voulu dans un premier temps traiter le sujet ici, mais après réflexion be
 - [https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1.getenumerator](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1.getenumerator)
 - [https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism)
 - [https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs](https://github.com/bytefish/TinyCsvParser/blob/master/TinyCsvParser/TinyCsvParser.Test/Integration/TokenizerBenchmark.cs)
-- [https://github.com/Golapadeog/blog/issues/1](https://github.com/Golapadeog/blog/issues/1)
+- [https://github.com/jeremylandon/blog/issues/1](https://github.com/jeremylandon/blog/issues/1)

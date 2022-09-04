@@ -23,10 +23,10 @@ Cette technique permettant de partager des fonctions est détaillée sur le blog
 {{< /notice >}}
 
 Le code ci-dessous est à placer dans une requête "fake" _(ex: type Get sur **https://postman-echo.com/get**)_ dans la section **Pre-request Script**.
-{{< gist Golapadeog 0494d9484c397beb39df3382cddb536d "postman-polling.js" >}}
+{{< gist jeremylandon 0494d9484c397beb39df3382cddb536d "postman-polling.js" >}}
 
 La fonction de polling est utilisable dans la section **Test** de la requête sur lequel le polling sera réalisé :
-{{< gist Golapadeog 0494d9484c397beb39df3382cddb536d "sample.js" >}}
+{{< gist jeremylandon 0494d9484c397beb39df3382cddb536d "sample.js" >}}
 Dans cet exemple la requête sera appelée tant que **le code HTTP de réponse ne sera pas 200**, avec **un délai de 1sec** entre chaque tentative et au **maximum 10 fois**.
 
 {{< notice warning >}}
@@ -37,7 +37,7 @@ Pour que le polling fonctionne la requête devra être lancée via le **[Collect
 
 ## Sources
 
-- [https://gist.github.com/Golapadeog/0494d9484c397beb39df3382cddb536d](https://gist.github.com/Golapadeog/0494d9484c397beb39df3382cddb536d)
+- [https://gist.github.com/jeremylandon/0494d9484c397beb39df3382cddb536d](https://gist.github.com/jeremylandon/0494d9484c397beb39df3382cddb536d)
 
 ### Documentation
 

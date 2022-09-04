@@ -19,7 +19,7 @@ Il est selon moi indispensable de passer la génération des applications au tra
 Aujourd'hui je vous partager le template de build que j'utilise pour générer les applications Flutter pour android.
 Ce template utilise la **[tâche Azure Devops](https://github.com/aloisdeniel/vsts-flutter-tasks)** de **[aloisdeniel](https://github.com/aloisdeniel)**.
 
-{{< gist Golapadeog 7b3f48f49bb636f9dd8edee3a553215f "generate-app-android.yml" >}}
+{{< gist jeremylandon 7b3f48f49bb636f9dd8edee3a553215f "generate-app-android.yml" >}}
 
 **Voilà !**
 
@@ -28,4 +28,4 @@ Ce template utilise la **[tâche Azure Devops](https://github.com/aloisdeniel/vs
 ### Documentation
 
 - [https://github.com/aloisdeniel/vsts-flutter-tasks](https://github.com/aloisdeniel/vsts-flutter-tasks)
-- [https://gist.github.com/Golapadeog/7b3f48f49bb636f9dd8edee3a553215f](https://gist.github.com/Golapadeog/7b3f48f49bb636f9dd8edee3a553215f)
+- [https://gist.github.com/jeremylandon/7b3f48f49bb636f9dd8edee3a553215f](https://gist.github.com/jeremylandon/7b3f48f49bb636f9dd8edee3a553215f)

@@ -58,9 +58,9 @@ Il faudra donc se poser la question suivante:
 {{< /alert >}}
 
 Bien évidemment **il n'y a pas de réponse universelle à cette question**, tout dépend de votre contexte (ressources / usages / fréquences...).
-Mais une fois la réponse trouvée ou supposément trouvée voici **[une méthode d'extension que vous pouvez retrouver sur mon gist](https://gist.github.com/Golapadeog/7228a17b6287619f71ffd1ba60e4faa2)** qui permet de limiter le nombre de tâche en parallèle de manière temporisée et ainsi répondre par exemple au besoin: "**je veux X traitements toutes les secondes**".
+Mais une fois la réponse trouvée ou supposément trouvée voici **[une méthode d'extension que vous pouvez retrouver sur mon gist](https://gist.github.com/jeremylandon/7228a17b6287619f71ffd1ba60e4faa2)** qui permet de limiter le nombre de tâche en parallèle de manière temporisée et ainsi répondre par exemple au besoin: "**je veux X traitements toutes les secondes**".
 
-{{< gist Golapadeog 7228a17b6287619f71ffd1ba60e4faa2 >}}
+{{< gist jeremylandon 7228a17b6287619f71ffd1ba60e4faa2 >}}
 
 ```csharp
 var maxDegreeOfParallelism = 10;
@@ -131,7 +131,7 @@ Elles doivent avant toute chose être un point d'alerte pour se poser des questi
 
 ### Repository
 
-- [https://gist.github.com/Golapadeog/7228a17b6287619f71ffd1ba60e4faa2](https://gist.github.com/Golapadeog/7228a17b6287619f71ffd1ba60e4faa2)
+- [https://gist.github.com/jeremylandon/7228a17b6287619f71ffd1ba60e4faa2](https://gist.github.com/jeremylandon/7228a17b6287619f71ffd1ba60e4faa2)
 
 ### Documentation
 

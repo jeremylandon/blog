@@ -36,7 +36,7 @@ Install-Package System.IdentityModel.Tokens.Jwt
 var isValid = await new AppleTokenValidator().ValidateAsync(myToken);
 ```
 
-{{< gist Golapadeog 130f1628e172cf090086da63d682f2b6 "AppleTokenValidator.cs" >}}
+{{< gist jeremylandon 130f1628e172cf090086da63d682f2b6 "AppleTokenValidator.cs" >}}
 
 **voilà tout simplement!**
 
@@ -46,7 +46,7 @@ Je suis en train de réaliser une librarie pour faciliter l'utilisation de la fo
 
 ## Sources
 
-- [https://gist.github.com/Golapadeog/130f1628e172cf090086da63d682f2b6](https://gist.github.com/Golapadeog/130f1628e172cf090086da63d682f2b6)
+- [https://gist.github.com/jeremylandon/130f1628e172cf090086da63d682f2b6](https://gist.github.com/jeremylandon/130f1628e172cf090086da63d682f2b6)
 
 ### Documentation
 

@@ -49,17 +49,17 @@ Troisième solution que je préfère est d'ajouter lors de la build l'ip de l'ag
 Sur **Azure Devops** cela se fait via la tâche **[Azure Cli](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-cli?view=azure-devops)** et il existe des équivalents ailleurs (Jenkins: **[azure-cli](https://plugins.jenkins.io/azure-cli/)**, Bamboo: **azure-cli-run**…).
 Voici le script générique _(à adapter en fonction du service de build utilisé et des ports requis)_:
 
-{{< gist Golapadeog b418c74123daa8b2973e0078ed7aaa08 "add-inbound.ps1" >}}
+{{< gist jeremylandon b418c74123daa8b2973e0078ed7aaa08 "add-inbound.ps1" >}}
 
 On oublie pas de supprimer la règle après la build
 
-{{< gist Golapadeog b418c74123daa8b2973e0078ed7aaa08 "delete-inbound.ps1" >}}
+{{< gist jeremylandon b418c74123daa8b2973e0078ed7aaa08 "delete-inbound.ps1" >}}
 
 **Et voilà!**
 
 ## Sources
 
-- [https://gist.github.com/Golapadeog/b418c74123daa8b2973e0078ed7aaa08](https://gist.github.com/Golapadeog/b418c74123daa8b2973e0078ed7aaa08)
+- [https://gist.github.com/jeremylandon/b418c74123daa8b2973e0078ed7aaa08](https://gist.github.com/jeremylandon/b418c74123daa8b2973e0078ed7aaa08)
 
 ### Documentation
 

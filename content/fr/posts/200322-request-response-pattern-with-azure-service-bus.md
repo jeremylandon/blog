@@ -237,7 +237,7 @@ static async Task Main()
 
 ### Repository
 
-- [https://github.com/Golapadeog/sample-azure-service-bus-request-response](https://github.com/Golapadeog/sample-azure-service-bus-request-response)
+- [https://github.com/jeremylandon/sample-azure-service-bus-request-response](https://github.com/jeremylandon/sample-azure-service-bus-request-response)
 
 ### Documentation
 
