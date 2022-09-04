@@ -20,6 +20,7 @@ steps:
     source: 
     destination: '$(Build.ArtifactStagingDirectory)'
     extendedVersion: true
+    hugoVersion: 0.92.2
 
 - task: PublishPipelineArtifact@0
   displayName: 'Publish Hugo site as artifact'
